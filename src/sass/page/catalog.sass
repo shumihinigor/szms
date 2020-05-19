@@ -1,0 +1,45 @@
+.catalog
+    position: relative
+    &-item
+        position: relative
+        background: #FFFFFF
+        border: 1px solid #DFC3C7
+        padding: 18px 14px
+        margin-top: -1px
+        margin-left: -1px
+        &:first-child
+            margin-left: 0
+        &:nth-child(4n)
+            margin-left: 0
+        &__image
+            position: relative
+            padding: 0 18px
+        &__name
+            position: relative
+        &__price
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__basket
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            right: 0
+            bottom: 0
+            width: 40px
+            height: 40px
+            padding: 6px 8px 7px 8px
+            border-radius: 100%
+            background: #FFFFFF
+            box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
+            & .icon.basket
+                margin-bottom: 0
+        &__discount
+            padding: 3px 8px 2px
+            background: #FFE3E3
+            border-radius: 2px
+            color: #E32E2E
+    &-information
+        background: #EAEAEA;
+        padding: 30px

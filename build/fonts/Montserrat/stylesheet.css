@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Light.eot');
+    src: url('hinted-Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Light.woff2') format('woff2'),
+        url('hinted-Montserrat-Light.woff') format('woff'),
+        url('hinted-Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Italic.eot');
+    src: url('hinted-Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Italic.woff2') format('woff2'),
+        url('hinted-Montserrat-Italic.woff') format('woff'),
+        url('hinted-Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-LightItalic.eot');
+    src: url('hinted-Montserrat-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-LightItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-LightItalic.woff') format('woff'),
+        url('hinted-Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-MediumItalic.eot');
+    src: url('hinted-Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-MediumItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-MediumItalic.woff') format('woff'),
+        url('hinted-Montserrat-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-ExtraBoldItalic.eot');
+    src: url('hinted-Montserrat-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-ExtraBoldItalic.woff') format('woff'),
+        url('hinted-Montserrat-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-BoldItalic.eot');
+    src: url('hinted-Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-BoldItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-BoldItalic.woff') format('woff'),
+        url('hinted-Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Bold.eot');
+    src: url('hinted-Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Bold.woff2') format('woff2'),
+        url('hinted-Montserrat-Bold.woff') format('woff'),
+        url('hinted-Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-ExtraLightItalic.eot');
+    src: url('hinted-Montserrat-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-ExtraLightItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-ExtraLightItalic.woff') format('woff'),
+        url('hinted-Montserrat-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Thin.eot');
+    src: url('hinted-Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Thin.woff2') format('woff2'),
+        url('hinted-Montserrat-Thin.woff') format('woff'),
+        url('hinted-Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-SemiBold.eot');
+    src: url('hinted-Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-SemiBold.woff2') format('woff2'),
+        url('hinted-Montserrat-SemiBold.woff') format('woff'),
+        url('hinted-Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Medium.eot');
+    src: url('hinted-Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Medium.woff2') format('woff2'),
+        url('hinted-Montserrat-Medium.woff') format('woff'),
+        url('hinted-Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-ExtraBold.eot');
+    src: url('hinted-Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-ExtraBold.woff2') format('woff2'),
+        url('hinted-Montserrat-ExtraBold.woff') format('woff'),
+        url('hinted-Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-SemiBoldItalic.eot');
+    src: url('hinted-Montserrat-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-SemiBoldItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-SemiBoldItalic.woff') format('woff'),
+        url('hinted-Montserrat-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-ExtraLight.eot');
+    src: url('hinted-Montserrat-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-ExtraLight.woff2') format('woff2'),
+        url('hinted-Montserrat-ExtraLight.woff') format('woff'),
+        url('hinted-Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-BlackItalic.eot');
+    src: url('hinted-Montserrat-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-BlackItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-BlackItalic.woff') format('woff'),
+        url('hinted-Montserrat-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Regular.eot');
+    src: url('hinted-Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Regular.woff2') format('woff2'),
+        url('hinted-Montserrat-Regular.woff') format('woff'),
+        url('hinted-Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-Black.eot');
+    src: url('hinted-Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-Black.woff2') format('woff2'),
+        url('hinted-Montserrat-Black.woff') format('woff'),
+        url('hinted-Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('hinted-Montserrat-ThinItalic.eot');
+    src: url('hinted-Montserrat-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Montserrat-ThinItalic.woff2') format('woff2'),
+        url('hinted-Montserrat-ThinItalic.woff') format('woff'),
+        url('hinted-Montserrat-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
