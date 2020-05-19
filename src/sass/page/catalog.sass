@@ -17,6 +17,8 @@
         &__name
             position: relative
         &__price
+            position: relative
+            z-index: 1
             display: flex
             align-items: center
             justify-content: space-between
@@ -29,17 +31,48 @@
             bottom: 0
             width: 40px
             height: 40px
-            padding: 6px 8px 7px 8px
+            padding: 7px
             border-radius: 100%
             background: #FFFFFF
             box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
             & .icon.basket
                 margin-bottom: 0
+            &:hover
+                background: #FFFFFF
+                box-shadow: 0px 0px 7px rgba(175, 125, 128, 0.25)
         &__discount
             padding: 3px 8px 2px
             background: #FFE3E3
             border-radius: 2px
             color: #E32E2E
+        &.active
+            & .icon.basket
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHJSURBVHgBtVZLTsMwEH3jZoEQCzgBBVbsygnaNb+WEwA36AWQUrhAr8EuRZVgR7pjR9h1wSK9gREgIdF4mKT/xhVCOE+KYk/Gfva88Th0c1x/ZKCGFITYvNOBHwYajqGYUZ72pK3WkwYKgDKfdGA82pFdhZmFsIkC4I3DpFtHpwMQgYmKIZq2RJ/sRXR+fVLfhkMQczQlIlIaIhhGml3AIVh2oSYdkyTOM20CEv2nRFClGAXBgHszouFIoyLAMHM7WkNhofO73RmRHwSFENH4fKoFK7sPX6pPjkjOq/NdpfrkiAQxHCPVJ0dkmN/gEKJPMGl7S19WhU6qBvQ4tNnDY19mHmRvw3HmqUojH0+io2fzLRCJc0SKsokN6AwfiFzdTTTf8RuNTfXNz2Itp0WWGBH/NUES0zOmFPoPQbySKCM7bFSUErL/wHJTe5YlVfLJmGqBSOp9xzJrXVZbWXRGmTZMM133SiK5j2qwQKTTV907f9ku/xxVtvmDqov9HJOKLeNWpr6c/BebnZeqTI6IPbQtpUhzopqwTThUbSCXMNok1Jo3lJYHhv3+V3VvvyN6bCk5OBL/J2Po0r8P+rAgfO3r6u7+7W/+P7aGwaLuS7d8AAAAAElFTkSuQmCC)
+            & .catalog-item__image
+                & img
+                    opacity: 0
+            & .catalog-item__bg
+                display: block
+        &__bg
+            display: none
+            position: absolute
+            top: -1px
+            bottom: 0
+            right: 0
+            left: 0
+            height: calc(100% + 1px)
+            width: calc(100% + 1px)
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                bottom: 0
+                right: 0
+                left: 0
+                background: #552225
+                opacity: 0.6
+                
     &-information
-        background: #EAEAEA;
+        background: #EAEAEA
         padding: 30px
+        height: 100%

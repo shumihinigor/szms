@@ -26,3 +26,8 @@ $(document).ready(function () {
     $('.progress-button').append($('.slick-prev'))
     $('.progress-button').append($('.slick-next'))
 });
+
+$('.catalog-item').hover(function() {
+    $(this).toggleClass('active')
+    $(this).find('.burgundy-100, .burgundy-50').toggleClass('white')
+})
