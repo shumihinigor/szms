@@ -2032,7 +2032,7 @@
         if (_.options.vertical === false) {
             if (_.options.centerMode === true) {
                 _.$list.css({
-                    padding: ('0px ' + _.options.centerPadding)
+                    padding: ('0px ' + _.options.centerPadding + ' 0px ' + ' 0px ')
                 });
             }
         } else {
