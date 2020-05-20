@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="header-link d-flex justify-content-between align-items-center">
+                <div class="header-link">
                     <a href="#" class="header-link__item active">Главная страница</a>
                     <a href="#" class="header-link__item">Каталог продукции</a>
                     <a href="#" class="header-link__item">Акции</a>
@@ -20,25 +20,35 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-between align-items-center">
+                <nav class="navbar navbar-expand-lg navbar-dark d-lg-none d-md-block">
+                    <button class="navbar-toggler menu" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button class="navbar-toggler d-lg-none d-md-none d-sm-block" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                        <span class="icon search red"></span>
+                    </button>
+                </nav>
                 <div class="header-logo">
                     <img src="../images/logo.png" alt="">
                 </div>
-                <div class="header-search w-50">
+                <div class="header-search w-50 d-lg-block d-md-block d-none">
                     <input class="form-control search" type="text" placeholder="Поиск">
                     <i class="icon search cursor-pointer"></i>
                 </div>
-                <a href="tel:+78452393315" class="header-phone gray-100 w-25 d-flex align-items-center">
+                <a href="tel:+78452393315" class="header-phone gray-100 align-items-center d-lg-flex d-none w-25">
                     <i class="icon phone"></i>
                     <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
                 </a>
-                <a href="#" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
-                    <i class="icon profile"></i>
-                    <div class="text montserrat">Профиль</div>
-                </a>
-                <a href="#" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
-                    <i class="icon basket"></i>
-                    <div class="text montserrat">Корзина</div>
-                </a>
+                <div class="d-flex ml-auto">
+                    <a href="#" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
+                        <i class="icon profile mb-sm__0"></i>
+                        <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
+                    </a>
+                    <a href="#" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
+                        <i class="icon basket mb-sm__0"></i>
+                        <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Корзина</div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

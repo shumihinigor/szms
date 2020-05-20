@@ -1,10 +1,25 @@
 .header
     background: #FFFFFF
     padding: 10px 0
+    box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
     &-nav
         background: #F8F8F8
         padding: 20px 0
+        @media screen and ( max-width: 991px )
+            position: absolute
+            z-index: 999
+            left: 0
+            right: 0
+            top: 70px
+            background: #333333
+            display: none
     &-link
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width: 991px )
+            flex-direction: column
+            align-items: start
         &__item
             font-family: Ubuntu
             font-style: normal
@@ -14,6 +29,18 @@
             letter-spacing: 0.045em
             color: $gray-50
             margin-right: 15px
+            @media screen and ( max-width: 991px )
+                color: #F2F2F2
+                margin-bottom: 15px
+                font-weight: normal
+                line-height: 20px
+                &:hover, &.active
+                    font-size: 16px
+                    font-family: Montserrat
+                    font-style: normal
+                    font-weight: 600
+                    color: $white !important
+                    text-decoration: none !important
             &:last-child
                 margin-right: 0
             &:hover, &.active
@@ -23,6 +50,8 @@
         margin-right: 25px
         img
             width: auto
+        @media screen and ( max-width: 767px )
+            margin: 0 auto
     &-search
         position: relative
         margin-right: 40px
@@ -32,6 +61,20 @@
     &-profile
         position: relative
         margin-right: 20px
+        &:hover
+            & .icon.profile
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALvSURBVHgBtVZBVhNBEK3qZNaOXsBJHlGfG+LSleEE4nuA7BJPAJ4AcgLwBJA1PIQTmCPAxg1I2gtIWPqSdPmrMwMj0skkyH9vXvdM99Sv7q761UwFsJIsNNhwE90GngRPn4ROyVDn4Mf5fhEbPG3CWvXFlpBsa19ETj2J/shcRxPjsQM3WDq21s5NdEOi3gt9OrDnp/nxlerCNhNvpWRvQNYP2SqFBtaTV4ljt6srGMjg7ZG9tHfnfL/61X399Nk1yNYNm9/6HrJnQgMjGjVIz4OpPcnTw8sL7wzImjQBQSJnnJ4BDUaDLk2BCJ2oU8tJEs9MZJifazvtkD1YbPrPk5mJyHHQu6AxKVWCYxP+Cp7LPAgSieNrbSft+81cEj/H8ag3MxH23edMmcp1mgIjZhFN/6jX+zk7kSNPJEaWaQI035ACjVQ1ws6EBg7tRRd70jVkmti+JDQPaeDzB1rYoXmIFPCyjSaOOPp6H9nH6suNVAftNHGdKqo5PcNkPnbkztB9wgJRZa/mDxfVDKtJrSUsTSh2I/e5j9V8Gbrh7iSJKkSkW+PEtbCFn/XM0lD3oZytYK1a2xF8w6rak1ZVvu+jL3TMW9imBlyxQxna1Lh6/pf3jkTVezMyUWu1WtsPEXLeOELjPX5qpV4X3pq0Au/RuPpqBne1+qogZ6Q8Xv5tFQUs+p2ie/8vIW3AbJZ7Fkv+oAWT9aDBvqdVNDsLeiD0LCOKlmF3B6/9g8vzCq9Wat80TLG3lUIlYQZkqSFOlgxI6lhJ93+TKCTVS6ysrsoQM5lregREoyjTv3gsQSxX9MhQIr0MTi0F82BIwyTt9sv+zoZgQLL19MaTj/15kbvZtvwHlBzWUCyb8mZ6XUr8ABIOB3miE4qEuyp7iUp1GH/H4xzydjTIYKutNjg32cf+PeKpsPjB+h6nrXhjMd7H7S36kK4OOz7OO8kBD2Nfwg01MGER97YE5HHmaWZQH3htMaZqcgbj3bvX5gx/AHwIehB84bxjAAAAAElFTkSuQmCC)
+        
+        &:focue, &:active
+            & .icon.profile
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHJSURBVHgBtVZLTsMwEH3jZoEQCzgBBVbsygnaNb+WEwA36AWQUrhAr8EuRZVgR7pjR9h1wSK9gREgIdF4mKT/xhVCOE+KYk/Gfva88Th0c1x/ZKCGFITYvNOBHwYajqGYUZ72pK3WkwYKgDKfdGA82pFdhZmFsIkC4I3DpFtHpwMQgYmKIZq2RJ/sRXR+fVLfhkMQczQlIlIaIhhGml3AIVh2oSYdkyTOM20CEv2nRFClGAXBgHszouFIoyLAMHM7WkNhofO73RmRHwSFENH4fKoFK7sPX6pPjkjOq/NdpfrkiAQxHCPVJ0dkmN/gEKJPMGl7S19WhU6qBvQ4tNnDY19mHmRvw3HmqUojH0+io2fzLRCJc0SKsokN6AwfiFzdTTTf8RuNTfXNz2Itp0WWGBH/NUES0zOmFPoPQbySKCM7bFSUErL/wHJTe5YlVfLJmGqBSOp9xzJrXVZbWXRGmTZMM133SiK5j2qwQKTTV907f9ku/xxVtvmDqov9HJOKLeNWpr6c/BebnZeqTI6IPbQtpUhzopqwTThUbSCXMNok1Jo3lJYHhv3+V3VvvyN6bCk5OBL/J2Po0r8P+rAgfO3r6u7+7W/+P7aGwaLuS7d8AAAAAElFTkSuQmCC)
     &-basket
         position: relative
-        // margin-right: 40px
+        &:hover
+            & .icon.basket
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJdSURBVHgBtVa9bhNBEP5mfVfHNLSsCW6ReQL7DQgC14EnIG9AeIKEJ0CUSBFJngCno4uRKFJE0aan2HQWNjvM7P3kzncIIZ+/03n25ub2m9mZnTVNB8OvIEyQwS3D8tmZcx4dwwiJrTxb0+vtYQswGoHcAzBmUcHUxxaQ5MvkXw2Gt5TptkNUjoid/Oi1P308fIQOYWDmSeW5KAAr92t0iCBXSUSBvFBHQgZ/QAcgprFWNDPPSiKZ3OnCKdHJzfUhOsB098kpmDQjF6ZQJkhcPrToCkyTKANmJdECi3KT7lm7ceVN7XCEvIJP3PU9UbUbGKIdbAg2PIlS8hPnXHvvopJ7A2wIIoyzAS4aRJyXeOixxaao5EdFUvdCNi3TqGhDkiurMkXal6rsS1XGZ1kWfa/3juj6uZc26qjsLGV+GkQc6I5iNdKRdIejmhOg1nFF2RbWWTGqE1Hw1EhbROyHktgoxRmR5LNA+DbyBHIqpQvIHORXWDncd5s6kQlmXnaHwC/EeN7V2VQLWPdPatJLZJtWO8VcPP4/Iqmy5e/lTBx0dfUa4kYzuMRmaJzUSYvRKJexueqxAY2QMWfi83VjaZzPxV39xon9p8I+McmByMO/EkkPnGiYSqLNVSJ0EuFHXcK2Ziv/OeLGzO2PC3tRjKt2zYiqB6B+RHgb1TB3aEGg8F0OtolEtv/S7irJu2hPWRUWaNTyKqyOkbUiGz3LlsUv+ddBG1EaUrX3ameMOUVWSF5y9L5q11v/8Mr7xdOdh+cB/EAXRPbMN3H7zRd3c9VG9MP/9GL/+V/2fwCKjwLQDh6HdwAAAABJRU5ErkJggg==)
+        
+        &:focue, &:active
+            & .icon.basket
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHJSURBVHgBtVZLTsMwEH3jZoEQCzgBBVbsygnaNb+WEwA36AWQUrhAr8EuRZVgR7pjR9h1wSK9gREgIdF4mKT/xhVCOE+KYk/Gfva88Th0c1x/ZKCGFITYvNOBHwYajqGYUZ72pK3WkwYKgDKfdGA82pFdhZmFsIkC4I3DpFtHpwMQgYmKIZq2RJ/sRXR+fVLfhkMQczQlIlIaIhhGml3AIVh2oSYdkyTOM20CEv2nRFClGAXBgHszouFIoyLAMHM7WkNhofO73RmRHwSFENH4fKoFK7sPX6pPjkjOq/NdpfrkiAQxHCPVJ0dkmN/gEKJPMGl7S19WhU6qBvQ4tNnDY19mHmRvw3HmqUojH0+io2fzLRCJc0SKsokN6AwfiFzdTTTf8RuNTfXNz2Itp0WWGBH/NUES0zOmFPoPQbySKCM7bFSUErL/wHJTe5YlVfLJmGqBSOp9xzJrXVZbWXRGmTZMM133SiK5j2qwQKTTV907f9ku/xxVtvmDqov9HJOKLeNWpr6c/BebnZeqTI6IPbQtpUhzopqwTThUbSCXMNok1Jo3lJYHhv3+V3VvvyN6bCk5OBL/J2Po0r8P+rAgfO3r6u7+7W/+P7aGwaLuS7d8AAAAAElFTkSuQmCC)
+        

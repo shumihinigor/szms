@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="header-link d-flex justify-content-between align-items-center">
+                    <div class="header-link">
                         <a href="#" class="header-link__item active">Главная страница</a>
                         <a href="#" class="header-link__item">Каталог продукции</a>
                         <a href="#" class="header-link__item">Акции</a>
@@ -35,25 +35,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center">
+                    <nav class="navbar navbar-expand-lg navbar-dark d-lg-none d-md-block">
+                        <button class="navbar-toggler menu" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <button class="navbar-toggler d-lg-none d-md-none d-sm-block" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                            <span class="icon search red"></span>
+                        </button>
+                    </nav>
                     <div class="header-logo">
                         <img src="../images/logo.png" alt="">
                     </div>
-                    <div class="header-search w-50">
+                    <div class="header-search w-50 d-lg-block d-md-block d-none">
                         <input class="form-control search" type="text" placeholder="Поиск">
                         <i class="icon search cursor-pointer"></i>
                     </div>
-                    <a href="tel:+78452393315" class="header-phone gray-100 w-25 d-flex align-items-center">
+                    <a href="tel:+78452393315" class="header-phone gray-100 align-items-center d-lg-flex d-none w-25">
                         <i class="icon phone"></i>
                         <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
                     </a>
-                    <a href="#" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
-                        <i class="icon profile"></i>
-                        <div class="text montserrat">Профиль</div>
-                    </a>
-                    <a href="#" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
-                        <i class="icon basket"></i>
-                        <div class="text montserrat">Корзина</div>
-                    </a>
+                    <div class="d-flex ml-auto">
+                        <a href="#" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
+                            <i class="icon profile mb-sm__0"></i>
+                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
+                        </a>
+                        <a href="#" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
+                            <i class="icon basket mb-sm__0"></i>
+                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Корзина</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,54 +74,55 @@
     
     <!-- breadcrumbs end -->
 
-    <section class="slider-block mb__70">
-        <div class="slider-title">
-            <h1 class="h1 white mb__20"><span class="contour-2 white">Инновации</span> в качестве</h1>
-            <h2 class="h2 white text ubuntu">Саратовский кирпичный завод </h2>
-        </div>
-        
+    <!-- Слайдер -->
+    <section class="slider-main__block mb__70">
         <div class="content">
-            <div class="slider">
+            <div class="slider-main">
                 <div>
-                    <div class="image">
-                        <img src="images/slider1-1.png" alt="">
+                    <div class="image" style="background-image: url(images/slider1-1.png);"></div>
+                    <div class="slider-main__title">
+                        <h1 class="h1 white mb__20"><span class="contour-2 white">Инновации</span> в качестве</h1>
+                        <h4 class="h4 white text ubuntu">Саратовский кирпичный завод </h4>
                     </div>
                 </div>
                 <div>
-                    <div class="image">
-                        <img src="images/slider1-1.png" alt="">
+                    <div class="image" style="background-image: url(images/slider1-1.png);"></div>
+                    <div class="slider-main__title">
+                        <h1 class="h1 white mb__20"><span class="contour-2 white">Инновации</span> в качестве</h1>
+                        <h4 class="h4 white text ubuntu">Саратовский кирпичный завод </h4>
                     </div>
                 </div>
                 <div>
-                    <div class="image">
-                        <img src="images/slider1-1.png" alt="">
+                    <div class="image" style="background-image: url(images/slider1-1.png);"></div>
+                    <div class="slider-main__title">
+                        <h1 class="h1 white mb__20"><span class="contour-2 white">Инновации</span> в качестве</h1>
+                        <h4 class="h4 white text ubuntu">Саратовский кирпичный завод </h4>
                     </div>
                 </div>
                 <div>
-                    <div class="image">
-                        <img src="images/slider1-1.png" alt="">
+                    <div class="image" style="background-image: url(images/slider1-1.png);"></div>
+                    <div class="slider-main__title">
+                        <h1 class="h1 white mb__20"><span class="contour-2 white">Инновации</span> в качестве</h1>
+                        <h4 class="h4 white text ubuntu">Саратовский кирпичный завод </h4>
                     </div>
                 </div>
             </div>
-            <div class="progress-wrapper">
-                <div class="progress-button"></div>
-                <div class="progress-line">
-                    <div class="text xl burgundy-75 montserrat-bold">01</div>
-                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                        <span class="slider__label sr-only"></span>
+            <div class="container mt-minus__50">
+                <div class="progress-wrapper">
+                    <div class="progress-button"></div>
+                    <div class="progress-line">
+                        <div class="text xl burgundy-75 montserrat-bold">01</div>
+                        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <span class="slider__label sr-only"></span>
+                        </div>
+                        <div class="text xl white montserrat-bold">04</div>
                     </div>
-                    <div class="text xl white montserrat-bold">04</div>
                 </div>
             </div>
         </div>
-        <!-- <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                </div>
-            </div>
-        </div> -->
     </section>
 
+    <!-- Каталог -->
     <section class="catalog mb__70">
         <div class="container">
             <div class="row">
@@ -120,134 +131,228 @@
                 </div>
             </div>
             <div class="row d-flex mb__70">
-                <div class="col-lg-8 d-flex align-items-center flex-wrap">
-                    <div class="catalog-item">
-                        <div class="catalog-item__bg">
-                            <img src="images/catalog1-1-hover.png" alt="">
+                <div class="col-lg-8 d-flex justify-content-between flex-wrap mb-md__20">
+                    <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-2">
+                        <div class="col mb__10">
+                            <div class="catalog-item">
+                                <div class="catalog-item__bg">
+                                    <img src="images/catalog1-1-hover.png" alt="">
+                                </div>
+                                <div class="catalog-item__image mb__10">
+                                    <img src="images/catalog1-1.png" alt="">
+                                    <div class="catalog-item__basket">
+                                        <i class="icon basket"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
+                                <div class="catalog-item__price burgundy-100">
+                                    <span class="text xxl semi-bold">13,6 руб.</span>
+                                    <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
+                                    <span class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item__image mb__10">
-                            <img src="images/catalog1-1.png" alt="">
-                            <a href="#" class="catalog-item__basket">
-                                <i class="icon basket"></i>
-                            </a>
+                        <div class="col mb__10">
+                            <div class="catalog-item">
+                                <div class="catalog-item__bg">
+                                    <img src="images/catalog1-1-hover.png" alt="">
+                                </div>
+                                <div class="catalog-item__image mb__10">
+                                    <img src="images/catalog1-1.png" alt="">
+                                    <div class="catalog-item__basket">
+                                        <i class="icon basket"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
+                                <div class="catalog-item__price burgundy-100">
+                                    <span class="text xxl semi-bold">13,6 руб.</span>
+                                    <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
+                                    <span class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item__name text m burgundy-50 mb__5">Силикатный кирпич</div>
-                        <div class="catalog-item__price burgundy-100">
-                            <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
-                            <span class="catalog-item__discount text s">-20%</span>
+                        <div class="col mb__10">
+                            <div class="catalog-item">
+                                <div class="catalog-item__bg">
+                                    <img src="images/catalog1-1-hover.png" alt="">
+                                </div>
+                                <div class="catalog-item__image mb__10">
+                                    <img src="images/catalog1-1.png" alt="">
+                                    <div class="catalog-item__basket">
+                                        <i class="icon basket"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
+                                <div class="catalog-item__price burgundy-100">
+                                    <span class="text xxl semi-bold">13,6 руб.</span>
+                                    <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
+                                    <span class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="catalog-item">
-                        <div class="catalog-item__bg">
-                            <img src="images/catalog1-1-hover.png" alt="">
+                        <div class="col mb__10">
+                            <div class="catalog-item">
+                                <div class="catalog-item__bg">
+                                    <img src="images/catalog1-1-hover.png" alt="">
+                                </div>
+                                <div class="catalog-item__image mb__10">
+                                    <img src="images/catalog1-1.png" alt="">
+                                    <div class="catalog-item__basket">
+                                        <i class="icon basket"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
+                                <div class="catalog-item__price burgundy-100">
+                                    <span class="text xxl semi-bold">13,6 руб.</span>
+                                    <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
+                                    <span class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item__image mb__10">
-                            <img src="images/catalog1-1.png" alt="">
-                            <a href="#" class="catalog-item__basket">
-                                <i class="icon basket"></i>
-                            </a>
+                        <div class="col mb__10">
+                            <div class="catalog-item">
+                                <div class="catalog-item__bg">
+                                    <img src="images/catalog1-1-hover.png" alt="">
+                                </div>
+                                <div class="catalog-item__image mb__10">
+                                    <img src="images/catalog1-1.png" alt="">
+                                    <div class="catalog-item__basket">
+                                        <i class="icon basket"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
+                                <div class="catalog-item__price burgundy-100">
+                                    <span class="text xxl semi-bold">13,6 руб.</span>
+                                    <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
+                                    <span class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item__name text m burgundy-50 mb__5">Силикатный кирпич</div>
-                        <div class="catalog-item__price">
-                            <span class="text xxl burgundy-100 semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
-                            <span class="catalog-item__discount text s">-20%</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item">
-                        <div class="catalog-item__bg">
-                            <img src="images/catalog1-1-hover.png" alt="">
-                        </div>
-                        <div class="catalog-item__image mb__10">
-                            <img src="images/catalog1-1.png" alt="">
-                            <a href="#" class="catalog-item__basket">
-                                <i class="icon basket"></i>
-                            </a>
-                        </div>
-                        <div class="catalog-item__name text m burgundy-50 mb__5">Силикатный кирпич</div>
-                        <div class="catalog-item__price">
-                            <span class="text xxl burgundy-100 semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
-                            <span class="catalog-item__discount text s">-20%</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item">
-                        <div class="catalog-item__bg">
-                            <img src="images/catalog1-1-hover.png" alt="">
-                        </div>
-                        <div class="catalog-item__image mb__10">
-                            <img src="images/catalog1-1.png" alt="">
-                            <a href="#" class="catalog-item__basket">
-                                <i class="icon basket"></i>
-                            </a>
-                        </div>
-                        <div class="catalog-item__name text m burgundy-50 mb__5">Силикатный кирпич</div>
-                        <div class="catalog-item__price">
-                            <span class="text xxl burgundy-100 semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
-                            <span class="catalog-item__discount text s">-20%</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item">
-                        <div class="catalog-item__bg">
-                            <img src="images/catalog1-1-hover.png" alt="">
-                        </div>
-                        <div class="catalog-item__image mb__10">
-                            <img src="images/catalog1-1.png" alt="">
-                            <a href="#" class="catalog-item__basket">
-                                <i class="icon basket"></i>
-                            </a>
-                        </div>
-                        <div class="catalog-item__name text m burgundy-50 mb__5">Силикатный кирпич</div>
-                        <div class="catalog-item__price">
-                            <span class="text xxl burgundy-100 semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
-                            <span class="catalog-item__discount text s">-20%</span>
-                        </div>
-                    </div>
-                    <div class="catalog-item">
-                        <div class="catalog-item__bg">
-                            <img src="images/catalog1-1-hover.png" alt="">
-                        </div>
-                        <div class="catalog-item__image mb__10">
-                            <img src="images/catalog1-1.png" alt="">
-                            <a href="#" class="catalog-item__basket">
-                                <i class="icon basket"></i>
-                            </a>
-                        </div>
-                        <div class="catalog-item__name text m burgundy-50 mb__5">Силикатный кирпич</div>
-                        <div class="catalog-item__price">
-                            <span class="text xxl burgundy-100 semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
-                            <span class="catalog-item__discount text s">-20%</span>
+                        <div class="col mb__10">
+                            <div class="catalog-item">
+                                <div class="catalog-item__bg">
+                                    <img src="images/catalog1-1-hover.png" alt="">
+                                </div>
+                                <div class="catalog-item__image mb__10">
+                                    <img src="images/catalog1-1.png" alt="">
+                                    <div class="catalog-item__basket">
+                                        <i class="icon basket"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
+                                <div class="catalog-item__price burgundy-100">
+                                    <span class="text xxl semi-bold">13,6 руб.</span>
+                                    <span class="text m burgundy-50 text-decoration__line-through ubuntu">16 руб.</span>
+                                    <span class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="catalog-information">
-                        <h2 class="h2 text-uppercase text l black mb__15">ПРОДУКЦИЯ</h2>
+                        <h4 class="h4 text-uppercase text l black mb__15">ПРОДУКЦИЯ</h4>
                         <div class="mb__15">
-                            <div class="text m gray-100 mb__10 ubuntu">Интересные факты о заводе, история возникновения и принципы работы. </div>
-                            <div class="text m gray-100 mb__10 ubuntu">Саратовский кирпичный завод производит огромными партиями кирпичи уже много лет. Благодаря опыту, постоянной модернизации, вся продукция, выпускаемая предприятием, заслужила популярность.</div>
-                            <div class="text m gray-100 mb__10 ubuntu">Саратовский кирпичный завод производит огромными партиями кирпичи уже много лет.</div>
+                            <div class="text m gray-100 mb__10 ubuntu">Интересные факты о заводе, история возникновения
+                                и принципы работы. </div>
+                            <div class="text m gray-100 mb__10 ubuntu">Саратовский кирпичный завод производит огромными
+                                партиями кирпичи уже много лет. Благодаря опыту, постоянной модернизации, вся продукция,
+                                выпускаемая предприятием, заслужила популярность.</div>
+                            <div class="text m gray-100 mb__10 ubuntu">Саратовский кирпичный завод производит огромными
+                                партиями кирпичи уже много лет.</div>
                         </div>
-                        <div class="button red text m text-uppercase">
+                        <a href="#" class="button red text m text-uppercase">
                             <span class="mr__10">Смотреть все</span>
                             <i class="icon arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="row d-flex mb__70">
-                <div class="col-lg-8 d-flex align-items-center flex-wrap">
-                    
+                <div class="col-lg-8 d-flex justify-content-between flex-wrap mb-md__20">
+                    <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-1">
+                        <div class="col mb-sm__10">
+                            <div class="catalog-link">
+                                <div class="catalog-link__image mb__25 mb-sm__0">
+                                    <img src="images/catalog2-1.png" alt="">
+                                    <div class="catalog-link__content d-flex flex-column">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <i class="icon network"></i>
+                                            <span class="text m ubuntu white">01</span>
+                                        </div>
+                                        <a href="#" class="link white text l mt-auto">
+                                            <span class="mr__10">О компании</span>
+                                            <i class="icon arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog-link__text">
+                                    <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">25</h1>
+                                    <div class="d-flex flex-column">
+                                        <span class="text m bold">работников</span>
+                                        <span class="text m ubuntu">завода</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-sm__10">
+                            <div class="catalog-link">
+                                <div class="catalog-link__image mb__25 mb-sm__0">
+                                    <img src="images/catalog2-1.png" alt="">
+                                    <div class="catalog-link__content d-flex flex-column">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <i class="icon network"></i>
+                                            <span class="text m ubuntu white">02</span>
+                                        </div>
+                                        <a href="#" class="link white text l mt-auto">
+                                            <span class="mr__10">Галерея</span>
+                                            <i class="icon arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog-link__text">
+                                    <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">+10</h1>
+                                    <div class="d-flex flex-column">
+                                        <span class="text m bold">партнеров</span>
+                                        <span class="text m ubuntu">на рынке</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-sm__10">
+                            <div class="catalog-link">
+                                <div class="catalog-link__image mb__25 mb-sm__0">
+                                    <img src="images/catalog2-1.png" alt="">
+                                    <div class="catalog-link__content d-flex flex-column">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <i class="icon network"></i>
+                                            <span class="text m ubuntu white">03</span>
+                                        </div>
+                                        <a href="#" class="link white text l mt-auto">
+                                            <span class="mr__10">О товаре</span>
+                                            <i class="icon arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog-link__text border-right-0">
+                                    <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">13</h1>
+                                    <div class="d-flex flex-column">
+                                        <span class="text m bold">лет </span>
+                                        <span class="text m ubuntu">на рынке</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="catalog-information bg__pink">
-                        <h2 class="h2 text-uppercase text l black mb__15">О ЗАВОДЕ</h2>
+                        <h4 class="h4 text-uppercase text l black mb__15">О ЗАВОДЕ</h4>
                         <div class="mb__15">
-                            <div class="text m gray-100 ubuntu">Интересные факты о заводе. Саратовский кирпичный завод производит огромными партиями кирпичи уже много лет. Благодаря опыту, постоянной модернизации, вся продукция, выпускаемая предприятием, заслужила популярность.</div>
+                            <div class="text m gray-100 ubuntu">Интересные факты о заводе. Саратовский кирпичный завод
+                                производит огромными партиями кирпичи уже много лет. Благодаря опыту, постоянной
+                                модернизации, вся продукция, выпускаемая предприятием, заслужила популярность.</div>
                         </div>
                         <a href="#" class="link red text m text-uppercase">
                             <span class="mr__10">Подробнее</span>
@@ -259,24 +364,241 @@
         </div>
     </section>
 
+    <!-- Отзывы -->
     <section class="reviews mb__70 bg__burgundy-50">
         <div class="container">
             <div class="row mb__25">
                 <div class="col-lg-12">
-                    <h2 class="h2 text xxl white text-uppercase">ОТЗЫВЫ <span class="contour-1 white">НАШИХ
-                            КЛИЕНТОВ</span></h2>
+                    <h4 class="h4 text xxl white text-uppercase">ОТЗЫВЫ <span class="contour-1 white">НАШИХ
+                            КЛИЕНТОВ</span></h4>
                 </div>
             </div>
-            <div class="row mb__25">
-                <div class="col-lg-12">
-
+            <div class="row row-cols-xl-1 row-cols-lg-1 row-cols-md-1 row-cols-1 slider-reviews">
+                <div class="col">
+                    <div class="slider-reviews__item d-flex flex-column">
+                        <div class="d-flex">
+                            <div class="slider-reviews__photo mr__15">
+                                <img src="images/slider2-1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="slider-reviews__name text xxl bold gray-100">Олег Гаврилов</div>
+                                <div class="slider-reviews__date burgundy-25 d-flex flex-column">
+                                    <h1 class="h1 burgundy-25">25</h1>
+                                    <span class="text m">января 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt__20">
+                            <div class="text m gray-100">
+                                Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция.
+                                Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака.
+                                Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так
+                                что всем кто собирается строит дом, советую брать кирпич у них!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="slider-reviews__item d-flex flex-column">
+                        <div class="d-flex">
+                            <div class="slider-reviews__photo mr__15">
+                                <img src="images/slider2-1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="slider-reviews__name text xxl bold gray-100">Олег Гаврилов</div>
+                                <div class="slider-reviews__date burgundy-25 d-flex flex-column">
+                                    <h1 class="h1 burgundy-25">25</h1>
+                                    <span class="text m">января 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt__20">
+                            <div class="text m gray-100">
+                                Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция.
+                                Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака.
+                                Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так
+                                что всем кто собирается строит дом, советую брать кирпич у них!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="slider-reviews__item d-flex flex-column">
+                        <div class="d-flex">
+                            <div class="slider-reviews__photo mr__15">
+                                <img src="images/slider2-1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="slider-reviews__name text xxl bold gray-100">Олег Гаврилов</div>
+                                <div class="slider-reviews__date burgundy-25 d-flex flex-column">
+                                    <h1 class="h1 burgundy-25">25</h1>
+                                    <span class="text m">января 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt__20">
+                            <div class="text m gray-100">
+                                Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция.
+                                Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака.
+                                Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так
+                                что всем кто собирается строит дом, советую брать кирпич у них!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="slider-reviews__item d-flex flex-column">
+                        <div class="d-flex">
+                            <div class="slider-reviews__photo mr__15">
+                                <img src="images/slider2-1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="slider-reviews__name text xxl bold gray-100">Олег Гаврилов</div>
+                                <div class="slider-reviews__date burgundy-25 d-flex flex-column">
+                                    <h1 class="h1 burgundy-25">25</h1>
+                                    <span class="text m">января 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt__20">
+                            <div class="text m gray-100">
+                                Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция.
+                                Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака.
+                                Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так
+                                что всем кто собирается строит дом, советую брать кирпич у них!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-wrapper d-lg-flex d-md-flex d-sm-none d-none">
+                <div class="progress-button"></div>
+                <div class="progress-line">
+                    <div class="text xl burgundy-75 montserrat-bold">01</div>
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                        <span class="slider__label sr-only"></span>
+                    </div>
+                    <div class="text xl white montserrat-bold">04</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Акции -->
+    <section class="stocks mb__70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="h1 contour-2 burgundy-25 mb__20">Акции</h1>
+                </div>
+            </div>
+            <div class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-1 slider-stocks">
+                <!-- <div class=""> -->
+                <div class="col">
+                    <a href="#" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-9 col-lg-9 col-12 footer-left">
+                    <div class="d-flex align-items-lg-center align-items-start mb__20 flex-lg-row flex-column">
+                        <h2 class="h2 white semi-bold mr__15">1 000 000</h2>
+                        <div class="d-flex flex-column">
+                            <div class="text m white ubuntu"><span class="text bold">Тонн продукции</span>
+                                поставляется<br />в регионы ежегодно</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-lg-center align-items-start flex-lg-row flex-column">
+                        <h2 class="h2 white semi-bold mr__15">+25</h2>
+                        <div class="d-flex flex-column">
+                            <div class="text m white ubuntu">Реализация пректов<br />в более чем 25 регионах России</div>
+                        </div>
+                    </div>
+                    <div class="footer-map">
+                        <img src="../images/footer-map.png" alt="">
+                    </div>
+                    <h4 class="h4 white text ubuntu mt-auto text-uppercase mb__20">СПОСОБЫ ДОСТАВКИ</h4>
+                    <div class="d-flex align-items-center justify-content-lg-start justify-content-around">
+                        <div class="footer-delivery mr__25 mr-md__0">
+                            <i class="icon delivery mr__15 mr-md__0 mb-md__10"></i>
+                            <span class="text m ubuntu white">Автотранспортом</span>
+                        </div>
+                        <div class="footer-delivery">
+                            <i class="icon delivery mr__15 mr-md__0 mb-md__10"></i>
+                            <span class="text m ubuntu white">Железной дорогой</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-lg-3 col-md-12 footer-right d-lg-block d-none">
+                    <div class="mb__70">
+                        <div class="text m ubuntu white gray-100-md mb__10">Здесь должен быть какой-то текст.</div>
+                        <div class="text m ubuntu white gray-100-md">Саратовский кирпичный завод производит огромными партиями кирпичи
+                            уже много лет. Благодаря опыту, постоянной модернизации, вся продукция, выпускаемая
+                            предприятием, заслужила популярность.</div>
+                    </div>
+                    <h4 class="h4 white text xxl bold text-uppercase mb__25 d-lg-block d-md-none">Стать партнером</h4>
+                    <h4 class="h4 black text xxl bold text-uppercase mb__25 d-lg-none d-md-block">Стать партнером</h4>
+                    <div class="mb__35">
+                        <form class="needs-validation" novalidate>
+                            <input type="text" class="form-control text mb__15" placeholder="Ваше имя" required>
+                            <input type="text" class="form-control text mb__15" placeholder="Номер телефона" required>
+                            <input type="text" class="form-control text mb__15" placeholder="Электронная почта" required>
+                        </form>
+                    </div>
+                    <div class="button red w-100 pr-0 pl-0">Отправить</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-lg-3 col-12 footer-right d-lg-none d-md-block">
+                <div class="mb__70">
+                    <div class="text m ubuntu white gray-100-md mb__10">Здесь должен быть какой-то текст.</div>
+                    <div class="text m ubuntu white gray-100-md">Саратовский кирпичный завод производит огромными партиями кирпичи
+                        уже много лет. Благодаря опыту, постоянной модернизации, вся продукция, выпускаемая
+                        предприятием, заслужила популярность.</div>
+                </div>
+                <h4 class="h4 white text xxl bold text-uppercase mb__25 d-lg-block d-none">Стать партнером</h4>
+                <h4 class="h4 black text xxl bold text-uppercase mb__25 d-lg-none d-md-block">Стать партнером</h4>
+                <div class="mb__35">
+                    <form class="needs-validation" novalidate>
+                        <input type="text" class="form-control text mb__15" placeholder="Ваше имя" required>
+                        <input type="text" class="form-control text mb__15" placeholder="Номер телефона" required>
+                        <input type="text" class="form-control text mb__15" placeholder="Электронная почта" required>
+                    </form>
+                </div>
+                <div class="button red w-100 pr-0 pl-0">Отправить</div>
+            </div>
+        </div>
+    </div>
     <!-- footer end -->
 
 
@@ -285,8 +607,6 @@
     <script src="js/slick.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
-
-
 </body>
 
 </html>

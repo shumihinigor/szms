@@ -21,6 +21,8 @@
     margin: 0
     padding: 0
 
+    @media screen and ( max-width: 767px )
+        // overflow: visible
     &:focus 
         outline: none
     
@@ -117,18 +119,23 @@
   transition: background-size .4s ease-in-out
 
 .progress-wrapper
-    position: absolute
+    position: relative
     bottom: 0
-    left: 50px
+    left: 0
     display: flex
     align-items: center
     justify-content: space-between
     width: auto
     max-width: 400px
     min-width: 400px
+    width: 100%
     background: #333333
     padding: 12px 25px
-
+    @media screen and ( max-width: 767px )
+        left: -15px
+        max-width: none
+        min-width: auto
+        width: calc(100% + 30px)
 .progress-line
     display: flex
     align-items: center
@@ -159,7 +166,16 @@ body
     position: relative
 
 .image 
-//   padding: 10px
+    display: block
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    width: 100%
+    height: 580px
+    @media screen and ( max-width: 767px )
+        & img
+            // width: auto
+            // height: 580px
 
 
 img 

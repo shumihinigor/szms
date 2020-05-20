@@ -5,12 +5,6 @@
         background: #FFFFFF
         border: 1px solid #DFC3C7
         padding: 18px 14px
-        margin-top: -1px
-        margin-left: -1px
-        &:first-child
-            margin-left: 0
-        &:nth-child(4n)
-            margin-left: 0
         &__image
             position: relative
             padding: 0 18px
@@ -31,23 +25,29 @@
             bottom: 0
             width: 40px
             height: 40px
-            padding: 7px
+            padding: 5px 7px 6px 7px
             border-radius: 100%
             background: #FFFFFF
             box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
+            cursor: pointer
             & .icon.basket
                 margin-bottom: 0
             &:hover
                 background: #FFFFFF
                 box-shadow: 0px 0px 7px rgba(175, 125, 128, 0.25)
+                & .icon.basket
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJdSURBVHgBtVa9bhNBEP5mfVfHNLSsCW6ReQL7DQgC14EnIG9AeIKEJ0CUSBFJngCno4uRKFJE0aan2HQWNjvM7P3kzncIIZ+/03n25ub2m9mZnTVNB8OvIEyQwS3D8tmZcx4dwwiJrTxb0+vtYQswGoHcAzBmUcHUxxaQ5MvkXw2Gt5TptkNUjoid/Oi1P308fIQOYWDmSeW5KAAr92t0iCBXSUSBvFBHQgZ/QAcgprFWNDPPSiKZ3OnCKdHJzfUhOsB098kpmDQjF6ZQJkhcPrToCkyTKANmJdECi3KT7lm7ceVN7XCEvIJP3PU9UbUbGKIdbAg2PIlS8hPnXHvvopJ7A2wIIoyzAS4aRJyXeOixxaao5EdFUvdCNi3TqGhDkiurMkXal6rsS1XGZ1kWfa/3juj6uZc26qjsLGV+GkQc6I5iNdKRdIejmhOg1nFF2RbWWTGqE1Hw1EhbROyHktgoxRmR5LNA+DbyBHIqpQvIHORXWDncd5s6kQlmXnaHwC/EeN7V2VQLWPdPatJLZJtWO8VcPP4/Iqmy5e/lTBx0dfUa4kYzuMRmaJzUSYvRKJexueqxAY2QMWfi83VjaZzPxV39xon9p8I+McmByMO/EkkPnGiYSqLNVSJ0EuFHXcK2Ziv/OeLGzO2PC3tRjKt2zYiqB6B+RHgb1TB3aEGg8F0OtolEtv/S7irJu2hPWRUWaNTyKqyOkbUiGz3LlsUv+ddBG1EaUrX3ameMOUVWSF5y9L5q11v/8Mr7xdOdh+cB/EAXRPbMN3H7zRd3c9VG9MP/9GL/+V/2fwCKjwLQDh6HdwAAAABJRU5ErkJggg==)
+            &.active
+                & .icon.basket
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHJSURBVHgBtVZLTsMwEH3jZoEQCzgBBVbsygnaNb+WEwA36AWQUrhAr8EuRZVgR7pjR9h1wSK9gREgIdF4mKT/xhVCOE+KYk/Gfva88Th0c1x/ZKCGFITYvNOBHwYajqGYUZ72pK3WkwYKgDKfdGA82pFdhZmFsIkC4I3DpFtHpwMQgYmKIZq2RJ/sRXR+fVLfhkMQczQlIlIaIhhGml3AIVh2oSYdkyTOM20CEv2nRFClGAXBgHszouFIoyLAMHM7WkNhofO73RmRHwSFENH4fKoFK7sPX6pPjkjOq/NdpfrkiAQxHCPVJ0dkmN/gEKJPMGl7S19WhU6qBvQ4tNnDY19mHmRvw3HmqUojH0+io2fzLRCJc0SKsokN6AwfiFzdTTTf8RuNTfXNz2Itp0WWGBH/NUES0zOmFPoPQbySKCM7bFSUErL/wHJTe5YlVfLJmGqBSOp9xzJrXVZbWXRGmTZMM133SiK5j2qwQKTTV907f9ku/xxVtvmDqov9HJOKLeNWpr6c/BebnZeqTI6IPbQtpUhzopqwTThUbSCXMNok1Jo3lJYHhv3+V3VvvyN6bCk5OBL/J2Po0r8P+rAgfO3r6u7+7W/+P7aGwaLuS7d8AAAAAElFTkSuQmCC)
+
         &__discount
             padding: 3px 8px 2px
             background: #FFE3E3
             border-radius: 2px
             color: #E32E2E
+                
         &.active
-            & .icon.basket
-                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHJSURBVHgBtVZLTsMwEH3jZoEQCzgBBVbsygnaNb+WEwA36AWQUrhAr8EuRZVgR7pjR9h1wSK9gREgIdF4mKT/xhVCOE+KYk/Gfva88Th0c1x/ZKCGFITYvNOBHwYajqGYUZ72pK3WkwYKgDKfdGA82pFdhZmFsIkC4I3DpFtHpwMQgYmKIZq2RJ/sRXR+fVLfhkMQczQlIlIaIhhGml3AIVh2oSYdkyTOM20CEv2nRFClGAXBgHszouFIoyLAMHM7WkNhofO73RmRHwSFENH4fKoFK7sPX6pPjkjOq/NdpfrkiAQxHCPVJ0dkmN/gEKJPMGl7S19WhU6qBvQ4tNnDY19mHmRvw3HmqUojH0+io2fzLRCJc0SKsokN6AwfiFzdTTTf8RuNTfXNz2Itp0WWGBH/NUES0zOmFPoPQbySKCM7bFSUErL/wHJTe5YlVfLJmGqBSOp9xzJrXVZbWXRGmTZMM133SiK5j2qwQKTTV907f9ku/xxVtvmDqov9HJOKLeNWpr6c/BebnZeqTI6IPbQtpUhzopqwTThUbSCXMNok1Jo3lJYHhv3+V3VvvyN6bCk5OBL/J2Po0r8P+rAgfO3r6u7+7W/+P7aGwaLuS7d8AAAAAElFTkSuQmCC)
             & .catalog-item__image
                 & img
                     opacity: 0
@@ -75,4 +75,59 @@
     &-information
         background: #EAEAEA
         padding: 30px
-        height: 100%
+        // height: 100%
+
+    &-link
+        position: relative
+        background: #FFFFFF
+        &__image
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                z-index: 0
+                top: 0
+                bottom: 0
+                right: 0
+                left: 0
+                background: #000000
+                opacity: 0.6
+            &:hover
+                &::after
+                    background: #552225
+                    opacity: 1
+        &__content
+            position: absolute
+            z-index: 1
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            padding: 20px
+        &__text
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            &.border-right-0
+                &::after
+                    content: ''
+                    position: absolute
+                    right: -10px
+                    border-right: 0
+                    height: 100%
+            &::after
+                content: ''
+                position: absolute
+                right: -10px
+                border-right: 1px solid #E4DED5
+                height: 100%
+        @media screen and ( max-width: 767px )
+            display: flex
+            justify-content: space-between
+            &__text
+                text-align: center
+                flex-direction: column
+                width: 50%
+                &::after
+                    display: none

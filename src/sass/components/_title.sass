@@ -3,7 +3,6 @@ h1, h2, h3, h4, h5, h6
   margin-top: 0
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
-  // margin-bottom: 0.5rem
   margin-bottom: 0
   margin-top: 0
   font-weight: 500
@@ -11,40 +10,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
   letter-spacing: 0.02em
 
 h1, .h1
-    font-size: 62px
-    line-height: 76px
+    font-size: 60px
+    line-height: 70px
+    font-family: $montserrat
+    font-style: normal
+    font-weight: bold
+    @media screen and ( max-width: 7667px )
+        font-size: 50px
+        line-height: 50px
+    
+
+h2, .h2
+    font-size: 50px
+    line-height: 60px
     font-family: $montserrat
     font-style: normal
     font-weight: bold
 
-.h1
-    font-size: 60px
-    line-height: 70px
-    color: black
-
 .contour-2
-    letter-spacing: 0.075em
     -webkit-text-fill-color: transparent
     -webkit-text-stroke-width: 2px
     -webkit-text-stroke-color: black
 
 .contour-1
-    letter-spacing: 0.075em
     -webkit-text-fill-color: transparent
     -webkit-text-stroke-width: 1px
     -webkit-text-stroke-color: black
 
 .contour-none
-    letter-spacing: 0.075em
     -webkit-text-fill-color: transparent
     -webkit-text-stroke-width: 0px
     -webkit-text-stroke-color: transparent
 
-h2, .h2
+h4, .h4
     position: relative
     font-size: 16px
     line-height: 22px
-    // text-transform: uppercase
     padding: 10px
     font-family: $ubuntu
     font-style: normal
@@ -59,7 +60,7 @@ h2, .h2
         width: 3px
         background: #552225
 
-h2.white, .h2.white
+h4.white, .h4.white
     &::before
         background: #FFFFFF
 

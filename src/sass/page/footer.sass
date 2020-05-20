@@ -1,0 +1,36 @@
+.footer
+    position: relative
+    padding: 60px 0 70px 0
+    background: #272727
+    @media screen and ( max-width: 991px )
+        padding: 35px 0 0px 0
+    &-map
+        position: relative
+        margin-top: -60px
+        @media screen and ( max-width: 767px )
+            margin-top: 0
+    &-delivery
+        @media screen and ( max-width: 991px )
+            display: flex
+            flex-direction: column
+            align-items: center
+    &-left
+        position: relative
+        @media screen and ( max-width: 991px )
+            padding-bottom: 35px
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            top: 0
+            right: 10px
+            height: 100%
+            width: 1px
+            background: #FFFFFF
+        @media screen and ( max-width: 991px )
+            &::after
+                display: none
+    &-right
+        @media screen and ( max-width: 991px )
+            background: #FFFFFF
+            padding: 50px 0
