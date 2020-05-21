@@ -395,6 +395,8 @@ pre
   padding-left: 15px
   margin-right: auto
   margin-left: auto
+.container-fluid
+  padding: 0
 
 @media (min-width: 576px)
   .container
@@ -4370,31 +4372,36 @@ input
   display: flex
   -ms-flex-wrap: wrap
   flex-wrap: wrap
-  padding: 0.75rem 1rem
-  margin-bottom: 1rem
   list-style: none
-  background-color: #e9ecef
-  border-radius: 0.25rem
+  padding: 20px 0 30px 0
+  margin: 0
+  background-color: transparent
 
 .breadcrumb-item
   display: -ms-flexbox
   display: flex
+  // text-decoration: underline
+  text-decoration: none
 
   + .breadcrumb-item
     padding-left: 0.5rem
 
     &::before
       display: inline-block
+      line-height: 1px
+      height: 1px
+      margin: auto
       padding-right: 0.5rem
-      color: #6c757d
-      content: "-"
+      color: #7C7C7C
+      content: "—"
 
     &:hover::before
-      text-decoration: underline
+      // text-decoration: underline
       text-decoration: none
 
   &.active
-    color: #6c757d
+    & a
+      text-decoration: underline
 
 .pagination
   display: -ms-flexbox
@@ -7124,7 +7131,7 @@ button.bg-dark
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important
 
 .shadow
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important
+  box-shadow: 0px 4px 7px rgba(175, 125, 128, 0.25) !important
 
 .shadow-lg
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important
@@ -8553,6 +8560,9 @@ button.bg-dark
 
 .text-wrap
   white-space: normal !important
+
+.word-break
+  word-break: break-word !important
 
 .text-nowrap
   white-space: nowrap !important

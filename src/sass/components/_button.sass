@@ -7,6 +7,11 @@
     font-weight: 500
     cursor: pointer
     text-align: center
+    min-height: 40px
+    &:hover
+        & i
+            position: relative
+            right: -5px
     &.red
         color: #FFFFFF
         background: #552225
@@ -15,5 +20,25 @@
             background: #4B1D20
             text-decoration: none
     &.contour
-        color: #552225
-        
+        background: #FFFFFF
+        border: 1px solid #AF7D80
+        color: #AF7D80
+        &:hover
+            box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
+    &.download
+        background: #EAEAEA
+        border-radius: 8px
+        padding: 10px 16px
+        &:hover
+            background: #DDDDDD
+            text-decoration: none
+        &::after
+            content: ''
+            display: block
+            margin: auto
+            width: 16px
+            height: 17px
+           	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAErSURBVHgB7ZIxTsMwGIX922SlTUuZTRoKohT1CIywJaIFRnoC4AQcAbaMFRtCQMsJSjc2ulABgsjdWGjDnMQ/9hCpS4saYONbLD/7PVu/HiNTqC8td9ayuUE/GIpJdyj5If8BvxHgcJ4lKUh81ACjtWuVTmYx7/NVrnydHV50KEPWUFpVl0al8u/MNW5vxjR+QMDza/HWphfiSVz6L64SugY1pobsWSuHQKGJEt0r//VMayw57I+Gd+VM/pNR1qyYBXgcfdyXzfyBOuqWsvNBJVfwEHErxHD7Rvi9xMfGX1Cd721kFm8lSG/dXNBD4sBgwAjzlPYcYdRoC/E+7gEyYUiSylMk6Oi9Wo+TL89EzbKP9NDIXwL1ot0iCFWSBkncuTCOdA9StVERfAGb8GkAu0MKoAAAAABJRU5ErkJggg==)
+            background-position: center center
+            background-size: contain
+            background-repeat: no-repeat

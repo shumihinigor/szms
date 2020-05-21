@@ -1,0 +1,44 @@
+.calculator
+    position: fixed
+    z-index: 10000
+    bottom: 0
+    right: 50px
+    width: 100%
+    max-width: 540px
+    @media screen and ( max-width: 767px )
+        max-width: 360px
+        right: 15px
+    @media screen and ( max-width: 575px )
+        max-width: 100%
+        right: 0
+        left: 0
+    &.active
+        & .calculator-wrapper
+
+        & .calculator-title
+            & .icon 
+                transform: scale(1, -1)
+    &-wrapper
+        position: relative
+        box-sizing: border-box
+        transition: all .3s
+    &-title
+        cursor: pointer
+        background: #824C4F
+        border: 2px solid #552225
+        border-radius: 10px 10px 0px 0px
+        padding: 15px 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-content
+        position: relative
+        padding: 15px 20px
+        background: #FFFFFF
+        border: 2px solid #DFC3C7
+        &__item
+            // display: flex
+            // align-items: center
+            // justify-content: space-between
+
+        
