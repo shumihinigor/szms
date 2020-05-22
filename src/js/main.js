@@ -9,6 +9,8 @@ $(document).ready(function() {
   sliderDelivery();
   cardCatalog();
   breadcrumbs();
+  range();
+  filterItem();
 });
 
 // window.onresize = function() {
@@ -201,6 +203,7 @@ function calculator() {
 
   $('.calculator-title').on('click', function () {
     $('.calculator').toggleClass('active')
+    // $('body').toggleClass('overflow-hidden')
     if ($('.calculator').hasClass('active')) {
       $('.calculator-wrapper').css('height', h)
     } else {
@@ -215,6 +218,31 @@ function calculator() {
 function breadcrumbs() {
   $('.breadcrumb-item').on('click', function() {
     $('.breadcrumb-item').removeClass('active')
+    $(this).addClass('active')
+  })
+}
+
+// custom range
+function range() {
+  var
+      val = $('.custom-range').val();
+  $('.custom-range').css({
+      'background': '-webkit-linear-gradient(left ,rgb(130, 76, 79) 0%,rgb(130, 76, 79) ' + val + '%,#DFC3C7 ' + val +
+          '%, #DFC3C7 100%)'
+  });
+}
+
+function filterItem() {
+  $('.filter-item').on('click', function() {
+    $('.filter-item').removeClass('active')
+    $(this).toggleClass('active')
+    $(this).toggleClass(function(){
+      return $(this).is('.up, .down') ? 'up down' : 'up';
+    })
+    return;
+  })
+  $('.filter-display__item').find('.icon').on('click', function() {
+    $('.filter-display__item').find('.icon').removeClass('active')
     $(this).addClass('active')
   })
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="">
+<body class="pb__100">
 
     <!-- header -->
     <nav class="header-nav">
@@ -99,81 +99,109 @@
             </div>
             <div class="row d-flex ">
                 <div class="col-lg-3 d-lg-block d-md-none d-none">
-                    <div class="col">
-                        <div class="filter mb__20">
-                            <div class="card">
-                                <button class="filter-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Цена ₽
-                                </button>
-                                <div id="collapseOne" class="collapse multi-collapse show" >
-                                    <div class="card-body"> 
-                                        <div class="row d-flex mb__20">
-                                            <div class="col">
-                                                <input type="text" class="form-control contour" placeholder="от 14" required="">
+                    <div class="row flex-column">
+                        <div class="col">
+                            <div class="filter mb__20">
+                                <div class="card">
+                                    <button class="filter-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Цена ₽
+                                    </button>
+                                    <div id="collapseOne" class="collapse multi-collapse show">
+                                        <div class="card-body">
+                                            <div class="row d-flex mb__20">
+                                                <div class="col">
+                                                    <input type="text" class="form-control contour" placeholder="от 14"
+                                                        required="">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control contour" placeholder="до 22"
+                                                        required="">
+                                                </div>
                                             </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control contour" placeholder="до 22" required="">
-                                            </div>
+                                            <input type="range" class="custom-range" min="0" max="100" value="50" id="customRange3" oninput="range();">
                                         </div>
-                                        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <button class="filter-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Цвет продукции
+                                    </button>
+                                    <div id="collapseTwo" class="collapse multi-collapse show">
+                                        <div class="card-body">
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Неокрашенный <span class="text s gray-50 montserrat ml__10">73</span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Бирюзовый <span class="text s gray-50 montserrat ml__10">61</span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Розовый <span class="text s gray-50 montserrat ml__10">73</span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Слоновая кость <span class="text s gray-50 montserrat ml__10">73</span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Благородная сталь <span class="text s gray-50 montserrat ml__10">73</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text m gray-50 montserrat text-center mb__10">
+                                        Подобран 41 товар
+                                    </div>
+                                    <div class="button red text m text-uppercase w-100 mb__10">
+                                        Показать
+                                    </div>
+                                    <div class="button contour text m text-uppercase w-100">
+                                        Сбросить фильтр
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <button class="filter-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    Цвет продукции
-                                </button>
-                                <div id="collapseTwo" class="collapse multi-collapse show" >
-                                    <div class="card-body">
-                                        <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
-                                            Неокрашенный <span class="text s gray-50 montserrat ml__10">73</span>
-                                        </button>
-                                        <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
-                                            Бирюзовый <span class="text s gray-50 montserrat ml__10">61</span>
-                                        </button>
-                                        <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
-                                            Розовый <span class="text s gray-50 montserrat ml__10">73</span>
-                                        </button>
-                                        <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
-                                            Слоновая кость <span class="text s gray-50 montserrat ml__10">73</span>
-                                        </button>
-                                        <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
-                                            Благородная сталь <span class="text s gray-50 montserrat ml__10">73</span>
-                                        </button>
+                        </div>
+                        <div class="col mb__20">
+                            <a href="stocks.html" class="stocks-item text-decoration-none">
+                                <div class="stocks-image">
+                                    <img src="images/stocks1-1.png" alt="">
+                                </div>
+                                <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                            </a>
+                        </div>
+                        <div class="col mb__20">
+                            <a href="stocks.html" class="stocks-item text-decoration-none">
+                                <div class="stocks-image">
+                                    <img src="images/stocks1-1.png" alt="">
+                                </div>
+                                <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mb-md__20">
+                    <div class="row d-lg-block d-md-none d-none">
+                        <div class="col">
+                            <div class="filter-block d-flex align-items-center justify-content-between">
+                                <div class="filter-item text m montserrat active up">По цене</div>
+                                <div class="filter-item text m montserrat">По популярности</div>
+                                <div class="filter-item text m montserrat">По новизне</div>
+                                <div class="filter-item text m montserrat">По выгоде</div>
+                                <div class="filter-display ml-auto d-flex align-items-center justify-content-end">
+                                    <div class="text m montserrat gray-100 mr__15">Вид:</div>
+                                    <div class="filter-display__item">
+                                        <i class="icon list"></i>
+                                        <i class="icon table active"></i>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="text m gray-50 montserrat text-center mb__10">
-                                    Подобран 41 товар
-                                </div>
-                                <div class="button red text m text-uppercase w-100 mb__10">
-                                    Показать
-                                </div>
-                                <div class="button contour text m text-uppercase w-100">
-                                    Сбросить фильтр
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb__20">
-                        <a href="stocks.html" class="stocks-item text-decoration-none">
-                            <div class="stocks-image">
-                                <img src="images/stocks1-1.png" alt="">
-                            </div>
-                            <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
-                        </a>
-                    </div>
-                    <div class="col mb__20">
-                        <a href="stocks.html" class="stocks-item text-decoration-none">
-                            <div class="stocks-image">
-                                <img src="images/stocks1-1.png" alt="">
-                            </div>
-                            <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-9 mb-md__20">
                     <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-2">
                         <div class="col mb__10">
                             <div class="catalog-item">
@@ -520,7 +548,7 @@
     <script src="js/main.js"></script>
 
     <script>
-        // $('.collapse').collapse('toggle')
+        
     </script>
 
 </body>
