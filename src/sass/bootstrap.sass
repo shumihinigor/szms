@@ -1762,18 +1762,18 @@ pre
     padding: 6px 0
     font-size: 14px
     line-height: 32px
-    color: #FFFFFF
+    color: #7C7C7C
     &::placeholder
-      color: #BDBDBD
+      color: #7C7C7C
     &:-ms-placeholder
-      color: #BDBDBD
+      color: #7C7C7C
     &::-ms-placeholder
-      color: #BDBDBD
+      color: #7C7C7C
     &:focus
       background: transparent
       outline: 0
       box-shadow: none
-      color: #FFFFFF
+      color: #7C7C7C
   &.contour
     border: 1px solid #DFC3C7
     box-sizing: border-box
@@ -3384,20 +3384,20 @@ input
 
   &:checked ~ .custom-control-label::before
     color: #fff
-    border-color: #007bff
-    background-color: #007bff
+    border-color: #552225
+    background-color: #552225
 
   &:focus
     ~ .custom-control-label::before
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+      box-shadow: none
 
     &:not(:checked) ~ .custom-control-label::before
-      border-color: #80bdff
+      border-color: #824C4F
 
   &:not(:disabled):active ~ .custom-control-label::before
     color: #fff
-    background-color: #b3d7ff
-    border-color: #b3d7ff
+    background-color: #552225
+    border-color: #552225
 
   &[disabled] ~ .custom-control-label, &:disabled ~ .custom-control-label
     color: #6c757d
@@ -3412,11 +3412,13 @@ input
 
   &::before
     position: absolute
-    top: 0.25rem
+    top: 0
+    bottom: 0
+    margin: auto
     left: -1.5rem
     display: block
-    width: 1rem
-    height: 1rem
+    width: 17px
+    height: 17px
     pointer-events: none
     content: ""
     background-color: #fff
@@ -3424,11 +3426,13 @@ input
 
   &::after
     position: absolute
-    top: 0.25rem
+    top: 0
+    bottom: 0
+    margin: auto
     left: -1.5rem
     display: block
-    width: 1rem
-    height: 1rem
+    width: 17px
+    height: 17px
     content: ""
     background: no-repeat 50% / 50% 50%
 
@@ -3782,11 +3786,18 @@ input
 
   .nav-link
     border: 1px solid transparent
-    border-top-left-radius: 0.25rem
-    border-top-right-radius: 0.25rem
-
+    // border-top-left-radius: 0.25rem
+    // border-top-right-radius: 0.25rem
+    font-size: 16px
+    line-height: 20px
+    font-family: Ubuntu
+    font-style: normal
+    font-weight: normal
+    color: #7C7C7C    
+    position: relative
+    bottom: -1.5px
     &:hover, &:focus
-      border-color: #e9ecef #e9ecef #dee2e6
+      // border-color: #e9ecef #e9ecef #dee2e6
 
     &.disabled
       color: #6c757d
@@ -3794,10 +3805,10 @@ input
       border-color: transparent
 
     &.active
-      color: #495057
       background-color: #fff
-      border-color: #dee2e6 #dee2e6 #fff
-
+      color: #824C4F
+      border-bottom: 3px solid #824C4F
+      font-weight: bold
   .nav-item.show .nav-link
     color: #495057
     background-color: #fff

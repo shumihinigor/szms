@@ -3,7 +3,7 @@
 <html lang="ru">
 
 <head>
-    <title>О нас</title>
+    <title>Карточка товара</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,21 +70,192 @@
     </header>
     <!-- header end -->
 
-    <!-- О нас -->
-    <section class="about about-image d-flex align-items-center mb__70"
-        style="background-image: url(images/about1-1.png);">
+    <!-- breadcrumbs -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">
+                            <a href="../index.html" class="text m ubuntu gray-50">Главная</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../stocks.html" class="text m ubuntu gray-50">Акции</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumbs end -->
+
+    <!-- breadcrumbs -->
+    <div class="comeback d-lg-none d-md-none d-sm-block">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="about-title">
-                        <h1 class="h1 white mb__20">О нас</h1>
-                        <h4 class="h4 white text ubuntu">Текст 1 уровня. Интересные факты о заводе, история
-                            возникновения и принципы работы.
-                            Саратовский кирпичный завод производит огромными партиями кирпичи уже много лет. Благодаря
-                            опыту, постоянной модернизации, вся продукция, выпускаемая предприятием, заслужила
-                            популярность. Саратовский кирпичный завод производит огромными партиями кирпичи уже много
-                            лет. </h4>
+                <div class="col">
+                    <a href="../catalog.html" class="text m montserrat gray-100 d-flex align-items-center">
+                        <i class="icon arrow-left mr__15"></i>
+                        Вернуться к категориям
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumbs end -->
+
+    <!-- Товар -->
+    <section class="mb__50">
+        <div class="container">
+            <div class="row mb__30">
+                <div class="col-8">
+                    <div class="row mb__70">
+                        <div class="col-4">
+                            <div class="img-fluid">
+                                <img src="images/card1-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text xxl gray-100 bold mb__20">Кирпич силикатный 3-ех пустотный цветной
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="d-flex align-items-center mb__30">
+                                        <span class="text xxxl burgundy-100 semi-bold mr__15">13,6 руб.</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="text m burgundy-50 text-decoration__line-through ubuntu">16
+                                                руб.</span>
+                                            <span class="text s black ubuntu">Стоимость за штуку*</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="d-flex align-items-center mb__20">
+                                        <span class="text xxl burgundy-50 semi-bold mr__15">10 330 руб.</span>
+                                        <div class="d-flex flex-column">
+                                            <span class="text s black ubuntu">Стоимость за штуку*</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="d-flex align-items-center mb__20">
+                                        <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1 пачка</option>
+                                            <option>2 пачки</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text xxl gray-100 montserrat-bold mb__20">Описание</div>
+                            <div class="text m gray-100 ubuntu">Компания СЗСМ призвана обеспечить надежную и безопасную
+                                транспортировку силиконового кирпича по построенной автомобильными сетями системе. Мы
+                                придаем огромное значение поддержанию открытого и уважительного диалога с
+                                представителями общественности, неправительственных организаций, подрядчиками и их
+                                сотрудниками, а также другими заинтересованными сторонами на всем протяжении
+                                эксплуатации проекта.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="checkout bg__pink mb__30">
+                        <div class="mb__20">
+                            <div class="text xxl gray-100 text-uppercase montserrat-bold mb__10">ОФОРМИТЕ ЗАКАЗ</div>
+                            <div class="text m gray-100 ubuntu-300">В близжайшее время с вами свяжутся для уточнения
+                                деталей по заказу</div>
+                        </div>
+                        <div class="mb__20">
+                            <form class="needs-validation" novalidate="">
+                                <input type="text" class="form-control text mb__15" placeholder="Ваше имя" required="">
+                                <input type="text" class="form-control text" placeholder="Номер телефона" required="">
+                            </form>
+                        </div>
+                        <div class="mb__20">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label text s ubuntu gray-50"
+                                    for="customControlAutosizing">Согласен с условиями
+                                    <span><a href="#" class="link text gray-50 underline">публичной оферты</a></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout-button">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="button red text-uppercase text m ubuntu-500 w-100 mr__10">Заказать</div>
+                                <a href="javascript: goToPage();" class="button contour checkout-button__basket"><i
+                                        class="icon basket"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text xxl gray-100 mb__25 montserrat-bold">Характеристики</div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item  w-50" role="presentation">
+                            <a class="nav-link disabled" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="false"></a>
+                        </li>
+                        <li class="nav-item  w-25" role="presentation">
+                            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Штука</a>
+                        </li>
+                        <li class="nav-item w-25" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">Пачка</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                        <div class="tab-pane fade show active" id="profile" role="tabpanel"
+                            aria-labelledby="profile-tab">
+                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
+                                <span class="w-50 pl-0 py-2">Количество</span>
+                                <span class="w-50 pl-0 py-2">2</span>
+                            </div>
+                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
+                                <span class="w-50 pl-0 py-2">Размер, мм</span>
+                                <span class="w-50 pl-0 py-2">120х250х138</span>
+                            </div>
+                            <div class="text m ubuntu gray-100 d-flex align-items-center">
+                                <span class="w-50 pl-0 py-2">Вес, кг</span>
+                                <span class="w-50 pl-0 py-2">5.9</span>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
+                                <span class="w-50 pl-0 py-2">Количество</span>
+                                <span class="w-50 pl-0 py-2">10</span>
+                            </div>
+                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
+                                <span class="w-50 pl-0 py-2">Размер, мм</span>
+                                <span class="w-50 pl-0 py-2">1200х2150х1380</span>
+                            </div>
+                            <div class="text m ubuntu gray-100 d-flex align-items-center">
+                                <span class="w-50 pl-0 py-2">Вес, кг</span>
+                                <span class="w-50 pl-0 py-2">54.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    
                 </div>
             </div>
         </div>
@@ -336,7 +507,8 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center">
+                                    <div
+                                        class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center">
                                         <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">25</h1>
                                         <div class="d-flex flex-column">
                                             <span class="text m bold">работников</span>
@@ -364,7 +536,8 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center">
+                                    <div
+                                        class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center">
                                         <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">+10</h1>
                                         <div class="d-flex flex-column">
                                             <span class="text m bold">партнеров</span>
@@ -392,7 +565,8 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center">
+                                    <div
+                                        class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center">
                                         <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">13</h1>
                                         <div class="d-flex flex-column">
                                             <span class="text m bold">лет </span>
@@ -420,7 +594,8 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center border-right-0">
+                                    <div
+                                        class="catalog-link__text flex-lg-row flex-md-column text-lg-left text-md-center border-right-0">
                                         <h1 class="h1 text burgundy-100 mr__10 mr-sm__0">13</h1>
                                         <div class="d-flex flex-column">
                                             <span class="text m bold">лет </span>

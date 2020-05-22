@@ -10,15 +10,34 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="pb__100">
+<body class="">
 
     <!-- header -->
     //= template/header.html
     <!-- header end -->
 
     <!-- breadcrumbs -->
+    //= template/come__back.html
+    <!-- breadcrumbs end -->
+
+    <div class="filter-fixed d-lg-none d-md-none d-sm-block">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-between">
+                    <select class="form-control bg__white" id="exampleFormControlSelect1">
+                        <option>По популярности</option>
+                        <option>По рейтингу</option>
+                    </select>
+                    <i class="icon filter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- breadcrumbs -->
     //= template/breadcrumbs.html
     <!-- breadcrumbs end -->
+
 
     <!-- Каталог -->
     <section class="catalog mb__70">
@@ -50,7 +69,8 @@
                                                         required="">
                                                 </div>
                                             </div>
-                                            <input type="range" class="custom-range" min="0" max="100" value="50" id="customRange3" oninput="range();">
+                                            <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange3" oninput="range();">
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +99,8 @@
                                             </button>
                                             <button type="button"
                                                 class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
-                                                Благородная сталь <span class="text s gray-50 montserrat ml__10">73</span>
+                                                Благородная сталь <span
+                                                    class="text s gray-50 montserrat ml__10">73</span>
                                             </button>
                                         </div>
                                     </div>
@@ -354,7 +375,7 @@
     <script src="js/main.js"></script>
 
     <script>
-        
+
     </script>
 
 </body>

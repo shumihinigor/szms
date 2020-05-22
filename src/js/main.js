@@ -11,6 +11,8 @@ $(document).ready(function() {
   breadcrumbs();
   range();
   filterItem();
+  buttonBasket();
+  goToPage();
 });
 
 // window.onresize = function() {
@@ -244,5 +246,22 @@ function filterItem() {
   $('.filter-display__item').find('.icon').on('click', function() {
     $('.filter-display__item').find('.icon').removeClass('active')
     $(this).addClass('active')
+  })
+  $('.filter-fixed').find('.icon').on('click', function() {
+    $(this).toggleClass('active')
+  })
+}
+
+// корзина оформления заказа
+function buttonBasket() {
+  $('.checkout-button__basket').on('click', function() {
+    $(this).toggleClass('active')
+  })
+}
+
+// двойной клик на корзину
+function goToPage() {
+  $('.checkout-button__basket').on('dblclick', function() {
+    document.location.href = "../index.html";
   })
 }
