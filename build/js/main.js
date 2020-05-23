@@ -7,6 +7,7 @@ $(document).ready(function() {
   sliderReviews();
   sliderStocks();
   sliderDelivery();
+  sliderProducts();
   cardCatalog();
   breadcrumbs();
   range();
@@ -187,6 +188,38 @@ function sliderDelivery() {
       ]
     });
   }
+}
+
+// слайдер на странице со списком товаров - доставка
+function sliderProducts() {
+  var $sliderProducts = $('.slider-products');
+  
+  $sliderProducts.slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    speed: 400,
+    arrows: true,
+    // responsive: [{
+    //     breakpoint: 991,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: true,
+    //       // arrows: false,
+    //       // dots: true
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 767,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       arrows: false,
+    //       centerMode: true,
+    //       centerPadding: '50px',
+    //       // dots: true
+    //     }
+    //   },
+    // ]
+  });
 }
 
 // карточки в каталоге
