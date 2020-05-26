@@ -199,26 +199,26 @@ function sliderProducts() {
     slidesToScroll: 1,
     speed: 400,
     arrows: true,
-    // responsive: [{
-    //     breakpoint: 991,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode: true,
-    //       // arrows: false,
-    //       // dots: true
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 767,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '50px',
-    //       // dots: true
-    //     }
-    //   },
-    // ]
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+          centerMode: true,
+          // arrows: false,
+          // dots: true
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '50px',
+          // dots: true
+        }
+      },
+    ]
   });
 }
 
