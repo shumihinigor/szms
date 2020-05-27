@@ -3,7 +3,7 @@
 <html lang="ru">
 
 <head>
-    <title>Карточка товара</title>
+    <title>Корзина</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,130 +13,15 @@
 <body class="">
 
     <!-- header -->
-    <nav class="header-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="header-link">
-                        <a href="../index.html" class="header-link__item active">Главная страница</a>
-                        <a href="../catalog.html" class="header-link__item">Каталог продукции</a>
-                        <a href="../stocks.html" class="header-link__item">Акции</a>
-                        <a href="../about.html" class="header-link__item">О компании</a>
-                        <a href="#" class="header-link__item">Доставка</a>
-                        <a href="../product__gallery.html" class="header-link__item">Галерея</a>
-                        <a href="../contacts.html" class="header-link__item">Контакты</a>
-                        <a href="../faq.html" class="header-link__item">Частые вопросы</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-between align-items-center">
-                    <nav class="navbar navbar-expand-lg navbar-dark d-lg-none d-md-block">
-                        <button class="navbar-toggler menu" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <button class="navbar-toggler d-lg-none d-md-none d-sm-block" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
-                            <span class="icon search red"></span>
-                        </button>
-                    </nav>
-                    <div class="header-logo">
-                        <img src="../images/logo.png" alt="">
-                    </div>
-                    <div class="header-search d-lg-block d-md-block d-none w-25 w-md-100 mr__20">
-                        <input class="form-control search" type="text" placeholder="Поиск">
-                        <i class="icon search cursor-pointer"></i>
-                    </div>
-                    <div class="align-items-center ml-auto d-lg-flex d-none">
-                        <a href="tel:+78452393315" class="header-phone mr__35 gray-100 align-items-center d-flex align-items-center">
-                            <i class="icon phone mr__10"></i>
-                            <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
-                        </a>
-                        <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
-                            <i class="icon inst"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
-                            <i class="icon whatsapp"></i>
-                        </a>
-                        <a href="viber://chat?number=78452393315" target="_blank">
-                            <i class="icon viber"></i>
-                        </a>
-                    </div>
-                    <div class="d-flex ml-sm__15 ml-auto">
-                        <a href="#" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
-                            <i class="icon profile mb-sm__0"></i>
-                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
-                        </a>
-                        <a href="#" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
-                            <i class="icon basket mb-sm__0"></i>
-                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Корзина</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <div class="header-contacts d-lg-none d-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex align-items-center">
-                        <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
-                            <i class="icon inst"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
-                            <i class="icon whatsapp"></i>
-                        </a>
-                        <a href="viber://chat?number=78452393315" target="_blank">
-                            <i class="icon viber"></i>
-                        </a>
-                        <a href="tel:+78452393315" class="header-phone gray-2 d-flex align-items-center ml-auto">
-                            <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
-                            <i class="icon phone ml__10"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    //= template/header.html
     <!-- header end -->
 
     <!-- breadcrumbs -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active">
-                            <a href="../index.html" class="text m ubuntu gray-50">Главная</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="../stocks.html" class="text m ubuntu gray-50">Акции</a>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
+    //= template/breadcrumbs.html
     <!-- breadcrumbs end -->
 
     <!-- breadcrumbs -->
-    <div class="comeback d-lg-none d-md-none d-sm-block d-none">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="../catalog.html" class="text m montserrat gray-100 d-flex align-items-center">
-                        <i class="icon arrow-left mr__15"></i>
-                        Вернуться к категориям
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    //= template/come__back.html
     <!-- breadcrumbs end -->
 
     <!-- Товар -->
@@ -144,68 +29,56 @@
         <div class="container">
             <div class="row mb__30">
                 <div class="col-lg-8 col-md-12 col-sm-12">
-                    <div class="row mb__70">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="row d-lg-none d-md-none d-sm-block mb__20">
+                    <div class="row mb__70 p__20 border-burgundy-25">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <!-- <div class="row d-lg-none d-md-none d-sm-block mb__20">
                                 <div class="col">
-                                    <div class="text xxl gray-100 bold">Кирпич силикатный 3-ех пустотный цветной
+                                    <div class="text l gray-100 semi-bold">Кирпич силикатный 3-ех пустотный цветной
                                     </div>
                                 </div>
-                            </div>
-                            <div class="img-fluid mb-sm__20">
-                                <img src="images/card1-1.png" alt="">
+                            </div> -->
+                            <div class="basket-image mb-sm__20">
+                                <img src="images/basket1-1.png" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="row d-lg-block d-md-block d-sm-none d-none">
+                        <div class="col-lg-7 col-md-7 col-sm-8">
+                            <div class="row ">
                                 <div class="col">
-                                    <div class="text xxl gray-100 bold mb__20">Кирпич силикатный 3-ех пустотный цветной
+                                    <div class="text l gray-100 semi-bold mb__20">Кирпич силикатный 3-ех пустотный цветной
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="d-flex align-items-center mb__30">
-                                        <span class="text xxxl burgundy-100 semi-bold mr__15">13,6 руб.</span>
-                                        <div class="d-flex flex-column">
-                                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
-                                                руб.</span>
-                                            <span class="text s black ubuntu">Стоимость за штуку*</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="d-flex align-items-center mb__20">
-                                        <span class="text xxl burgundy-50 semi-bold mr__15">10 330 руб.</span>
-                                        <div class="d-flex flex-column">
-                                            <span class="text s black ubuntu">Стоимость за штуку*</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row d-lg-block d-md-block d-sm-none d-none">
-                                <div class="col-7">
+                            <div class="row ">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
                                     <div class="d-flex align-items-center mb__20">
                                         <div class="text m gray-100 montserrat mr__15">Количество:</div>
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <select class="form-control ml-auto" id="exampleFormControlSelect1">
                                             <option>1 пачка</option>
                                             <option>2 пачки</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row mb__15">
+                                <div class="col-lg-8 col-md-8 col-xs-12">
+                                    <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange3" oninput="range();">
+                                </div>
+                            </div>
                             <div class="row d-lg-none d-md-none d-sm-block d-block mb-sm__30">
-                                <div class="col-12">
+                                <div class="col-lg-8 col-md-8 col-xs-12">
                                     <div class="d-flex align-items-center mb__20">
                                         <div class="text m gray-100 montserrat mr__15">Количество:</div>
-                                        <div class="d-flex align-items-center ml-auto">
+                                        <div class="d-flex align-items-center">
                                             <i class="icon minus"></i>
                                             <input type="text" class="form-control contour w-50 ml__10 mr__10" placeholder="1 пачка" required="">
                                             <i class="icon plus"></i>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row d-lg-block d-md-block d-sm-none d-none mb-sm__30">
+                                <div class="col-lg-8 col-md-8 col-xs-12">
                                     <div class="d-flex align-items-center mb__10">
                                         <div class="text m gray-100 montserrat mr__15">Упаковка</div>
                                         <div class="d-flex align-items-center ml-auto">
@@ -213,26 +86,16 @@
                                             <div class="button contour medium text m semi-bold">Нет</div>
                                         </div>
                                     </div>
-                                    <div class="text s ubuntu-300 black">*Упаковка производится стрейч-пленкой в 10 оборотов, фиксируется полиэстеровой лентой на деревянном поддоне. Стоимость упаковки — 700 руб. за пачку</div>
-                                </div>
-                            </div>
-                            <div class="row d-lg-none d-md-none d-sm-block d-block">
-                                <div class="col-12">
-                                    <div class="button red text m text-uppercase w-100 mb-sm__10">Заказать</div>
-                                    <div class="button contour text m text-uppercase w-100">Добавить в корзину</div>
+                                    <div class="text s ubuntu-300 black">*Стоимость упаковки — 700 руб. за пачку</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mb-md__20 mb-sm__50">
-                        <div class="col">
-                            <div class="text xxl gray-100 montserrat-bold mb__20">Описание</div>
-                            <div class="text m gray-100 ubuntu">Компания СЗСМ призвана обеспечить надежную и безопасную
-                                транспортировку силиконового кирпича по построенной автомобильными сетями системе. Мы
-                                придаем огромное значение поддержанию открытого и уважительного диалога с
-                                представителями общественности, неправительственных организаций, подрядчиками и их
-                                сотрудниками, а также другими заинтересованными сторонами на всем протяжении
-                                эксплуатации проекта.</div>
+                        <div class="col-2 align-self-end p-0">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text xxl black montserrat-bold">10 330 руб.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,62 +128,6 @@
                                         class="icon basket"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="text xxl gray-100 mb__25 montserrat-bold">Характеристики</div>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item  w-50" role="presentation">
-                            <a class="nav-link disabled" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="false"></a>
-                        </li>
-                        <li class="nav-item  w-25" role="presentation">
-                            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">Штука</a>
-                        </li>
-                        <li class="nav-item w-25" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">Пачка</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-                        <div class="tab-pane fade show active" id="profile" role="tabpanel"
-                            aria-labelledby="profile-tab">
-                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
-                                <span class="w-50 pl-0 py-2">Количество</span>
-                                <span class="w-50 pl-0 py-2">2</span>
-                            </div>
-                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
-                                <span class="w-50 pl-0 py-2">Размер, мм</span>
-                                <span class="w-50 pl-0 py-2">120х250х138</span>
-                            </div>
-                            <div class="text m ubuntu gray-100 d-flex align-items-center">
-                                <span class="w-50 pl-0 py-2">Вес, кг</span>
-                                <span class="w-50 pl-0 py-2">5.9</span>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
-                                <span class="w-50 pl-0 py-2">Количество</span>
-                                <span class="w-50 pl-0 py-2">10</span>
-                            </div>
-                            <div class="text m ubuntu gray-100 d-flex align-items-center border-bottom">
-                                <span class="w-50 pl-0 py-2">Размер, мм</span>
-                                <span class="w-50 pl-0 py-2">1200х2150х1380</span>
-                            </div>
-                            <div class="text m ubuntu gray-100 d-flex align-items-center">
-                                <span class="w-50 pl-0 py-2">Вес, кг</span>
-                                <span class="w-50 pl-0 py-2">54.9</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt__30">
-                        <div class="text xxl montserrat-bold gray-100 mb__20">Преимущества</div>
-                        <ul class="list">
-                            <li class="list-item dashed text m ubuntu gray-100">Преимущество 1</li>
-                            <li class="list-item dashed text m ubuntu gray-100">Преимущество 2</li>
-                            <li class="list-item dashed text m ubuntu gray-100">Преимущество 3</li>
-                            <li class="list-item dashed text m ubuntu gray-100">Преимущество 4</li>
-                        </ul>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ $(document).ready(function() {
   sliderMain();
   sliderReviews();
   sliderStocks();
-  sliderDelivery();
+  // sliderAdvantage();
   sliderProducts();
   cardCatalog();
   breadcrumbs();
@@ -161,36 +161,35 @@ function sliderStocks() {
 }
 
 // слайдер на странице со списком товаров - доставка
-function sliderDelivery() {
-  if (window.innerWidth <= 767) {
-    var $sliderReviews = $('.slider-delivery');
+// function sliderAdvantage() {
+//   if (window.innerWidth <= 767) {
+//     var $sliderReviews = $('.slider-advantage');
 
-    $sliderReviews.slick({
-      centerMode: true,
-      centerPadding: '50px',
-      responsive: [{
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 1,
-            arrows: false,
-            // dots: true
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            centerMode: true,
-            arrows: false,
-            // dots: true
-          }
-        },
-      ]
-    });
-  }
-}
+//     $sliderReviews.slick({
+//       centerMode: true,
+//       centerPadding: '50px',
+//       responsive: [{
+//           breakpoint: 991,
+//           settings: {
+//             slidesToShow: 1,
+//             arrows: false,
+//           },
+//         },
+//         {
+//           breakpoint: 767,
+//           settings: {
+//             slidesToShow: 1,
+//             centerMode: true,
+//             arrows: false,
+//           }
+//         },
+//       ]
+//     });
+//   }
+// }
 
 // слайдер на странице со списком товаров - доставка
+
 function sliderProducts() {
   var $sliderProducts = $('.slider-products');
   
