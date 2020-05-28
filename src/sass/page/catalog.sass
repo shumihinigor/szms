@@ -6,6 +6,8 @@
         border: 1px solid #DFC3C7
         padding: 18px 14px
         // min-height: 220px
+        &:hover
+            box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
         &__image
             position: relative
             margin-left: -15px
@@ -13,14 +15,17 @@
             width: calc(100% + 30px)
             height: calc(100% + 38px)
             // padding: 0 18px
+       
         &__name
             position: relative
+        
         &__price
             position: relative
             z-index: 1
             display: flex
             align-items: center
             justify-content: space-between
+        
         &__basket
             position: absolute
             display: flex
@@ -58,6 +63,7 @@
                     opacity: 0
             & .catalog-item__bg
                 display: block
+        
         &__bg
             display: none
             position: absolute
@@ -91,13 +97,13 @@
         position: relative
         background: #FFFFFF
         // max-height: 230px
-        min-height: 230px
+        // min-height: 230px
         // max-width: 260px
         // min-width: 260px
         // overflow: hidden
         &__image
             position: relative
-            min-height: 230px
+            min-height: 180px
             background-position: center center
             background-size: cover
             background-repeat: no-repeat
@@ -123,6 +129,8 @@
             right: 0
             left: 0
             padding: 20px
+            @media screen and ( max-width: 767px )
+                padding: 10px
         &__text
             position: relative
             display: flex

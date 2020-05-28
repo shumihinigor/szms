@@ -25,11 +25,11 @@
     <!-- breadcrumbs end -->
 
     <!-- Товар -->
-    <section class="mb__50 mt-sm__30">
+    <section class="mb__50 mt-sm__30 mt-md__30">
         <div class="container">
             <div class="row mb__30">
                 <div class="col-lg-8 col-md-12 col-sm-12">
-                    <div class="row mb__70">
+                    <div class="row ">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="row d-lg-none d-md-none d-sm-block mb__20">
                                 <div class="col">
@@ -41,7 +41,7 @@
                                 <img src="images/card1-1.png" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="col-lg-8 col-md-8 col-sm-12 mb-md__20">
                             <div class="row d-lg-block d-md-block d-sm-none d-none">
                                 <div class="col">
                                     <div class="text xxl gray-100 bold mb__20">Кирпич силикатный 3-ех пустотный цветной
@@ -53,7 +53,8 @@
                                     <div class="d-flex align-items-center mb__30">
                                         <span class="text xxxl burgundy-100 semi-bold mr__15">13,6 руб.</span>
                                         <div class="d-flex flex-column">
-                                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                            <span
+                                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
                                                 руб.</span>
                                             <span class="text s black ubuntu">Стоимость за штуку*</span>
                                         </div>
@@ -71,7 +72,7 @@
                                 </div>
                             </div>
                             <div class="row d-lg-block d-md-block d-sm-none d-none">
-                                <div class="col-7">
+                                <div class="col-lg-7 col-md-12 col-sm-12 col-12">
                                     <div class="d-flex align-items-center mb__20">
                                         <div class="text m gray-100 montserrat mr__15">Количество:</div>
                                         <select class="form-control" id="exampleFormControlSelect1">
@@ -81,48 +82,51 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row d-lg-none d-md-none d-sm-block d-block mb-sm__30">
-                                <div class="col-12">
-                                    <div class="d-flex align-items-center mb__20">
+                            <div class="row d-lg-block d-md-block d-sm-block d-block mb-md__30">
+                                <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <div class="d-flex align-items-center mb__20 d-lg-none d-md-none d-sm-flex d-block">
                                         <div class="text m gray-100 montserrat mr__15">Количество:</div>
-                                        <div class="d-flex align-items-center ml-auto">
+                                        <div class="d-flex align-items-center justify-content-end  ml-auto">
                                             <i class="icon minus"></i>
-                                            <input type="text" class="form-control contour w-50 ml__10 mr__10" placeholder="1 пачка" required="">
+                                            <input type="text" class="form-control contour w-50 ml__10 mr__10"
+                                                placeholder="1 пачка" required="">
                                             <i class="icon plus"></i>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center mb__10">
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb__15">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange3" oninput="range();">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-sm__10">
                                         <div class="text m gray-100 montserrat mr__15">Упаковка</div>
                                         <div class="d-flex align-items-center ml-auto">
                                             <div class="button pink medium mr__10 text m semi-bold">Да</div>
                                             <div class="button contour medium text m semi-bold">Нет</div>
                                         </div>
                                     </div>
-                                    <div class="text s ubuntu-300 black">*Упаковка производится стрейч-пленкой в 10 оборотов, фиксируется полиэстеровой лентой на деревянном поддоне. Стоимость упаковки — 700 руб. за пачку</div>
+                                    <div class="text s ubuntu-300 black d-flex align-items-center">
+                                        <span class="d-lg-block d-md-none d-sm-none d-none mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                        <span class="d-lg-block d-md-none d-sm-none d-none" data-toggle="tooltip"
+                                            data-placement="right" title=""
+                                            data-original-title="Упаковка производится стрейч-пленкой в 10 оборотов, фиксируется полиэстеровой лентой на деревянном поддоне."><i
+                                                class="icon prompt"></i></span>
+                                        <div class="d-lg-none d-md-block d-sm-block d-block">*Упаковка производится стрейч-пленкой в 10 оборотов, фиксируется полиэстеровой лентой на деревянном поддоне. Стоимость упаковки — 700 руб. за пачку</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row d-lg-none d-md-none d-sm-block d-block">
+                            <div class="row d-lg-none d-md-block d-sm-block d-block">
                                 <div class="col-12">
-                                    <div class="button red text m text-uppercase w-100 mb-sm__10">Заказать</div>
+                                    <div class="button red text m text-uppercase w-100 mb-md__10">Заказать</div>
                                     <div class="button contour text m text-uppercase w-100">Добавить в корзину</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-md__20 mb-sm__50">
-                        <div class="col">
-                            <div class="text xxl gray-100 montserrat-bold mb__20">Описание</div>
-                            <div class="text m gray-100 ubuntu">Компания СЗСМ призвана обеспечить надежную и безопасную
-                                транспортировку силиконового кирпича по построенной автомобильными сетями системе. Мы
-                                придаем огромное значение поддержанию открытого и уважительного диалога с
-                                представителями общественности, неправительственных организаций, подрядчиками и их
-                                сотрудниками, а также другими заинтересованными сторонами на всем протяжении
-                                эксплуатации проекта.</div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="checkout bg__pink mb__30 d-lg-block d-md-block d-sm-none d-none">
+                <div class="col-lg-4 col-md-12 col-sm-12 d-lg-block d-md-none d-sm-none d-none">
+                    <div class="checkout bg__pink ">
                         <div class="mb__20">
                             <div class="text xxl gray-100 text-uppercase montserrat-bold mb__10">ОФОРМИТЕ ЗАКАЗ</div>
                             <div class="text m gray-100 ubuntu-300">В близжайшее время с вами свяжутся для уточнения
@@ -151,7 +155,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text xxl gray-100 mb__25 montserrat-bold">Характеристики</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 mb-md__30">
+                    <ul class="nav nav-tabs" id="myTab-2" role="tablist">
+                        <li class="nav-item w-25" role="presentation">
+                            <a class="nav-link active text xxl" id="home-tab-2" data-toggle="tab" href="#home-2"
+                                role="tab" aria-controls="home-2" aria-selected="false">Описание</a>
+                        </li>
+                        <li class="nav-item  w-25" role="presentation">
+                            <a class="nav-link text xxl" id="profile-tab-2" data-toggle="tab" href="#profile-2"
+                                role="tab" aria-controls="profile-2" aria-selected="false">Бонусы</a>
+                        </li>
+                        <li class="nav-item w-50" role="presentation">
+                            <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false"></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent-2">
+                        <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
+                            <div class="text m ubuntu gray-100 mt__20">
+                                Компания СЗСМ призвана обеспечить надежную и безопасную транспортировку силиконового
+                                кирпича по построенной автомобильными сетями системе. Мы придаем огромное значение
+                                поддержанию открытого и уважительного диалога с представителями общественности,
+                                неправительственных организаций, подрядчиками и их сотрудниками, а также другими
+                                заинтересованными сторонами на всем протяжении эксплуатации проекта.
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
+                            <div class="text m ubuntu gray-100 mt__20">
+                                Компания СЗСМ призвана обеспечить надежную и безопасную транспортировку силиконового
+                                кирпича по построенной автомобильными сетями системе. Мы придаем огромное значение
+                                поддержанию открытого и уважительного диалога.
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item  w-50" role="presentation">
                             <a class="nav-link disabled" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -235,7 +279,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -255,7 +301,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -275,7 +323,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -295,7 +345,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -315,7 +367,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -335,7 +389,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -355,7 +411,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -388,7 +446,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -408,7 +468,9 @@
                         <div class="catalog-item__name text m ubuntu burgundy-50 mb__5">Силикатный кирпич</div>
                         <div class="catalog-item__price burgundy-100">
                             <span class="text xxl semi-bold">13,6 руб.</span>
-                            <span class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16 руб.</span>
+                            <span
+                                class="text m burgundy-50 text-decoration__line-through ubuntu d-lg-block d-md-block d-sm-none d-none">16
+                                руб.</span>
                             <span
                                 class="catalog-item__discount text s d-lg-block d-md-block d-sm-none d-none">-20%</span>
                         </div>
@@ -446,7 +508,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так что всем кто собирается строит дом, советую брать кирпич у них!</div>
+                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский
+                                    кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо,
+                                    нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал
+                                    сделали отличные дома и это очень радует. Так что всем кто собирается строит дом,
+                                    советую брать кирпич у них!</div>
                             </div>
                         </div>
                     </div>
@@ -476,7 +542,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так что всем кто собирается строит дом, советую брать кирпич у них!</div>
+                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский
+                                    кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо,
+                                    нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал
+                                    сделали отличные дома и это очень радует. Так что всем кто собирается строит дом,
+                                    советую брать кирпич у них!</div>
                             </div>
                         </div>
                     </div>
@@ -506,7 +576,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так что всем кто собирается строит дом, советую брать кирпич у них!</div>
+                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский
+                                    кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо,
+                                    нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал
+                                    сделали отличные дома и это очень радует. Так что всем кто собирается строит дом,
+                                    советую брать кирпич у них!</div>
                             </div>
                         </div>
                     </div>
@@ -536,7 +610,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо, нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал сделали отличные дома и это очень радует. Так что всем кто собирается строит дом, советую брать кирпич у них!</div>
+                                <div class="text m gray-100 ubuntu">Хочу сказать пару приятных слов о заводе Саратовский
+                                    кирпич. У них отличная продукция. Мы уже столько коттеджей построили и все хорошо,
+                                    нигде никаких сколов и прочего брака. Наши умелые руки и ваш хороший материал
+                                    сделали отличные дома и это очень радует. Так что всем кто собирается строит дом,
+                                    советую брать кирпич у них!</div>
                             </div>
                         </div>
                     </div>
@@ -552,7 +630,7 @@
     </section>
 
 
-    
+
 
 
     <script src="js/jquery.js"></script>

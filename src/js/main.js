@@ -8,12 +8,14 @@ $(document).ready(function() {
   sliderStocks();
   // sliderAdvantage();
   sliderProducts();
-  cardCatalog();
+  
   breadcrumbs();
   range();
   filterItem();
   buttonBasket();
   goToPage();
+  tooltip();
+  removeBasketItem();
 });
 
 // window.onresize = function() {
@@ -295,5 +297,16 @@ function buttonBasket() {
 function goToPage() {
   $('.checkout-button__basket').on('dblclick', function() {
     document.location.href = "../index.html";
+  })
+}
+// tooltip
+function tooltip() {
+  $('[data-toggle="tooltip"]').tooltip({ boundary: 'window' })
+}
+
+// удаление позиции из корзины
+function removeBasketItem() {
+  $('.basket-remove').on('click', function() {
+    $(this).parent().hide('slow');
   })
 }
