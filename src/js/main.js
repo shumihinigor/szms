@@ -8,7 +8,7 @@ $(document).ready(function() {
   sliderStocks();
   // sliderAdvantage();
   sliderProducts();
-  
+  // cardCatalog();
   breadcrumbs();
   range();
   filterItem();
@@ -16,6 +16,7 @@ $(document).ready(function() {
   goToPage();
   tooltip();
   removeBasketItem();
+  deleteImage();
 });
 
 // window.onresize = function() {
@@ -308,5 +309,12 @@ function tooltip() {
 function removeBasketItem() {
   $('.basket-remove').on('click', function() {
     $(this).parent().hide('slow');
+  })
+}
+
+// удаление картинки из модалки
+function deleteImage() {
+  $('.icon.remove').on('click', function() {
+    $(this).parent().hide()
   })
 }
