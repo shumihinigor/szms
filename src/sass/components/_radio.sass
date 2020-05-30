@@ -1,0 +1,41 @@
+.radio
+    &-item
+        display: flex
+        align-items: center
+        position: relative
+        margin: 0
+    &-input
+        clip: rect(0, 0, 0, 0)
+        position: absolute
+        top: 0
+        left: 0
+        &:checked, &:hover
+            & + .radio-label
+                background: #552225
+                color: #FFFFFF
+                &::before
+                    border: 6px solid #FFFFFF
+                    background: #552225
+    &-label
+        display: flex
+        align-items: center
+        padding: 16px 20px 16px 20px
+        border: 1px solid #552225
+        cursor: pointer
+        margin: 0
+        color: #333333
+        & [data-toggle="tooltip"]
+            position: absolute
+            top: 10px
+            right: 10px
+        &::before
+            content: ''
+            display: inline-block
+            vertical-align: middle
+            margin-right: 15px
+            width: 20px
+            height: 20px
+            border: 6px solid #552225
+            background: #fff
+            -webkit-border-radius: 100%
+            border-radius: 100%

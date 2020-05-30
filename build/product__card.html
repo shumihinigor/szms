@@ -22,7 +22,7 @@
                         <a href="catalog.html" class="header-link__item">Каталог продукции</a>
                         <a href="stocks.html" class="header-link__item">Акции</a>
                         <a href="about.html" class="header-link__item">О компании</a>
-                        <a href="#" class="header-link__item">Доставка</a>
+                        <a href="delivery.html" class="header-link__item">Доставка</a>
                         <a href="product__gallery.html" class="header-link__item">Галерея</a>
                         <a href="contacts.html" class="header-link__item">Контакты</a>
                         <a href="faq.html" class="header-link__item">Частые вопросы</a>
@@ -47,7 +47,7 @@
                         <img src="images/image1-1.png" alt="">
                     </div>
                     <div class="header-search d-lg-block d-md-block d-none w-md-100 mr__20">
-                        <input class="form-control search" type="text" placeholder="Поиск">
+                        <input class="form-control gray" type="text" placeholder="Поиск">
                         <i class="icon search cursor-pointer"></i>
                     </div>
                     <div class="align-items-center ml-auto d-lg-flex d-none">
@@ -66,7 +66,7 @@
                         </a>
                     </div>
                     <div class="d-flex ml-sm__15 ml-auto">
-                        <a href="#" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
+                        <a href="#" data-toggle="modal" data-target="#registration" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
                             <i class="icon profile mb-sm__0"></i>
                             <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
                         </a>
@@ -102,6 +102,56 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+     <!-- Modal -->
+     <div class="modal registration fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-md">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body text-center">
+                 <div class="mb__25 text-center">
+                     <div class="text xxl montserrat-bold gray-100">Вход или регистрация</div>
+                 </div>
+                 <div class="row">
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                    <div class="col">
+                        <div class="mb__20">
+                            <div class="form-group custom">
+                               <input type="email" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Адрес электронной почты">
+                             </div>
+                        </div>
+                         <div class="mb__30">
+                             <div class="button contour medium text m ubuntu-500 burgundy-50 text-uppercase w-100">получить код</div>
+                         </div>
+                    </div>
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                </div>
+                  <div class="mb__20">
+                      <div class="text m ubuntu gray-50">Войти через соц. сеть</div>
+                  </div>
+                  <div class="mb__40">
+                      <a class="mr__25 text-decoration-none" href="">
+                          <i class="icon google "></i>
+                      </a>
+                      <a class="mr__25 text-decoration-none" href="">
+                          <i class="icon facebook "></i>
+                      </a>
+                      <a class=" text-decoration-none" href="">
+                          <i class="icon vk"></i>
+                      </a>
+                  </div>
+                  <div class="">
+                      <a href="#" class="link red text m ubuntu">Войти в аккаунт как юрлицо</a>
+                  </div>
+             </div>
+         </div>
+     </div>
     </div>
     <!-- header end -->
 
@@ -139,46 +189,6 @@
     </div>
     <!-- come__back end -->
 
-    <!-- menu -->
-    <nav class="menu">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-between align-items-lg-center align-items-md-center align-items-sm-start align-items-start">
-                    <a href="" class="menu-item home">
-                        <div class="menu-item__icon">
-                            <i class="icon home"></i>
-                        </div>
-                        <span class="ml__10 ml-sm__0">Главная</span>
-                    </a>
-                    <a href="" class="menu-item orders">
-                        <div class="menu-item__icon">
-                            <i class="icon orders"></i>
-                        </div>
-                        <span class="ml__10 ml-sm__0">Мои заказы</span>
-                    </a>
-                    <a href="" class="menu-item profile">
-                        <div class="menu-item__icon">
-                            <i class="icon profile gray"></i>
-                        </div>
-                        <span class="ml__10 ml-sm__0">Профиль</span>
-                    </a>
-                    <a href="" class="menu-item basket">
-                        <div class="menu-item__icon">
-                            <i class="icon basket gray"></i>
-                        </div>
-                        <span class="ml__10 ml-sm__0">Корзина</span>
-                    </a>
-                    <a href="" class="menu-item message">
-                        <div class="menu-item__icon">
-                            <i class="icon message"></i>
-                        </div>
-                        <span class="ml__10 ml-sm__0">Обратная связь</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- menu end -->
 
     <!-- Товар -->
     <section class="mb__50 mt-sm__30 mt-md__30">
@@ -255,14 +265,14 @@
                                                 id="customRange3" oninput="range();">
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center mb-sm__10">
+                                    <div class="d-flex align-items-center mb__10">
                                         <div class="text m gray-100 montserrat mr__15">Упаковка</div>
                                         <div class="d-flex align-items-center ml-auto">
                                             <div class="button pink medium mr__10 text m semi-bold">Да</div>
                                             <div class="button contour medium text m semi-bold">Нет</div>
                                         </div>
                                     </div>
-                                    <div class="text s ubuntu-300 black d-flex align-items-center">
+                                    <div class="text s ubuntu-300 black d-flex align-items-start">
                                         <span class="d-lg-block d-md-none d-sm-none d-none mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
                                         <span class="d-lg-block d-md-none d-sm-none d-none" data-toggle="tooltip"
                                             data-placement="right" title=""
@@ -325,7 +335,7 @@
                                 role="tab" aria-controls="profile-2" aria-selected="false">Бонусы</a>
                         </li>
                         <li class="nav-item w-50" role="presentation">
-                            <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact-2" role="tab"
                                 aria-controls="contact" aria-selected="false"></a>
                         </li>
                     </ul>
@@ -346,7 +356,7 @@
                                 поддержанию открытого и уважительного диалога.
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab">
 
                         </div>
                     </div>

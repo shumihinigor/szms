@@ -5,6 +5,10 @@
         background-color: $burgundy-50 !important
     &__burgundy-25
         background-color: $burgundy-25 !important
+    &__burgundy-75
+        background-color: $burgundy-75 !important
+    &__burgundy-100
+        background-color: $burgundy-100 !important
     &__pink
         background-color: #FDF5F6 !important
 
@@ -19,6 +23,8 @@
         border: 1px solid $burgundy-25
 
 .map
+    width: 100%
+    height: 100%
     @media screen and ( max-width: 767px )
         position: relative
         left: -15px
@@ -35,4 +41,37 @@ textarea.form-control.custom
 button.close
     &:focus
         outline: none
+
+.error
+    color: #FF5065
+    font-family: $ubuntu
+    font-style: normal
+    font-weight: 300
+    font-size: 11px
+    line-height: 13px
+    text-transform: none
+
+.form-group.custom
+    margin: 0
+    & .form-control
+        border: 1px solid #DFC3C7
+        color: #333333
+        &:hover, &:focus
+            border: 1px solid #552225
+            box-shadow: none
+        &.error
+            border: 1px solid #FF5065
+            box-shadow: 0px 1px 7px rgba(255, 80, 101, 0.4)
+
+@media screen and ( max-width: 767px )
+    .h-sm-auto
+        height: auto !important
+    .w-sm-auto
+        width: auto !important
+            
+.sticky
+    position: sticky !important
+    top: 20px
+    @media screen and ( max-width: 991px )
+        position: relative !important
         

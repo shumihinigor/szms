@@ -13,10 +13,15 @@
         min-height: auto
         min-height: 35px
         padding: 6px 26px
+    
     &:hover
         & i
             position: relative
             right: -5px
+            &.repeat
+                transition: all .3s
+                right: 0
+    
     &.red
         color: #FFFFFF
         background: #552225
@@ -24,6 +29,7 @@
         &:hover
             background: #4B1D20
             text-decoration: none
+    
     &.pink
         color: #FFFFFF
         background: #824C4F
@@ -31,12 +37,14 @@
         &:hover
             background: #552225
             text-decoration: none
+    
     &.contour
         background: #FFFFFF
         border: 1px solid #AF7D80
         color: #AF7D80
         &:hover
             box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
+    
     &.download
         background: #EAEAEA
         border-radius: 8px
@@ -54,6 +62,7 @@
             background-position: center center
             background-size: contain
             background-repeat: no-repeat
+    
     &.photo
         background: #EAEAEA
         border-radius: 8px

@@ -6,6 +6,7 @@ $(document).ready(function() {
   sliderMain();
   sliderReviews();
   sliderStocks();
+  sliderDelivery();
   // sliderAdvantage();
   sliderProducts();
   // cardCatalog();
@@ -19,13 +20,11 @@ $(document).ready(function() {
   deleteImage();
 });
 
-// window.onresize = function() {
-//   menuMobile();
-//   sliderMain();
-//   sliderReviews();
-//   calculator();
-//   sliderStocks();
-// };
+$(window).on('resize', function() {
+  $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
+  $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
+  menuMobile();
+});
 
 // ссылки в навигации
 function navigation() {
@@ -37,9 +36,6 @@ function navigation() {
 
 // меню на мобилке
 function menuMobile() {
-  // $('.navbar-toggler.menu').on('click', function () {
-  //   $('.header-nav').toggle('slow');
-  // })
   let heightNav = $('.header-nav').height()
   let heightHeader = $('.header').height()
   $('.header-nav').css('top', -heightNav)
@@ -113,7 +109,7 @@ function sliderReviews() {
         settings: {
           slidesToShow: 1,
           centerMode: true,
-          // arrows: false,
+          arrows: false,
           // dots: true
         },
       },
@@ -317,4 +313,35 @@ function deleteImage() {
   $('.icon.remove').on('click', function() {
     $(this).parent().hide()
   })
+}
+
+// слайдер на доставку 
+// слайдер на главной с акциями
+function sliderDelivery() {
+  if (window.innerWidth <= 991) {
+    var $sliderReviews = $('.slider-delivery');
+
+    $sliderReviews.slick({
+      // centerMode: true,
+      // centerPadding: '50px',
+      responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            // centerMode: true,
+            arrows: false,
+            dots: true
+          }
+        },
+      ]
+    });
+  }
 }

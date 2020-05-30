@@ -1464,16 +1464,33 @@ pre
   width: 100%
   margin-bottom: 1rem
   color: #212529
-
+  table-layout: fixed
+  // & .border-top-left
+  //   border-top-left-radius: 10px
+  //   border-left: 1px solid transparent
+  //   border-top: 1px solid transparent
+  // & .border-top-right
+  //   border-top-right-radius: 10px
+  //   border-right: 1px solid transparent
+  //   border-top: 1px solid transparent
   th, td
     padding: 0.75rem
-    vertical-align: top
-    border-top: 1px solid #dee2e6
-
+    vertical-align: middle
+    border: 1px solid #AF7D80
+  thead
+    border-radius: 5px 5px 0px 0px
   thead th
-    vertical-align: bottom
-    border-bottom: 2px solid #dee2e6
-
+    vertical-align: top
+    color: #FFFFFF
+    border: 1px solid #AF7D80
+    background: #824C4F
+    font-family: $ubuntu
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+  tbody td
+    vertical-align: middle
   tbody + tbody
     border-top: 2px solid #dee2e6
 
@@ -1733,7 +1750,7 @@ pre
   display: block
   width: 100%
   height: calc(1.5em + 0.75rem + 2px)
-  padding: 0.375rem 0.75rem
+  padding: 0.375rem 35px 0.375rem 0.75rem
   font-size: 1rem
   font-weight: 400
   line-height: 1.5
@@ -1743,12 +1760,15 @@ pre
   border: 1px solid #ced4da
   border-radius: 0.25rem
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
-  &.search
+  text-overflow: ellipsis
+  &.gray
     background: #F5F5F5
     border-radius: 5px
     border: 1px solid #F5F5F5
     font-size: 14px
     line-height: 19px
+    &[readonly] 
+      background-color: #F5F5F5
     &:focus
       background: #F5F5F5
       border-color: #F5F5F5
@@ -1887,7 +1907,9 @@ textarea.form-control
   height: auto
 
 .form-group
-  margin-bottom: 1rem
+  margin-bottom: 10px
+  &:last-child
+    margin-bottom: 0
 
 .form-text
   display: block
@@ -3922,6 +3944,7 @@ input
   background-color: transparent
   border: 1px solid transparent
   border-radius: 0.25rem
+  margin: 0
   &:hover, &:focus
     outline: none
     text-decoration: none
@@ -5276,6 +5299,8 @@ a.close.disabled
   height: 100%
   overflow: hidden
   outline: 0
+  @media screen and ( max-width: 991px )
+    top: 20%
 
 .modal-dialog
   position: relative
@@ -6100,6 +6125,9 @@ button.bg-dark
 
 .border-white
   border-color: #fff !important
+
+.border-burgundy-25
+  border-color: $burgundy-25 !important
 
 .rounded-sm
   border-radius: 0.2rem !important
@@ -7190,6 +7218,9 @@ button.bg-dark
   width: 100% !important
 @media screen and ( max-width: 991px )
   .w-md-100
+    width: 100% !important
+@media screen and ( max-width: 767px )
+  .w-sm-100
     width: 100% !important
 
 .w-auto

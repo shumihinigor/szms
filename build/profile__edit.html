@@ -3,7 +3,7 @@
 <html lang="ru">
 
 <head>
-    <title>Профиль</title>
+    <title>Настройки профиля</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -234,98 +234,131 @@
         <div class="container">
             <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
                 <div class="col mb__15">
-                    <div class="profile-item bg__burgundy-100">
-                        <div class="text l semi-bold white mb__15">Корзина</div>
-                        <div class="text m ubuntu white mb__10">2 товара</div>
-                        <div class="text xxl montserrat-bold white">20 660 руб.</div>
-                        <a href="#" class="link white text m ubuntu d-inline-block mt-auto">
-                            <span class="mr__5">Подробнее</span>
-                            <i class="icon arrow-right "></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col mb__15">
-                    <div class="profile-item bg__burgundy-50">
-                        <div class="text l semi-bold white mb__15">Доставки</div>
-                        <div class="text m ubuntu white">Ожидается доставка на 21.05</div>
-                        <div class="text m ubuntu white">с 12:00 до 16:00</div>
-                        <a href="#" class="link white text m ubuntu d-inline-block mt-auto">
-                            <span class="mr__5">Подробнее</span>
-                            <i class="icon arrow-right "></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col mb__15">
-                    <div class="profile-item border-burgundy-25">
-                        <div class="d-flex align-items-start flex-lg-row flex-md-row flex-sm-column flex-column w-100 ">
-                            <div class="profile-photo mr__20 mb-sm__20" style="background-image: url(images/profile1-1.png);"></div>
-                            <div class="d-flex flex-column w-75 w-sm-100">
-                                <div class="mb__30">
-                                    <div class="text l semi-bold gray-100 mb__15">Семен Семеныч</div>
-                                    <div class="text m montserrat-normal gray-100 mb__10"><span class="gray-50">Email: </span>semensemenich@gmail.com</div>
-                                    <div class="text m montserrat-normal gray-100"><span class="gray-50">Телефон: </span>+7 910 969 04 18</div>
+                    <div class="row mb__15">
+                        <div class="col">
+                            <div class="profile-item border-burgundy-25">
+                                <div class="d-flex align-items-start flex-column w-100 ">
+                                    <div class="text l semi-bold gray-100 mb__10">Персональные данные</div>
+                                    <div class="profile-photo edit mb__20" style="background-image: url(images/profile1-1.png);">
+                                        <i class="icon edit white"></i>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="staticName"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">ФИО:</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticName"
+                                                        value="Иванов Семен Семеныч">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticPhone"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">Телефон:</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticPhone"
+                                                        value="+7 910 969 04 18">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">E-mail:</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticEmail"
+                                                        value="semensemenich@gmail.com">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="mt-auto d-flex flex-column">
-                                    <a href="#" class="link red text m ubuntu mb__15">Посмотреть все данные</a>
-                                    <a href="#" class="link red text m ubuntu">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__15">
+                        <div class="col">
+                            <div class="profile-item border-burgundy-25">
+                                <div class="d-flex align-items-start flex-column w-100 ">
+                                    <div class="text l semi-bold gray-100 mb__20">Реквизиты</div>
+                                    <div class="d-flex flex-column w-100">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="staticName-2"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">Наименование:</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticName-2"
+                                                        value="ООО ">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticInn"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">ИНН:</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticInn"
+                                                        value="semensemenich@gmail.com">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail-2"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">КПП:</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticEmail-2"
+                                                        value="semensemenich@gmail.com">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail-3"
+                                                    class="col-sm-3 d-lg-block d-md-block d-sm-none d-none col-form-label text m montserrat-normal gray-50">Юр. адрес</label>
+                                                <div class="col-sm-9 col-md-9 col-sm-12 col-12 position-relative">
+                                                    <input type="text" readonly class="form-control gray" id="staticEmail-3"
+                                                        value="semensemenich@gmail.com">
+                                                    <i class="icon edit cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb__15">
-                    <div class="profile-item border-burgundy-25">
-                        <div class="d-flex align-items-start flex-lg-row flex-md-row flex-sm-column flex-column w-100 ">
-                            <div class="profile-photo bg__burgundy-50 mr__20 mb-sm__20">
-                                <span class="text xxxl burgundy-100 montserrat-bold">5%</span>
-                            </div>
-                            <div class="d-flex flex-column w-75 w-sm-100 ">
-                                <div class="text l semi-bold gray-100 mb__15">Мой кэшбек</div>
-                                <div class="d-flex justify-content-between align-items-center mb__10">
-                                    <span class="text s montserrat gray-100 text-left mr__10">Сумма выкупа<br/>за последние два месяца:</span>
-                                    <span class="text m montserrat-bold gray-100 text-right">251 178 руб.</span>
-                                </div>
-                                <div class="mb__15">
-                                    <div class="d-flex justify-content-between align-items-center mb__10">
-                                        <span class="text s montserrat gray-50 text-left mr__10">За апрель:</span>
-                                        <span class="text m montserrat gray-100 text-right">160 854 руб.</span>
+                    <div class="row mb__15">
+                        <div class="col">
+                            <div class="profile-item border-burgundy-25">
+                                <div class="d-flex align-items-start flex-column w-100 ">
+                                    <div class="text l semi-bold gray-100 mb__20">Адреса доставки</div>
+                                    <div class="d-flex flex-column w-100 ">
+                                        <form class="mb__40">
+                                            <div class="form-group row">
+                                                <div class="col-sm-12 position-relative">
+                                                    <input type="text"  class="form-control gray" id="staticName"
+                                                        value="Ярославль, Угличская улица, д. 50, индекс 150047">
+                                                    <i class="icon remove-gray cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="d-flex align-items-center flex-column">
+                                            <a href="#" class="button contour text m text-uppercase mb__5 w-100">
+                                                <span class="">Добавить адрес</span>
+                                            </a>
+                                            <span class="text m montserrat-normal green">Введите адрес в поле ниже</span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="text s montserrat gray-50 text-left mr__10">За май:</span>
-                                        <span class="text m montserrat gray-100 text-right">91 003 руб.</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mb__30">
-                                    <span class="text s montserrat gray-100 text-left mr__10">Сумма к выплате (в июне):</span>
-                                    <span class="text xxl montserrat-bold gray-100 text-right">10 556 руб.</span>
-                                </div>
-                                <div class="mt-auto">
-                                    <a href="bonus__system.html" class="link red text m ubuntu ">
-                                        <span class="mr__5">Перейти в раздел «О магазине»</span>
-                                        <i class="icon arrow-right red"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="facts bg__burgundy-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-1 col-md-1 col-2 d-lg-block d-md-none d-none"></div>
-                <div class="col-lg-10 col-md-12 col-12 col-sm-12 d-flex align-items-center justify-content-center flex-column text-center">
-                    <div class="text l bold white mb__20">О бонусной системе.</div>
-                    <div class="text m ubuntu white">Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. </div>
-                </div>
-                <div class="col-lg-1 col-md-1 col-2 d-lg-block d-md-none d-none"></div>
-            </div>
-        </div>
-    </section>
 
     <!-- footer -->
     <footer class="footer">
@@ -334,7 +367,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="row mb__15">
                         <div class="col">
-                            <div class="text xxl white montserrat">Меню:</div>
+                            <div class="text xxl white montserrat">��еню:</div>
                         </div>
                     </div>
                     <div class="row mb__40">

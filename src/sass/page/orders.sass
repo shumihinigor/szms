@@ -1,0 +1,36 @@
+.orders
+    &-image
+        max-width: 167px
+        max-height: 160px
+    &-price
+
+    &-title
+        
+    &-item
+        position: relative
+        padding: 20px
+        border: 1px solid $burgundy-25
+        margin-left: 0 !important
+        margin-right: 0 !important
+        @media screen and ( max-width: 767px )
+            margin-left: -5px !important
+            margin-right: -5px !important
+            padding: 10px 10px 40px 10px
+    &-state
+        display: inline-block
+        vertical-align: middle
+        padding: 6px 15px
+        backdrop-filter: blur(24px)
+        border-radius: 5px
+        font-size: 12px
+        line-height: 12px
+        font-family: $ubuntu
+        font-style: normal
+        font-weight: 500
+        color: #FFFFFF
+        &.green
+            background: #559A3D
+        &.red
+            background: #824C4F
+        &.yellow 
+            background: #E4CB44

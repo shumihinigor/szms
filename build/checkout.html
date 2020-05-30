@@ -1,0 +1,617 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru">
+
+<head>
+    <title>Оформить заказ</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="">
+
+    <!-- header -->
+    <nav class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-link">
+                        <a href="index.html" class="header-link__item active">Главная страница</a>
+                        <a href="catalog.html" class="header-link__item">Каталог продукции</a>
+                        <a href="stocks.html" class="header-link__item">Акции</a>
+                        <a href="about.html" class="header-link__item">О компании</a>
+                        <a href="delivery.html" class="header-link__item">Доставка</a>
+                        <a href="product__gallery.html" class="header-link__item">Галерея</a>
+                        <a href="contacts.html" class="header-link__item">Контакты</a>
+                        <a href="faq.html" class="header-link__item">Частые вопросы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <nav class="navbar navbar-expand-lg navbar-dark d-lg-none d-md-block">
+                        <button class="navbar-toggler menu" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <button class="navbar-toggler d-lg-none d-md-none d-sm-block" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                            <span class="icon search red"></span>
+                        </button>
+                    </nav>
+                    <div class="header-logo">
+                        <img src="images/image1-1.png" alt="">
+                    </div>
+                    <div class="header-search d-lg-block d-md-block d-none w-md-100 mr__20">
+                        <input class="form-control gray" type="text" placeholder="Поиск">
+                        <i class="icon search cursor-pointer"></i>
+                    </div>
+                    <div class="align-items-center ml-auto d-lg-flex d-none">
+                        <a href="tel:+78452393315" class="header-phone mr__35 gray-100 align-items-center d-flex align-items-center">
+                            <i class="icon phone mr__10"></i>
+                            <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
+                        </a>
+                        <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
+                            <i class="icon inst"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
+                            <i class="icon whatsapp"></i>
+                        </a>
+                        <a href="viber://chat?number=78452393315" target="_blank">
+                            <i class="icon viber"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex ml-sm__15 ml-auto">
+                        <a href="#" data-toggle="modal" data-target="#registration" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
+                            <i class="icon profile mb-sm__0"></i>
+                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
+                        </a>
+                        <a href="#" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
+                            <i class="icon basket mb-sm__0"></i>
+                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Корзина</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="header-contacts d-lg-none d-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex align-items-center">
+                        <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
+                            <i class="icon inst"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
+                            <i class="icon whatsapp"></i>
+                        </a>
+                        <a href="viber://chat?number=78452393315" target="_blank">
+                            <i class="icon viber"></i>
+                        </a>
+                        <a href="tel:+78452393315" class="header-phone gray-2 d-flex align-items-center ml-auto">
+                            <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
+                            <i class="icon phone ml__10"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Modal -->
+     <div class="modal registration fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-md">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body text-center">
+                 <div class="mb__25 text-center">
+                     <div class="text xxl montserrat-bold gray-100">Вход или регистрация</div>
+                 </div>
+                 <div class="row">
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                    <div class="col">
+                        <div class="mb__20">
+                            <div class="form-group custom">
+                               <input type="email" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Адрес электронной почты">
+                             </div>
+                        </div>
+                         <div class="mb__30">
+                             <div class="button contour medium text m ubuntu-500 burgundy-50 text-uppercase w-100">получить код</div>
+                         </div>
+                    </div>
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                </div>
+                  <div class="mb__20">
+                      <div class="text m ubuntu gray-50">Войти через соц. сеть</div>
+                  </div>
+                  <div class="mb__40">
+                      <a class="mr__25 text-decoration-none" href="">
+                          <i class="icon google "></i>
+                      </a>
+                      <a class="mr__25 text-decoration-none" href="">
+                          <i class="icon facebook "></i>
+                      </a>
+                      <a class=" text-decoration-none" href="">
+                          <i class="icon vk"></i>
+                      </a>
+                  </div>
+                  <div class="">
+                      <a href="#" class="link red text m ubuntu">Войти в аккаунт как юрлицо</a>
+                  </div>
+             </div>
+         </div>
+     </div>
+    </div>
+    <!-- header end -->
+
+    <!-- breadcrumbs -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">
+                            <a href="../index.html" class="text m ubuntu gray-50">Главная</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../stocks.html" class="text m ubuntu gray-50">Акции</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumbs end -->
+
+    <!-- breadcrumbs -->
+    <div class="comeback d-lg-none d-md-block d-sm-block d-none d-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="../catalog.html" class="text m montserrat gray-100 d-flex align-items-center">
+                        <i class="icon arrow-left mr__15"></i>
+                        Вернуться к категориям
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumbs end -->
+
+    <!-- menu -->
+    <nav class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-lg-center align-items-md-center align-items-sm-start align-items-start">
+                    <a href="" class="menu-item home">
+                        <div class="menu-item__icon">
+                            <i class="icon home"></i>
+                        </div>
+                        <span class="ml__10 ml-sm__0">Главная</span>
+                    </a>
+                    <a href="" class="menu-item orders">
+                        <div class="menu-item__icon">
+                            <i class="icon orders"></i>
+                        </div>
+                        <span class="ml__10 ml-sm__0">Мои заказы</span>
+                    </a>
+                    <a href="" class="menu-item profile">
+                        <div class="menu-item__icon">
+                            <i class="icon profile gray"></i>
+                        </div>
+                        <span class="ml__10 ml-sm__0">Профиль</span>
+                    </a>
+                    <a href="" class="menu-item basket">
+                        <div class="menu-item__icon">
+                            <i class="icon basket gray"></i>
+                        </div>
+                        <span class="ml__10 ml-sm__0">Корзина</span>
+                    </a>
+                    <a href="" class="menu-item message">
+                        <div class="menu-item__icon">
+                            <i class="icon message"></i>
+                        </div>
+                        <span class="ml__10 ml-sm__0">Обратная связь</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- menu end -->
+
+    <!-- Товар -->
+    <section class="mb__50 mt-sm__30 mt-md__50">
+        <div class="container">
+            <div class="row mb__30">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="row mb__50">
+                        <div class="col">
+                            <div class="row mb__40">
+                                <div class="col">
+                                    <h1 class="h1 text burgundy-100">Оформить заказ</h1>
+                                </div>
+                            </div>
+                            <div class="row mb__25">
+                                <div class="col">
+                                    <h4 class="h4 text-uppercase ">Выберите способ доставки</h4>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 mb__20">
+                                <div class="col mb-md__15">
+                                    <div class="radio-item">
+                                        <input type="radio" id="radio1" class="radio-input" name="gender">
+                                        <label for="radio1" class="radio-label text xl montserrat-bold w-100">Самовывоз</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="radio-item">
+                                        <input type="radio" id="radio2" class="radio-input" name="gender">
+                                        <label for="radio2" class="radio-label text xl montserrat-bold w-100">Доставка</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb__20">
+                                <div class="col">
+                                    <div class="checkout-address">
+                                        <div class="text m gray-100 montserrat">Адрес доставки:</div>
+                                        <div class="button medium contour text m ubuntu-500 burgundy-50 text-uppercase">Выбрать адрес</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb__15">
+                                <div class="col">
+                                    <div class="text m ubuntu gray-100">Компания СЗСМ призвана обеспечить надежную и безопасную транспортировку силиконового кирпича по построенной автомобильными сетями системе. Мы придаем огромное значение поддержанию открытого и уважительного диалога с представителями общественности, неправительственных организаций, подрядчиками и их сотрудниками, а также другими заинтересованными сторонами на всем протяжении эксплуатации проекта.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="link red text m ubuntu underline">
+                                        <span class="mr__5">Перейти в раздел «О магазине»</span>
+                                        <i class="icon arrow-right red"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__50">
+                        <div class="col">
+                            <div class="row mb__25">
+                                <div class="col">
+                                    <h4 class="h4 text-uppercase ">Выберите Способ оплаты</h4>
+                                </div>
+                            </div>
+                            <div class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 row-cols-1 mb__20">
+                                <div class="col mb__15">
+                                    <div class="radio-item">
+                                        <input type="radio" id="radio3" class="radio-input" name="gender">
+                                        <label for="radio3" class="radio-label text xl montserrat-bold w-100">Оплата онлайн</label>
+                                    </div>
+                                </div>
+                                <div class="col mb__15">
+                                    <div class="radio-item">
+                                        <input type="radio" id="radio4" class="radio-input" name="gender">
+                                        <label for="radio4" class="radio-label text xl montserrat-bold w-100">Наличными при получении</label>
+                                    </div>
+                                </div>
+                                <div class="col mb__15">
+                                    <div class="radio-item">
+                                        <input type="radio" id="radio5" class="radio-input" name="gender">
+                                        <label for="radio5" class="radio-label text xl montserrat-bold w-100">
+                                            Выставить счет
+                                            <span class="" data-toggle="tooltip" data-placement="right" title="" data-original-title="Это документ от Продавца к Покупателю, который содержит реквизиты для оплаты и перечень товаров и (или) услуг."><i class="icon prompt"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__50">
+                        <div class="col">
+                            <div class="row mb__25">
+                                <div class="col">
+                                    <h4 class="h4 text-uppercase">
+                                        <span class=" mr__25">Ваши данные</span>
+                                        <span class="error">*Вы заполнили не все данные</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="nav nav-tabs" id="myTab-2" role="tablist">
+                                        <li class="nav-item w-50" role="presentation">
+                                            <a class="nav-link active text xxl text-nowrap" id="home-tab-2" data-toggle="tab" href="#home-2" role="tab" aria-controls="home-2" aria-selected="false">Физическое лицо</a>
+                                        </li>
+                                        <li class="nav-item  w-50" role="presentation">
+                                            <a class="nav-link text xxl text-nowrap" id="profile-tab-2" data-toggle="tab" href="#profile-2" role="tab" aria-controls="profile-2" aria-selected="false">Юридическое лицо</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent-2">
+                                        <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
+                                            <div class="text m ubuntu gray-100 mt__20">
+                                                <form>
+                                                    <div class="row mb__30">
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputEmail1">Имя*</label>
+                                                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputPassword1">Фамилия*</label>
+                                                              <input type="text" class="form-control error" id="exampleInputPassword1" placeholder="Семенов">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputEmail2">Телефон для связи*</label>
+                                                              <input type="tel" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputPassword2">Электронная почта</label>
+                                                              <input type="email" class="form-control" id="exampleInputPassword2" placeholder="semen_semenov@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
+                                            <div class="text m ubuntu gray-100 mt__20">
+                                                <form>
+                                                    <div class="row mb__30">
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputEmail3">Имя*</label>
+                                                              <input type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputPassword3">Фамилия*</label>
+                                                              <input type="text" class="form-control error" id="exampleInputPassword3" placeholder="Семенов">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb__30">
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputEmail4">Телефон для связи*</label>
+                                                              <input type="tel" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputPassword4">Электронная почта</label>
+                                                              <input type="email" class="form-control" id="exampleInputPassword4" placeholder="semen_semenov@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb__30">
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputEmail5">Наименование</label>
+                                                              <input type="tel" class="form-control" id="exampleInputEmail5" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputPassword6">ИНН</label>
+                                                              <input type="email" class="form-control" id="exampleInputPassword6" placeholder="semen_semenov@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputEmail6">КПП</label>
+                                                              <input type="tel" class="form-control" id="exampleInputEmail6" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group custom">
+                                                              <label for="exampleInputPassword7">Юр. адрес</label>
+                                                              <input type="email" class="form-control" id="exampleInputPassword7" placeholder="semen_semenov@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="checkout bg__pink mb__20 sticky">
+                        <div class="mb__20">
+                            <div class="text m montserrat gray-100 d-flex justify-content-between align-items-center mb__10">
+                                <span class="text-left mr__10">Кирпич силикатный:</span>
+                                <span class="text xl text-right">160 854 руб.</span>
+                            </div>
+                            <div class="text m montserrat gray-100 d-flex justify-content-between align-items-center">
+                                <span class="text-left mr__10">Упаковка:</span>
+                                <span class="text xl text-right">14 754 руб.</span>
+                            </div>
+                        </div>
+                        <div class="mb__10">
+                            <div class="text xxl montserrat-bold black d-flex justify-content-between align-items-center">
+                                <span class="text-left mr__10">Итого:</span>
+                                <span class="text xxxl text-right">175 599 руб.</span>
+                            </div>
+                        </div>
+                        <div class="mb__25">
+                            <div class="text s ubuntu-300 black d-flex justify-content-between align-items-center mb__5">
+                                <span class="text-left mr__10">В том числе НДС (20%)</span>
+                                <span class="text s text-right">29 266 руб.</span>
+                            </div>
+                            <div class="text s ubuntu-300 black d-flex justify-content-between align-items-center">
+                                <span class="text-left mr__10">*без учета стоимости раствора и доставки</span>
+                            </div>
+                        </div>
+                        <div class="mb__15">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label text s ubuntu gray-50" for="customControlAutosizing">Согласен с условиями
+                                    <span><a href="#" class="link text gray-50 underline">публичной оферты</a></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout-button">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="button red text-uppercase text m ubuntu-500 w-100 mr-md__10">оформить заказ</div>
+                                <a href="#" class="button download d-lg-none d-md-block d-sm-block d-block"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="row mb__15">
+                        <div class="col">
+                            <div class="text xxl white montserrat">Меню:</div>
+                        </div>
+                    </div>
+                    <div class="row mb__40">
+                        <div class="col-6 d-flex flex-column">
+                            <a class="link gray text m ubuntu mb__10" href="">Главная страница</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Каталог продукции</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Акции</a>
+                            <a class="link gray text m ubuntu" href="">О компании</a>
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <a class="link gray text m ubuntu mb__10" href="">Доставка</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Галерея</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Контакты</a>
+                            <a class="link gray text m ubuntu" href="">Частые вопросы</a>
+                        </div>
+                    </div>
+                    <div class="row mb__20 d-lg-block d-md-block d-sm-none d-none">
+                        <div class="col">
+                            <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
+                                продукции.<br />Все права защищены. Доставка по всей России.</div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center d-lg-block d-md-block d-sm-none d-none">
+                        <div class="col">
+                            <span class="mr__15">
+                                <i class="icon visa"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mastercard"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mir"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-left text-md-right text-lg-right text-sm-left">
+                    <div class="row mb__15">
+                        <div class="col">
+                            <a href="tel:+78452393315" class="text white montserrat">
+                                <span>+7 (8452) </span>
+                                <span class="text montserrat-bold">39-33-15</span>
+                            </a>
+                            <div class="text m gray-1 ubuntu">
+                                Администрация
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__15">
+                        <div class="col">
+                            <a href="tel:+79120991104" class="text white montserrat">
+                                <span>+7 (9120) </span>
+                                <span class="text montserrat-bold">99-11-04</span>
+                            </a>
+                            <div class="text m gray-1 ubuntu">
+                                Отдел продаж
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__30">
+                        <div class="col">
+                            <a href="mailto:szsm2019@mail.ru" class="text white montserrat">
+                                szsm2019@mail.ru
+                            </a>
+                            <div class="text m gray-1 ubuntu">
+                                E-mail для связи
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-sm__30">
+                        <div class="col d-flex justify-content-center  justify-content-lg-end justify-content-md-end  justify-content-sm-center">
+                            <a class="link gray d-flex flex-column align-items-center mr__20" href="">
+                                <i class="icon inst gray mb__5"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a class="link gray d-flex flex-column align-items-center mr__20" href="">
+                                <i class="icon whatsapp gray mb__5"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a class="link gray d-flex flex-column align-items-center" href="">
+                                <i class="icon viber gray mb__5"></i>
+                                <span>Viber</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb__20 d-lg-none d-md-none d-sm-block d-block text-center">
+                        <div class="col">
+                            <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
+                                продукции. Все права защищены. Доставка по всей России.</div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center d-lg-none d-md-none d-sm-block d-block text-center">
+                        <div class="col">
+                            <span class="mr__15">
+                                <i class="icon visa"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mastercard"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mir"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -5,8 +5,8 @@
         font-size: 26px
         line-height: 32px
     &.xxl
-        font-size: 20px
-        line-height: 19px
+        font-size: 20px !important
+        line-height: 19px !important
     &.xl
         font-size: 18px
         line-height: 26px 
@@ -31,14 +31,18 @@
         font-family: $montserrat
         font-style: normal
         font-weight: bold
+    &.montserrat-normal
+        font-family: $montserrat
+        font-style: normal
+        font-weight: normal
     &.montserrat
         font-family: $montserrat
         font-style: normal
         font-weight: 500
     &.ubuntu
-        font-family: $ubuntu
-        font-style: normal
-        font-weight: normal
+        font-family: $ubuntu !important
+        font-style: normal !important
+        font-weight: normal !important
     &.ubuntu-500
         font-family: $ubuntu
         font-style: normal
@@ -90,4 +94,9 @@
 .gray-2
     color: #777777 !important
     -webkit-text-stroke-color: #777777 !important
-        
+
+.green
+    color: #559A3D
+
+.yellow
+    color: #E4CB44
