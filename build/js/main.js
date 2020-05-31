@@ -292,8 +292,11 @@ function buttonBasket() {
 
 // двойной клик на корзину
 function goToPage() {
-  $('.checkout-button__basket').on('dblclick', function() {
-    document.location.href = "../index.html";
+  $('.checkout-button__basket ').on('dblclick', function() {
+    document.location.href = "basket.html";
+  })
+  $('.catalog-item__basket ').on('dblclick', function() {
+    document.location.href = "basket.html";
   })
 }
 // tooltip
