@@ -69,3 +69,30 @@
         padding: 15px 0
         background: #F6F6F6
         border-bottom: 1px solid #DFC3C7
+        &__button
+            
+        &__content
+            display: none
+            position: absolute
+            z-index: 999
+            top: 71px
+            right: 0
+            left: 0
+            background: #F7F7F7
+            padding-bottom: 25px
+            &.active
+                display: block
+            &-item
+                position: relative
+                width: 100%
+                padding: 20px 0
+                border-bottom: 1px solid #DFC3C7
+                &:last-child
+                    border-bottom: 0
+                    padding-bottom: 0
+        
+        &__close
+            position: absolute
+            z-index: 100
+            right: 0
+            top: 0

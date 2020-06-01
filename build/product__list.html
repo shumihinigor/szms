@@ -178,7 +178,72 @@
                         <option>По популярности</option>
                         <option>По рейтингу</option>
                     </select>
-                    <i class="icon filter"></i>
+                    <div class="filter-fixed__button">
+                        <i class="icon filter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-fixed__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="filter-fixed__close">
+                            <i class="icon close"></i>
+                        </div>
+                    </div>
+                    <div class="filter-fixed__content-item">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="text xl semi-bold gray-100 mb__15">Цена ₽</div>
+                            <div class="row d-flex mb__20">
+                                <div class="col">
+                                    <input type="text" class="form-control contour" placeholder="от 14" required="">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control contour" placeholder="до 22" required="">
+                                </div>
+                            </div>
+                            <input type="range" class="custom-range" min="0" max="100" value="50" id="customRange5"
+                                oninput="range();">
+                        </div>
+                    </div>
+                    <div class="filter-fixed__content-item">
+                        <div class="col-12">
+                            <div class="text xl semi-bold gray-100 mb__15">Цвет продукции</div>
+                            <div class="row d-flex mb__20">
+                                <div class="col d-flex flex-wrap">
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Неокрашенный <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Розовый <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Бирюзовый <span class="text s gray-50 montserrat ml__10">61</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Слоновая кость <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Благородная сталь <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-fixed__content-item">
+                        <div class="col-12">
+                            <div class="text m gray-50 montserrat text-center mb__10">
+                                Подобран 41 товар
+                            </div>
+                            <div class="button red text m text-uppercase w-100 mb__10">
+                                Показать
+                            </div>
+                            <div class="button contour text m text-uppercase w-100">
+                                Сбросить фильтр
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,14 +377,15 @@
                                 <div class="filter-display ml-auto d-flex align-items-center justify-content-end">
                                     <div class="text m montserrat gray-100 mr__15">Вид:</div>
                                     <div class="filter-display__item">
-                                        <i class="icon list"></i>
-                                        <i class="icon table active"></i>
+                                        <i class="icon list active"></i>
+                                        <i class="icon table"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-2">
+                    <div id="table" class="row row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-2"
+                        style="display: none;">
                         <div class="col mb__10">
                             <a href="product__card.html" class="catalog-item">
                                 <div class="catalog-item__bg">
@@ -441,12 +507,338 @@
                             </div>
                         </div>
                     </div>
+                    <div id="list" class="row row-cols-xl-1 row-cols-lg-1 row-cols-md-1 row-cols-1">
+                        <div class="col mb__10">
+                            <div class="basket-item row">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                                    <div class="basket-image mb-sm__20">
+                                        <img src="images/basket1-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-8 col-8">
+                                    <div class="row mb__15">
+                                        <div class="col">
+                                            <div class="basket-title text l gray-100 semi-bold mb__10">Кирпич силикатный
+                                                цветной</div>
+                                            <div class="basket-price text xxl black montserrat-bold">10 330 руб.</div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="d-flex align-items-center mb__20">
+                                                <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                                <select class="form-control ml-auto" id="exampleFormControlSelect1">
+                                                    <option>1 пачка</option>
+                                                    <option>2 пачки</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb__15">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange3" oninput="range();"
+                                                style="background: -webkit-linear-gradient(left, rgb(130, 76, 79) 0%, rgb(130, 76, 79) 50%, rgb(223, 195, 199) 50%, rgb(223, 195, 199) 100%);">
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb-sm__30">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <div class="d-flex align-items-center mb__10">
+                                                <div class="text m gray-100 montserrat mr__15">Упаковка</div>
+                                                <div class="d-flex align-items-center ml-auto">
+                                                    <div class="button pink medium mr__10 text m semi-bold">Да</div>
+                                                    <div class="button contour medium text m semi-bold">Нет</div>
+                                                </div>
+                                            </div>
+                                            <div class="text s ubuntu-300 black d-flex ">
+                                                <span class="mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                                <span data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Tooltip on top"><i
+                                                        class="icon prompt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-lg-none d-md-none d-sm-block d-block mb-sm__20">
+                                    <div class="row ">
+                                        <div class="col-lg-8 col-md-8 col-xs-12">
+                                            <div class="d-flex align-items-center mb__20">
+                                                <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icon minus"></i>
+                                                    <input type="text" class="form-control contour w-50 ml__10 mr__10"
+                                                        placeholder="1 пачка" required="">
+                                                    <i class="icon plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-xs-12">
+                                            <div class="d-flex align-items-center mb__10">
+                                                <div class="text m gray-100 montserrat mr__15">Упаковка</div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="button pink medium mr__10 text m semi-bold">Да</div>
+                                                    <div class="button contour medium text m semi-bold">Нет</div>
+                                                </div>
+                                            </div>
+                                            <div class="text s ubuntu-300 black d-flex ">
+                                                <span class="mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                                <span data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Tooltip on top"><i
+                                                        class="icon prompt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="catalog__list-item d-flex flex-column">
+                                        <div class="mb__25">
+                                            <div class="mb__15">
+                                                <div class="text xxxl montserrat-bold burgundy-100">13,6 руб.</div>
+                                                <div class="text s ubuntu-300 black">Стоимость за штуку*</div>
+                                            </div>
+                                            <div class="mb__15">
+                                                <div class="text xxxl montserrat-bold burgundy-50">13,6 руб.</div>
+                                                <div class="text s ubuntu-300 black">Стоимость за штуку*</div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-button mt-auto">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="button red text-uppercase text m ubuntu-500 w-100 mr__10">
+                                                    Заказать</div>
+                                                <a href="javascript: goToPage();"
+                                                    class="button contour checkout-button__basket"><i
+                                                        class="icon basket"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb__10">
+                            <div class="basket-item row">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                                    <div class="basket-image mb-sm__20">
+                                        <img src="images/basket1-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-8 col-8">
+                                    <div class="row mb__15">
+                                        <div class="col">
+                                            <div class="basket-title text l gray-100 semi-bold mb__10">Кирпич силикатный
+                                                цветной</div>
+                                            <div class="basket-price text xxl black montserrat-bold">10 330 руб.</div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="d-flex align-items-center mb__20">
+                                                <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                                <select class="form-control ml-auto" id="exampleFormControlSelect1">
+                                                    <option>1 пачка</option>
+                                                    <option>2 пачки</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb__15">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange3" oninput="range();"
+                                                style="background: -webkit-linear-gradient(left, rgb(130, 76, 79) 0%, rgb(130, 76, 79) 50%, rgb(223, 195, 199) 50%, rgb(223, 195, 199) 100%);">
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb-sm__30">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <div class="d-flex align-items-center mb__10">
+                                                <div class="text m gray-100 montserrat mr__15">Упаковка</div>
+                                                <div class="d-flex align-items-center ml-auto">
+                                                    <div class="button pink medium mr__10 text m semi-bold">Да</div>
+                                                    <div class="button contour medium text m semi-bold">Нет</div>
+                                                </div>
+                                            </div>
+                                            <div class="text s ubuntu-300 black d-flex ">
+                                                <span class="mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                                <span data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Tooltip on top"><i
+                                                        class="icon prompt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-lg-none d-md-none d-sm-block d-block mb-sm__20">
+                                    <div class="row ">
+                                        <div class="col-lg-8 col-md-8 col-xs-12">
+                                            <div class="d-flex align-items-center mb__20">
+                                                <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icon minus"></i>
+                                                    <input type="text" class="form-control contour w-50 ml__10 mr__10"
+                                                        placeholder="1 пачка" required="">
+                                                    <i class="icon plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-xs-12">
+                                            <div class="d-flex align-items-center mb__10">
+                                                <div class="text m gray-100 montserrat mr__15">Упаковка</div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="button pink medium mr__10 text m semi-bold">Да</div>
+                                                    <div class="button contour medium text m semi-bold">Нет</div>
+                                                </div>
+                                            </div>
+                                            <div class="text s ubuntu-300 black d-flex ">
+                                                <span class="mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                                <span data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Tooltip on top"><i
+                                                        class="icon prompt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="catalog__list-item d-flex flex-column">
+                                        <div class="mb__25">
+                                            <div class="mb__15">
+                                                <div class="text xxxl montserrat-bold burgundy-100">13,6 руб.</div>
+                                                <div class="text s ubuntu-300 black">Стоимость за штуку*</div>
+                                            </div>
+                                            <div class="mb__15">
+                                                <div class="text xxxl montserrat-bold burgundy-50">13,6 руб.</div>
+                                                <div class="text s ubuntu-300 black">Стоимость за штуку*</div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-button mt-auto">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="button red text-uppercase text m ubuntu-500 w-100 mr__10">
+                                                    Заказать</div>
+                                                <a href="javascript: goToPage();"
+                                                    class="button contour checkout-button__basket"><i
+                                                        class="icon basket"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb__10">
+                            <div class="basket-item row">
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                                    <div class="basket-image mb-sm__20">
+                                        <img src="images/basket1-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-8 col-8">
+                                    <div class="row mb__15">
+                                        <div class="col">
+                                            <div class="basket-title text l gray-100 semi-bold mb__10">Кирпич силикатный
+                                                цветной</div>
+                                            <div class="basket-price text xxl black montserrat-bold">10 330 руб.</div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="d-flex align-items-center mb__20">
+                                                <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                                <select class="form-control ml-auto" id="exampleFormControlSelect1">
+                                                    <option>1 пачка</option>
+                                                    <option>2 пачки</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb__15">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange3" oninput="range();"
+                                                style="background: -webkit-linear-gradient(left, rgb(130, 76, 79) 0%, rgb(130, 76, 79) 50%, rgb(223, 195, 199) 50%, rgb(223, 195, 199) 100%);">
+                                        </div>
+                                    </div>
+                                    <div class="row d-lg-block d-md-block d-sm-none d-none mb-sm__30">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <div class="d-flex align-items-center mb__10">
+                                                <div class="text m gray-100 montserrat mr__15">Упаковка</div>
+                                                <div class="d-flex align-items-center ml-auto">
+                                                    <div class="button pink medium mr__10 text m semi-bold">Да</div>
+                                                    <div class="button contour medium text m semi-bold">Нет</div>
+                                                </div>
+                                            </div>
+                                            <div class="text s ubuntu-300 black d-flex ">
+                                                <span class="mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                                <span data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Tooltip on top"><i
+                                                        class="icon prompt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-lg-none d-md-none d-sm-block d-block mb-sm__20">
+                                    <div class="row ">
+                                        <div class="col-lg-8 col-md-8 col-xs-12">
+                                            <div class="d-flex align-items-center mb__20">
+                                                <div class="text m gray-100 montserrat mr__15">Количество:</div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icon minus"></i>
+                                                    <input type="text" class="form-control contour w-50 ml__10 mr__10"
+                                                        placeholder="1 пачка" required="">
+                                                    <i class="icon plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-xs-12">
+                                            <div class="d-flex align-items-center mb__10">
+                                                <div class="text m gray-100 montserrat mr__15">Упаковка</div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="button pink medium mr__10 text m semi-bold">Да</div>
+                                                    <div class="button contour medium text m semi-bold">Нет</div>
+                                                </div>
+                                            </div>
+                                            <div class="text s ubuntu-300 black d-flex ">
+                                                <span class="mr__10">*Стоимость упаковки — 700 руб. за пачку</span>
+                                                <span data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Tooltip on top"><i
+                                                        class="icon prompt"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="catalog__list-item d-flex flex-column">
+                                        <div class="mb__25">
+                                            <div class="mb__15">
+                                                <div class="text xxxl montserrat-bold burgundy-100">13,6 руб.</div>
+                                                <div class="text s ubuntu-300 black">Стоимость за штуку*</div>
+                                            </div>
+                                            <div class="mb__15">
+                                                <div class="text xxxl montserrat-bold burgundy-50">13,6 руб.</div>
+                                                <div class="text s ubuntu-300 black">Стоимость за штуку*</div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-button mt-auto">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="button red text-uppercase text m ubuntu-500 w-100 mr__10">
+                                                    Заказать</div>
+                                                <a href="javascript: goToPage();"
+                                                    class="button contour checkout-button__basket"><i
+                                                        class="icon basket"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- НЕ Доставка -->
+    <!-- Преимущества -->
     <section class="advantage bg__burgundy-50 mb__70">
         <div class="container">
             <div class="row row-cols-xl-6 row-cols-lg-3 row-cols-md-3 row-cols-2 slider-advantage">
@@ -529,7 +921,125 @@
         </div>
     </section>
 
-
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="row mb__15">
+                        <div class="col">
+                            <div class="text xxl white montserrat">Меню:</div>
+                        </div>
+                    </div>
+                    <div class="row mb__40">
+                        <div class="col-6 d-flex flex-column">
+                            <a class="link gray text m ubuntu mb__10" href="">Главная страница</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Каталог продукции</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Акции</a>
+                            <a class="link gray text m ubuntu" href="">О компании</a>
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <a class="link gray text m ubuntu mb__10" href="">Доставка</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Галерея</a>
+                            <a class="link gray text m ubuntu mb__10" href="">Контакты</a>
+                            <a class="link gray text m ubuntu" href="">Частые вопросы</a>
+                        </div>
+                    </div>
+                    <div class="row mb__20 d-lg-block d-md-block d-sm-none d-none">
+                        <div class="col">
+                            <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
+                                продукции.<br />Все права защищены. Доставка по всей России.</div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center d-lg-block d-md-block d-sm-none d-none">
+                        <div class="col">
+                            <span class="mr__15">
+                                <i class="icon visa"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mastercard"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mir"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-left text-md-right text-lg-right text-sm-left">
+                    <div class="row mb__15">
+                        <div class="col">
+                            <a href="tel:+78452393315" class="text white montserrat">
+                                <span>+7 (8452) </span>
+                                <span class="text montserrat-bold">39-33-15</span>
+                            </a>
+                            <div class="text m gray-1 ubuntu">
+                                Администрация
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__15">
+                        <div class="col">
+                            <a href="tel:+79120991104" class="text white montserrat">
+                                <span>+7 (9120) </span>
+                                <span class="text montserrat-bold">99-11-04</span>
+                            </a>
+                            <div class="text m gray-1 ubuntu">
+                                Отдел продаж
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__30">
+                        <div class="col">
+                            <a href="mailto:szsm2019@mail.ru" class="text white montserrat">
+                                szsm2019@mail.ru
+                            </a>
+                            <div class="text m gray-1 ubuntu">
+                                E-mail для связи
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-sm__30">
+                        <div class="col d-flex justify-content-center  justify-content-lg-end justify-content-md-end  justify-content-sm-center">
+                            <a class="link gray d-flex flex-column align-items-center mr__20" href="">
+                                <i class="icon inst gray mb__5"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a class="link gray d-flex flex-column align-items-center mr__20" href="">
+                                <i class="icon whatsapp gray mb__5"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a class="link gray d-flex flex-column align-items-center" href="">
+                                <i class="icon viber gray mb__5"></i>
+                                <span>Viber</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb__20 d-lg-none d-md-none d-sm-block d-block text-center">
+                        <div class="col">
+                            <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
+                                продукции. Все права защищены. Доставка по всей России.</div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center d-lg-none d-md-none d-sm-block d-block text-center">
+                        <div class="col">
+                            <span class="mr__15">
+                                <i class="icon visa"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mastercard"></i>
+                            </span>
+                            <span class="mr__15">
+                                <i class="icon mir"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="top"></div>
+    <!-- footer end -->
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>

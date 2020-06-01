@@ -20,7 +20,11 @@
 
 .border
     &-burgundy-25
-        border: 1px solid $burgundy-25
+        border-color: 1px solid $burgundy-25 !important
+    @media screen and ( max-width: 767px )
+        &-sm
+            &__0
+                border: 0
 
 .map
     width: 100%
@@ -75,3 +79,31 @@ button.close
     @media screen and ( max-width: 991px )
         position: relative !important
         
+.top
+    position: fixed
+    z-index: 9999
+    bottom: 30px
+    left: 50px
+    width: 50px
+    height: 50px
+    background: #552225
+    border-radius: 50%
+    cursor: pointer
+    @media screen and ( max-width: 767px )
+        left: 30px
+    &:hover
+        box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4)
+    &::before
+        content: ''
+        position: absolute
+        top: -3px
+        bottom: 0
+        right: 0
+        left: 0
+        margin: auto
+        width: 22px
+        height: 13px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAANCAYAAACtpZ5jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABoSURBVHgBrcyBCYAwDATAjNKR3EA3sSO4kaM4SkzBYikNTb55eAJ5OCJjmPmQbhQZAU/+s1NEOjQGV9A1fIBe0mcJH6D5+ycY19Bm9+MzFMKtqAv3oiYcRad4gVBUwctNdcgo2uF3RV9siJpPVtWR0wAAAABJRU5ErkJggg==)

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   calculator();
   navigation();
   menuMobile();
@@ -18,9 +18,12 @@ $(document).ready(function() {
   tooltip();
   removeBasketItem();
   deleteImage();
+  scrollTop();
+  filterList();
+  filterMobild();
 });
 
-$(window).on('resize', function() {
+$(window).on('resize', function () {
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
   menuMobile();
@@ -31,22 +34,6 @@ function navigation() {
   $('.header-link__item').on('click', function () {
     $('.header-link__item').removeClass('active')
     $(this).addClass('active')
-  })
-}
-
-// меню на мобилке
-function menuMobile() {
-  let heightNav = $('.header-nav').height()
-  let heightHeader = $('.header').height()
-  $('.header-nav').css('top', -heightNav)
-
-  $('.navbar-toggler.menu').on('click', function () {
-    $('.header-nav').toggleClass('active')
-    if ($('.header-nav').hasClass('active')) {
-      $('.header-nav').css('top', heightHeader + 20)
-    } else {
-      $('.header-nav').css('top', -heightNav)
-    }
   })
 }
 
@@ -62,17 +49,17 @@ function sliderMain() {
   var $sliderMain = $('.slider-main');
   var $progressBarMain = $('.slider-main + .container .progress-wrapper .progress');
   var $progressBarLabelMain = $('.slider__label');
-  
+
   $sliderMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
-  
+
     $progressBarMain
       .css('background-size', calc + '% 100%')
       .attr('aria-valuenow', calc);
-  
+
     $progressBarLabelMain.text(calc + '% completed');
   });
-  
+
   $sliderMain.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -89,17 +76,17 @@ function sliderReviews() {
   var $sliderReviews = $('.slider-reviews');
   var $progressBarReviews = $('.slider-reviews + .progress-wrapper .progress');
   var $progressBarLabelReviews = $('.slider__label');
-  
+
   $sliderReviews.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
-  
+
     $progressBarReviews
       .css('background-size', calc + '% 100%')
       .attr('aria-valuenow', calc);
-  
+
     $progressBarLabelReviews.text(calc + '% completed');
   });
-  
+
   $sliderReviews.slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -191,7 +178,7 @@ function sliderStocks() {
 
 function sliderProducts() {
   var $sliderProducts = $('.slider-products');
-  
+
   $sliderProducts.slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -249,7 +236,7 @@ function calculator() {
 
 // хлебные крошки
 function breadcrumbs() {
-  $('.breadcrumb-item').on('click', function() {
+  $('.breadcrumb-item').on('click', function () {
     $('.breadcrumb-item').removeClass('active')
     $(this).addClass('active')
   })
@@ -257,68 +244,70 @@ function breadcrumbs() {
 
 // custom range
 function range() {
-  var
-      val = $('.custom-range').val();
+  var val = $('.custom-range').val();
   $('.custom-range').css({
-      'background': '-webkit-linear-gradient(left ,rgb(130, 76, 79) 0%,rgb(130, 76, 79) ' + val + '%,#DFC3C7 ' + val +
-          '%, #DFC3C7 100%)'
+    'background': '-webkit-linear-gradient(left ,rgb(130, 76, 79) 0%,rgb(130, 76, 79) ' + val + '%,#DFC3C7 ' + val +
+      '%, #DFC3C7 100%)'
   });
 }
 
 function filterItem() {
-  $('.filter-item').on('click', function() {
+  $('.filter-item').on('click', function () {
     $('.filter-item').removeClass('active')
     $(this).toggleClass('active')
-    $(this).toggleClass(function(){
+    $(this).toggleClass(function () {
       return $(this).is('.up, .down') ? 'up down' : 'up';
     })
     return;
   })
-  $('.filter-display__item').find('.icon').on('click', function() {
+  $('.filter-display__item').find('.icon').on('click', function () {
     $('.filter-display__item').find('.icon').removeClass('active')
     $(this).addClass('active')
   })
-  $('.filter-fixed').find('.icon').on('click', function() {
+  $('.filter-fixed').find('.icon').on('click', function () {
     $(this).toggleClass('active')
   })
 }
 
 // корзина оформления заказа
 function buttonBasket() {
-  $('.checkout-button__basket').on('click', function() {
+  $('.checkout-button__basket').on('click', function () {
     $(this).toggleClass('active')
   })
 }
 
 // двойной клик на корзину
 function goToPage() {
-  $('.checkout-button__basket ').on('dblclick', function() {
+  $('.checkout-button__basket ').on('dblclick', function () {
     document.location.href = "basket.html";
   })
-  $('.catalog-item__basket ').on('dblclick', function() {
+  $('.catalog-item__basket ').on('dblclick', function () {
     document.location.href = "basket.html";
   })
 }
 // tooltip
 function tooltip() {
-  $('[data-toggle="tooltip"]').tooltip({ boundary: 'window' })
+  $('[data-toggle="tooltip"]').tooltip({
+    boundary: 'window'
+  })
 }
 
 // удаление позиции из корзины
 function removeBasketItem() {
-  $('.basket-remove').on('click', function() {
+  $('.basket-remove').on('click', function () {
     $(this).parent().hide('slow');
   })
 }
 
 // удаление картинки из модалки
 function deleteImage() {
-  $('.icon.remove').on('click', function() {
+  $('.icon.remove').on('click', function () {
     $(this).parent().hide()
   })
 }
 
 // слайдер на доставку 
+
 // слайдер на главной с акциями
 function sliderDelivery() {
   if (window.innerWidth <= 991) {
@@ -347,4 +336,106 @@ function sliderDelivery() {
       ]
     });
   }
+}
+
+// scroll top
+function scrollTop() {
+  // появление/затухание кнопки #back-top
+  $(function () {
+    // прячем кнопку #back-top
+    $(".top").hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $(".top").fadeIn();
+      } else {
+        $(".top").fadeOut();
+      }
+    });
+    // при клике на ссылку плавно поднимаемся вверх
+    $(".top").click(function () {
+      $("body,html").animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+}
+
+// меню на мобилке
+function menuMobile() {
+  let heightNav = $('.header-nav').height() + 40
+  let heightHeader = $('.header').height()
+  $('.header-nav').css('top', -heightNav)
+
+  $('.navbar-toggler.menu').on('click', function () {
+    $('.header-nav').toggleClass('active')
+    if ($('.header-nav').hasClass('active')) {
+      $('.header-nav').css('top', heightHeader + 20)
+    } else {
+      $('.header-nav').css('top', -heightNav)
+    }
+  })
+}
+
+// scroll menu
+$(window).scroll(function () {
+  
+  let heightNav = $('.header-nav').height() + 40
+  let scrollTop = $(this).scrollTop();
+
+  if ($(this).scrollTop() > 52) {
+    if ($(this).innerWidth() >= 992) {
+      $(".header").css(
+        {
+          'position': 'sticky',
+          'left': '0px',
+          'right': '0px',
+          // 'top': (scrollTop - heightNav),
+        }
+      );
+    } else {
+      $(".header").css(
+        {
+          'position': 'sticky',
+          'left': '0px',
+          'right': '0px',
+          // 'top': scrollTop,
+        }
+      );
+      $('.header-nav').css({
+        // 'top': -heightNav,
+        // 'position': 'fixed',
+      })
+    }
+  } else {
+    $(".header").css(
+      {
+        'position': 'sticky',
+        'top': '0px',
+      }
+    );
+  }
+});
+
+// фильтр Список - Таблица
+function filterList() {
+  $('.icon.list').on('click', function() {
+    $('#table').hide()
+    $('#list').show()
+  })
+  $('.icon.table').on('click', function() {
+    $('#list').hide()
+    $('#table').show()
+  })
+}
+
+// фильтр на мобилке
+function filterMobild() {
+  $('.filter-fixed__button').on('click', function() {
+    $('.filter-fixed__content').addClass('active')
+  })
+  $('.filter-fixed__close').on('click', function() {
+    $('.icon.filter').removeClass('active')
+    $('.filter-fixed__content').removeClass('active')
+  })
 }
