@@ -25,6 +25,12 @@
   }
 }
 
+@media screen and (max-width: 991px) {
+  .breadcrumb {
+    display: none !important;
+  }
+}
+
 .bg__white {
   background-color: #FFFFFF !important;
 }
@@ -163,6 +169,7 @@ button.close:focus {
 
 @media screen and (max-width: 767px) {
   .top {
+    display: none !important;
     left: 30px;
   }
 }
@@ -3217,6 +3224,7 @@ body.compensate-for-scrollbar {
 
 .header-contacts {
   position: relative;
+  z-index: 1;
   padding: 15px 0;
   background: #F8F8F8;
   -webkit-box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4);
@@ -3224,33 +3232,27 @@ body.compensate-for-scrollbar {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   padding: 30px 0;
   height: 334px;
   background: #333333;
-  bottom: -334px;
-  left: 0;
-  right: 0;
 }
 
 @media screen and (max-width: 991px) {
   .footer {
     height: 354px;
-    bottom: -354px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer {
     height: 630px;
-    bottom: -630px;
   }
 }
 
 @media screen and (max-width: 424px) {
   .footer {
     height: 650px;
-    bottom: -650px;
   }
 }
 

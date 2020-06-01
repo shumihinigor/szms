@@ -7,7 +7,9 @@
     @media screen and ( max-width: 424px )
         min-height: calc(100vh - 650px)
     
-
+.breadcrumb
+    @media screen and ( max-width: 991px )
+        display: none !important
     
 .bg
     &__white
@@ -101,6 +103,7 @@ button.close
     border-radius: 50%
     cursor: pointer
     @media screen and ( max-width: 767px )
+        display: none !important
         left: 30px
     &:hover
         box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4)

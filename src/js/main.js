@@ -24,6 +24,14 @@ $(document).ready(function () {
   height();
 });
 
+
+$(window).on('resize', function () {
+  $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
+  $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
+  menuMobile();
+  height();
+});
+
 // высота плашек в отзывах
 function height() {
   
@@ -36,17 +44,10 @@ function height() {
     });
     
     var heightItem = maxHeightElement.height() + 40;
-
     $('.slider-reviews__item').css('height', heightItem)
 
+
 }
-
-
-$(window).on('resize', function () {
-  $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
-  $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
-  menuMobile();
-});
 
 // ссылки в навигации
 function navigation() {
@@ -216,6 +217,15 @@ function sliderProducts() {
       },
       {
         breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '50px',
+          // dots: true
+        }
+      },{
+        breakpoint: 449,
         settings: {
           slidesToShow: 1,
           arrows: false,
