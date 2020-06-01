@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  calculator();
+  scrollTop();
+  // calculator();
   navigation();
   menuMobile();
   basketCatalog();
@@ -18,7 +19,6 @@ $(document).ready(function () {
   tooltip();
   removeBasketItem();
   deleteImage();
-  scrollTop();
   filterList();
   filterMobild();
 });

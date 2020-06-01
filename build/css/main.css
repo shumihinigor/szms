@@ -3425,6 +3425,7 @@ body.compensate-for-scrollbar {
 
 .catalog-item__image {
   position: relative;
+  display: block;
   margin-left: -15px;
   margin-top: -19px;
   width: -webkit-calc(100% + 30px);
@@ -3470,7 +3471,7 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   right: 14px;
-  top: 50%;
+  top: 40%;
   width: 40px;
   height: 40px;
   padding: 5px 7px 6px 7px;
@@ -3480,12 +3481,6 @@ body.compensate-for-scrollbar {
   -webkit-box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4);
           box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4);
   cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  .catalog-item__basket {
-    top: 40%;
-  }
 }
 
 .catalog-item__basket .icon.basket {
@@ -4089,6 +4084,7 @@ body.compensate-for-scrollbar {
 }
 
 .basket-image {
+  display: block;
   max-width: 167px;
   max-height: 160px;
 }
