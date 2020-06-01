@@ -21,7 +21,26 @@ $(document).ready(function () {
   deleteImage();
   filterList();
   filterMobild();
+  height();
 });
+
+// высота плашек в отзывах
+function height() {
+  
+  var maxHeight = 0, maxHeightElement = null;
+  $('.slider-reviews__item').each(function(){
+   if ($(this).height() > maxHeight) {
+       maxHeight = $(this).height();
+       maxHeightElement = $(this);
+      }
+    });
+    
+    var heightItem = maxHeightElement.height() + 40;
+
+    $('.slider-reviews__item').css('height', heightItem)
+
+}
+
 
 $(window).on('resize', function () {
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
@@ -112,6 +131,8 @@ function sliderReviews() {
       },
     ]
   });
+  
+
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
 }
@@ -185,7 +206,7 @@ function sliderProducts() {
     speed: 400,
     arrows: true,
     responsive: [{
-        breakpoint: 992,
+        breakpoint: 991,
         settings: {
           slidesToShow: 4,
           centerMode: true,
@@ -196,7 +217,7 @@ function sliderProducts() {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
           centerMode: true,
           centerPadding: '50px',

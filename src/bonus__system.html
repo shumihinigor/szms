@@ -12,132 +12,134 @@
 
 <body class="">
 
-    <!-- header -->
-    //= template/header.html
-    <!-- header end -->
+    <div class="content">
 
-    <!-- breadcrumbs -->
-    //= template/breadcrumbs.html
-    <!-- breadcrumbs end -->
+        <!-- header -->
+        //= template/header.html
+        <!-- header end -->
 
-    <!-- breadcrumbs -->
-    //= template/come__back.html
-    <!-- breadcrumbs end -->
+        <!-- breadcrumbs -->
+        //= template/breadcrumbs.html
+        <!-- breadcrumbs end -->
 
-    <section class="mb__50">
-        <div class="container">
-            <div class="row mb__40 mt-md__20">
-                <div class="col">
-                    <h1 class="h1 text burgundy-100">Бонусная система</h1>
+        <!-- breadcrumbs -->
+        //= template/come__back.html
+        <!-- breadcrumbs end -->
+
+        <section class="mb__50">
+            <div class="container">
+                <div class="row mb__40 mt-md__20">
+                    <div class="col">
+                        <h1 class="h1 text burgundy-100">Бонусная система</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <ul class="nav nav-tabs" id="myTab-2" role="tablist">
-                        <li class="nav-item w-25 w-sm-50" role="presentation">
-                            <a class="nav-link active text xxl" id="home-tab-2" data-toggle="tab" href="#home-2" role="tab" aria-controls="home-2" aria-selected="false">Кирпич</a>
-                        </li>
-                        <li class="nav-item  w-25 w-sm-50" role="presentation">
-                            <a class="nav-link text xxl" id="profile-tab-2" data-toggle="tab" href="#profile-2" role="tab" aria-controls="profile-2" aria-selected="false">Газосиликат</a>
-                        </li>
-                        <!-- <li class="nav-item w-50" role="presentation">
-                            <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact-2" role="tab" aria-controls="contact" aria-selected="false"></a>
-                        </li> -->
-                    </ul>
-                    <div class="tab-content" id="myTabContent-2">
-                        <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
-                            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
-                                <div class="col mb__20">
-                                    <div class="text m ubuntu gray-100 mb__10">
-                                        Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs" id="myTab-2" role="tablist">
+                            <li class="nav-item w-25 w-sm-50" role="presentation">
+                                <a class="nav-link active text xxl" id="home-tab-2" data-toggle="tab" href="#home-2" role="tab" aria-controls="home-2" aria-selected="false">Кирпич</a>
+                            </li>
+                            <li class="nav-item  w-25 w-sm-50" role="presentation">
+                                <a class="nav-link text xxl" id="profile-tab-2" data-toggle="tab" href="#profile-2" role="tab" aria-controls="profile-2" aria-selected="false">Газосиликат</a>
+                            </li>
+                            <!-- <li class="nav-item w-50" role="presentation">
+                                <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact-2" role="tab" aria-controls="contact" aria-selected="false"></a>
+                            </li> -->
+                        </ul>
+                        <div class="tab-content" id="myTabContent-2">
+                            <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
+                                <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
+                                    <div class="col mb__20">
+                                        <div class="text m ubuntu gray-100 mb__10">
+                                            Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
+                                        </div>
+                                        <div class="text m ubuntu gray-100">
+                                            *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
+                                        </div>
                                     </div>
-                                    <div class="text m ubuntu gray-100">
-                                        *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <td>200 000 — 500 999</td>
+                                                    <td>9%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501 000 — 1 000 999</td>
+                                                    <td>12%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1 000 100 — 2 000 999</td>
+                                                    <td>14%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Свыше 2 000 999</td>
+                                                    <td>16%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <table class="table">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="text-center">
-                                            <tr>
-                                                <td>200 000 — 500 999</td>
-                                                <td>9%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>501 000 — 1 000 999</td>
-                                                <td>12%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1 000 100 — 2 000 999</td>
-                                                <td>14%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Свыше 2 000 999</td>
-                                                <td>16%</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
-                            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
-                                <div class="col mb__20">
-                                    <div class="text m ubuntu gray-100 mb__10">
-                                        Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
+                            <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
+                                <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
+                                    <div class="col mb__20">
+                                        <div class="text m ubuntu gray-100 mb__10">
+                                            Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
+                                        </div>
+                                        <div class="text m ubuntu gray-100">
+                                            *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
+                                        </div>
                                     </div>
-                                    <div class="text m ubuntu gray-100">
-                                        *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <td>200 000 — 500 999</td>
+                                                    <td>9%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501 000 — 1 000 999</td>
+                                                    <td>12%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1 000 100 — 2 000 999</td>
+                                                    <td>14%</td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td>Свыше 2 000 999</td>
+                                                    <td>16%</td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <table class="table">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="text-center">
-                                            <tr>
-                                                <td>200 000 — 500 999</td>
-                                                <td>9%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>501 000 — 1 000 999</td>
-                                                <td>12%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1 000 100 — 2 000 999</td>
-                                                <td>14%</td>
-                                            </tr>
-                                            <!-- <tr>
-                                                <td>Свыше 2 000 999</td>
-                                                <td>16%</td>
-                                            </tr> -->
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
-                        </div>
-                        <!-- <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab">
+                            <!-- <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab">
 
-                        </div> -->
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- footer -->
-    //= template/footer.html
-    <!-- footer end -->
-
+        <!-- footer -->
+        //= template/footer.html
+        <!-- footer end -->
+    </div>
 
 
     <script src="js/jquery.js"></script>

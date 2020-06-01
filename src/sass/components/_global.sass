@@ -1,15 +1,12 @@
-// fix footer
-
-html, body 
-  height: 100%
-
-body 
-  display: flex
-  flex-direction: column
-
-.footer 
-  flex-shrink: 0
-  margin-top: auto
+.content
+    min-height: calc(100vh - 334px)
+    @media screen and ( max-width: 991px )
+        min-height: calc(100vh - 354px)
+    @media screen and ( max-width: 767px )
+        min-height: calc(100vh - 630px)
+    @media screen and ( max-width: 424px )
+        min-height: calc(100vh - 650px)
+    
 
     
 .bg

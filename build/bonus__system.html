@@ -12,413 +12,415 @@
 
 <body class="">
 
-    <!-- header -->
-    <nav class="header-nav">
+    <div class="content">
+
+        <!-- header -->
+        <nav class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header-link">
+                            <a href="index.html" class="header-link__item active">Главная страница</a>
+                            <a href="catalog.html" class="header-link__item">Каталог продукции</a>
+                            <a href="stocks.html" class="header-link__item">Акции</a>
+                            <a href="about.html" class="header-link__item">О компании</a>
+                            <a href="delivery.html" class="header-link__item">Доставка</a>
+                            <a href="product__gallery.html" class="header-link__item">Галерея</a>
+                            <a href="contacts.html" class="header-link__item">Контакты</a>
+                            <a href="faq.html" class="header-link__item">Частые вопросы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <nav class="navbar navbar-expand-lg navbar-dark d-lg-none d-md-block">
+                            <button class="navbar-toggler menu" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <button class="navbar-toggler d-lg-none d-md-none d-sm-block" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
+                                <span class="icon search red"></span>
+                            </button>
+                        </nav>
+                        <a href="index.html" class="header-logo">
+                            <img src="images/image1-1.png" alt="">
+                        </a>
+                        <div class="header-search d-lg-block d-md-block d-none w-md-100 mr__20">
+                            <input class="form-control gray" type="text" placeholder="Поиск">
+                            <i class="icon search cursor-pointer"></i>
+                        </div>
+                        <div class="align-items-center ml-auto d-lg-flex d-none">
+                            <a href="tel:+78452393315" class="header-phone mr__35 gray-100 align-items-center d-flex align-items-center">
+                                <i class="icon phone mr__10"></i>
+                                <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
+                            </a>
+                            <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
+                                <i class="icon inst"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
+                                <i class="icon whatsapp"></i>
+                            </a>
+                            <a href="viber://chat?number=78452393315" target="_blank">
+                                <i class="icon viber"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex ml-sm__15 ml-auto">
+                            <a href="#" data-toggle="modal" data-target="#registration" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
+                                <i class="icon profile mb-sm__0"></i>
+                                <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
+                            </a>
+                            <a href="basket__empty.html" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
+                                <i class="icon basket mb-sm__0"></i>
+                                <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Корзина</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="header-contacts d-lg-none d-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
+                                <i class="icon inst"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
+                                <i class="icon whatsapp"></i>
+                            </a>
+                            <a href="viber://chat?number=78452393315" target="_blank">
+                                <i class="icon viber"></i>
+                            </a>
+                            <a href="tel:+78452393315" class="header-phone gray-2 d-flex align-items-center ml-auto">
+                                <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
+                                <i class="icon phone ml__10"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!-- Modal -->
+         <div class="modal registration fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-md">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body text-center">
+                     <div class="mb__25 text-center">
+                         <div class="text xxl montserrat-bold gray-100">Вход или регистрация</div>
+                     </div>
+                     <div class="row">
+                        <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                        <div class="col">
+                            <div class="mb__20">
+                                <div class="form-group custom">
+                                   <input type="email" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Адрес электронной почты">
+                                 </div>
+                            </div>
+                             <div class="mb__30">
+                                 <div class="button contour medium text m ubuntu-500 burgundy-50 text-uppercase w-100">получить код</div>
+                             </div>
+                        </div>
+                        <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                    </div>
+                      <div class="mb__20">
+                          <div class="text m ubuntu gray-50">Войти через соц. сеть</div>
+                      </div>
+                      <div class="mb__40">
+                          <a class="mr__25 text-decoration-none" href="">
+                              <i class="icon google "></i>
+                          </a>
+                          <a class="mr__25 text-decoration-none" href="">
+                              <i class="icon facebook "></i>
+                          </a>
+                          <a class=" text-decoration-none" href="">
+                              <i class="icon vk"></i>
+                          </a>
+                      </div>
+                      <div class="">
+                          <a href="#" class="link red text m ubuntu">Войти в аккаунт как юрлицо</a>
+                      </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+        <!-- header end -->
+
+        <!-- breadcrumbs -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="header-link">
-                        <a href="index.html" class="header-link__item active">Главная страница</a>
-                        <a href="catalog.html" class="header-link__item">Каталог продукции</a>
-                        <a href="stocks.html" class="header-link__item">Акции</a>
-                        <a href="about.html" class="header-link__item">О компании</a>
-                        <a href="delivery.html" class="header-link__item">Доставка</a>
-                        <a href="product__gallery.html" class="header-link__item">Галерея</a>
-                        <a href="contacts.html" class="header-link__item">Контакты</a>
-                        <a href="faq.html" class="header-link__item">Частые вопросы</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-between align-items-center">
-                    <nav class="navbar navbar-expand-lg navbar-dark d-lg-none d-md-block">
-                        <button class="navbar-toggler menu" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <button class="navbar-toggler d-lg-none d-md-none d-sm-block" type="button" data-toggler="colapse" data-target="#navbarSupportContent">
-                            <span class="icon search red"></span>
-                        </button>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">
+                                <a href="../index.html" class="text m ubuntu gray-50">Главная</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="../stocks.html" class="text m ubuntu gray-50">Акции</a>
+                            </li>
+                        </ol>
                     </nav>
-                    <a href="index.html" class="header-logo">
-                        <img src="images/image1-1.png" alt="">
-                    </a>
-                    <div class="header-search d-lg-block d-md-block d-none w-md-100 mr__20">
-                        <input class="form-control gray" type="text" placeholder="Поиск">
-                        <i class="icon search cursor-pointer"></i>
-                    </div>
-                    <div class="align-items-center ml-auto d-lg-flex d-none">
-                        <a href="tel:+78452393315" class="header-phone mr__35 gray-100 align-items-center d-flex align-items-center">
-                            <i class="icon phone mr__10"></i>
-                            <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
-                        </a>
-                        <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
-                            <i class="icon inst"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
-                            <i class="icon whatsapp"></i>
-                        </a>
-                        <a href="viber://chat?number=78452393315" target="_blank">
-                            <i class="icon viber"></i>
-                        </a>
-                    </div>
-                    <div class="d-flex ml-sm__15 ml-auto">
-                        <a href="#" data-toggle="modal" data-target="#registration" class="header-profile gray-100 d-flex flex-column justify-content-between align-items-center">
-                            <i class="icon profile mb-sm__0"></i>
-                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Профиль</div>
-                        </a>
-                        <a href="basket__empty.html" class="header-basket gray-100 d-flex flex-column justify-content-between align-items-center">
-                            <i class="icon basket mb-sm__0"></i>
-                            <div class="text montserrat d-lg-block d-md-block d-sm-none d-none">Корзина</div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    
-    <div class="header-contacts d-lg-none d-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex align-items-center">
-                        <a href="https://www.instagram.com/szsm_slav/" target="_blank" class="mr__15">
-                            <i class="icon inst"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=78452393315" target="_blank" class="mr__15">
-                            <i class="icon whatsapp"></i>
-                        </a>
-                        <a href="viber://chat?number=78452393315" target="_blank">
-                            <i class="icon viber"></i>
-                        </a>
-                        <a href="tel:+78452393315" class="header-phone gray-2 d-flex align-items-center ml-auto">
-                            <div class="text montserrat">+7 (8452) <span class="text montserrat-bold">39-33-15</span></div>
-                            <i class="icon phone ml__10"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-     <!-- Modal -->
-     <div class="modal registration fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel"
-     aria-hidden="true">
-     <div class="modal-dialog modal-md">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                 </button>
-             </div>
-             <div class="modal-body text-center">
-                 <div class="mb__25 text-center">
-                     <div class="text xxl montserrat-bold gray-100">Вход или регистрация</div>
-                 </div>
-                 <div class="row">
-                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+        <!-- breadcrumbs end -->
+
+        <!-- breadcrumbs -->
+        <div class="comeback d-lg-none d-md-block d-sm-block d-none d-block">
+            <div class="container">
+                <div class="row">
                     <div class="col">
-                        <div class="mb__20">
-                            <div class="form-group custom">
-                               <input type="email" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Адрес электронной почты">
-                             </div>
-                        </div>
-                         <div class="mb__30">
-                             <div class="button contour medium text m ubuntu-500 burgundy-50 text-uppercase w-100">получить код</div>
-                         </div>
+                        <a href="../catalog.html" class="text m montserrat gray-100 d-flex align-items-center">
+                            <i class="icon arrow-left mr__15"></i>
+                            Вернуться к категориям
+                        </a>
                     </div>
-                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
                 </div>
-                  <div class="mb__20">
-                      <div class="text m ubuntu gray-50">Войти через соц. сеть</div>
-                  </div>
-                  <div class="mb__40">
-                      <a class="mr__25 text-decoration-none" href="">
-                          <i class="icon google "></i>
-                      </a>
-                      <a class="mr__25 text-decoration-none" href="">
-                          <i class="icon facebook "></i>
-                      </a>
-                      <a class=" text-decoration-none" href="">
-                          <i class="icon vk"></i>
-                      </a>
-                  </div>
-                  <div class="">
-                      <a href="#" class="link red text m ubuntu">Войти в аккаунт как юрлицо</a>
-                  </div>
-             </div>
-         </div>
-     </div>
+            </div>
+        </div>
+        <!-- breadcrumbs end -->
+
+        <section class="mb__50">
+            <div class="container">
+                <div class="row mb__40 mt-md__20">
+                    <div class="col">
+                        <h1 class="h1 text burgundy-100">Бонусная система</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs" id="myTab-2" role="tablist">
+                            <li class="nav-item w-25 w-sm-50" role="presentation">
+                                <a class="nav-link active text xxl" id="home-tab-2" data-toggle="tab" href="#home-2" role="tab" aria-controls="home-2" aria-selected="false">Кирпич</a>
+                            </li>
+                            <li class="nav-item  w-25 w-sm-50" role="presentation">
+                                <a class="nav-link text xxl" id="profile-tab-2" data-toggle="tab" href="#profile-2" role="tab" aria-controls="profile-2" aria-selected="false">Газосиликат</a>
+                            </li>
+                            <!-- <li class="nav-item w-50" role="presentation">
+                                <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact-2" role="tab" aria-controls="contact" aria-selected="false"></a>
+                            </li> -->
+                        </ul>
+                        <div class="tab-content" id="myTabContent-2">
+                            <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
+                                <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
+                                    <div class="col mb__20">
+                                        <div class="text m ubuntu gray-100 mb__10">
+                                            Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
+                                        </div>
+                                        <div class="text m ubuntu gray-100">
+                                            *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <td>200 000 — 500 999</td>
+                                                    <td>9%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501 000 — 1 000 999</td>
+                                                    <td>12%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1 000 100 — 2 000 999</td>
+                                                    <td>14%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Свыше 2 000 999</td>
+                                                    <td>16%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
+                                <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
+                                    <div class="col mb__20">
+                                        <div class="text m ubuntu gray-100 mb__10">
+                                            Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
+                                        </div>
+                                        <div class="text m ubuntu gray-100">
+                                            *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
+                                                    <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <td>200 000 — 500 999</td>
+                                                    <td>9%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501 000 — 1 000 999</td>
+                                                    <td>12%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1 000 100 — 2 000 999</td>
+                                                    <td>14%</td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td>Свыше 2 000 999</td>
+                                                    <td>16%</td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab">
+
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                        <div class="row mb__15">
+                            <div class="col">
+                                <div class="text xxl white montserrat">Меню:</div>
+                            </div>
+                        </div>
+                        <div class="row mb__40">
+                            <div class="col-6 d-flex flex-column">
+                                <a class="link gray text m ubuntu mb__10" href="">Главная страница</a>
+                                <a class="link gray text m ubuntu mb__10" href="">Каталог продукции</a>
+                                <a class="link gray text m ubuntu mb__10" href="">Акции</a>
+                                <a class="link gray text m ubuntu" href="">О компании</a>
+                            </div>
+                            <div class="col-6 d-flex flex-column">
+                                <a class="link gray text m ubuntu mb__10" href="">Доставка</a>
+                                <a class="link gray text m ubuntu mb__10" href="">Галерея</a>
+                                <a class="link gray text m ubuntu mb__10" href="">Контакты</a>
+                                <a class="link gray text m ubuntu" href="">Частые вопросы</a>
+                            </div>
+                        </div>
+                        <div class="row mb__20 d-lg-block d-md-block d-sm-none d-none">
+                            <div class="col">
+                                <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
+                                    продукции.<br />Все права защищены. Доставка по всей России.</div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center d-lg-block d-md-block d-sm-none d-none">
+                            <div class="col">
+                                <span class="mr__15">
+                                    <i class="icon visa"></i>
+                                </span>
+                                <span class="mr__15">
+                                    <i class="icon mastercard"></i>
+                                </span>
+                                <span class="mr__15">
+                                    <i class="icon mir"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-left text-md-right text-lg-right text-sm-left">
+                        <div class="row mb__15">
+                            <div class="col">
+                                <a href="tel:+78452393315" class="text white montserrat">
+                                    <span>+7 (8452) </span>
+                                    <span class="text montserrat-bold">39-33-15</span>
+                                </a>
+                                <div class="text m gray-1 ubuntu">
+                                    Администрация
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb__15">
+                            <div class="col">
+                                <a href="tel:+79120991104" class="text white montserrat">
+                                    <span>+7 (9120) </span>
+                                    <span class="text montserrat-bold">99-11-04</span>
+                                </a>
+                                <div class="text m gray-1 ubuntu">
+                                    Отдел продаж
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb__30">
+                            <div class="col">
+                                <a href="mailto:szsm2019@mail.ru" class="text white montserrat">
+                                    szsm2019@mail.ru
+                                </a>
+                                <div class="text m gray-1 ubuntu">
+                                    E-mail для связи
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-sm__30">
+                            <div class="col d-flex justify-content-center  justify-content-lg-end justify-content-md-end  justify-content-sm-center">
+                                <a class="link gray d-flex flex-column align-items-center mr__20" href="">
+                                    <i class="icon inst gray mb__5"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a class="link gray d-flex flex-column align-items-center mr__20" href="">
+                                    <i class="icon whatsapp gray mb__5"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a class="link gray d-flex flex-column align-items-center" href="">
+                                    <i class="icon viber gray mb__5"></i>
+                                    <span>Viber</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mb__20 d-lg-none d-md-none d-sm-block d-block text-center">
+                            <div class="col">
+                                <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
+                                    продукции. Все права защищены. Доставка по всей России.</div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center d-lg-none d-md-none d-sm-block d-block text-center">
+                            <div class="col">
+                                <span class="mr__15">
+                                    <i class="icon visa"></i>
+                                </span>
+                                <span class="mr__15">
+                                    <i class="icon mastercard"></i>
+                                </span>
+                                <span class="mr__15">
+                                    <i class="icon mir"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="top"></div>
+        <!-- footer end -->
     </div>
-    <!-- header end -->
-
-    <!-- breadcrumbs -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active">
-                            <a href="../index.html" class="text m ubuntu gray-50">Главная</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="../stocks.html" class="text m ubuntu gray-50">Акции</a>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- breadcrumbs end -->
-
-    <!-- breadcrumbs -->
-    <div class="comeback d-lg-none d-md-block d-sm-block d-none d-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="../catalog.html" class="text m montserrat gray-100 d-flex align-items-center">
-                        <i class="icon arrow-left mr__15"></i>
-                        Вернуться к категориям
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- breadcrumbs end -->
-
-    <section class="mb__50">
-        <div class="container">
-            <div class="row mb__40 mt-md__20">
-                <div class="col">
-                    <h1 class="h1 text burgundy-100">Бонусная система</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <ul class="nav nav-tabs" id="myTab-2" role="tablist">
-                        <li class="nav-item w-25 w-sm-50" role="presentation">
-                            <a class="nav-link active text xxl" id="home-tab-2" data-toggle="tab" href="#home-2" role="tab" aria-controls="home-2" aria-selected="false">Кирпич</a>
-                        </li>
-                        <li class="nav-item  w-25 w-sm-50" role="presentation">
-                            <a class="nav-link text xxl" id="profile-tab-2" data-toggle="tab" href="#profile-2" role="tab" aria-controls="profile-2" aria-selected="false">Газосиликат</a>
-                        </li>
-                        <!-- <li class="nav-item w-50" role="presentation">
-                            <a class="nav-link disabled" id="contact-tab" data-toggle="tab" href="#contact-2" role="tab" aria-controls="contact" aria-selected="false"></a>
-                        </li> -->
-                    </ul>
-                    <div class="tab-content" id="myTabContent-2">
-                        <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
-                            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
-                                <div class="col mb__20">
-                                    <div class="text m ubuntu gray-100 mb__10">
-                                        Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
-                                    </div>
-                                    <div class="text m ubuntu gray-100">
-                                        *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <table class="table">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="text-center">
-                                            <tr>
-                                                <td>200 000 — 500 999</td>
-                                                <td>9%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>501 000 — 1 000 999</td>
-                                                <td>12%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1 000 100 — 2 000 999</td>
-                                                <td>14%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Свыше 2 000 999</td>
-                                                <td>16%</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
-                            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt__30 ">
-                                <div class="col mb__20">
-                                    <div class="text m ubuntu gray-100 mb__10">
-                                        Бонусы выплачиваются на счет организации Покупателя за прошедший месяц при выполнении условий выборки продукции за два месяца (прошедший и текущий) не позднее 15 числа месяца, следующим за текущим. 
-                                    </div>
-                                    <div class="text m ubuntu gray-100">
-                                        *Ретро бонусы не включат в себя скидки на кирпич и камень, действующие при единовременной оплате. 
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <table class="table">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Оплата и выборка кирпича на сумму в месяц</th>
-                                                <th scope="col" class="bg__burgundy-100 align-middle p-4">Размер скидки на всю номенклатуру кирпича от цены, указанной в прайсе</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="text-center">
-                                            <tr>
-                                                <td>200 000 — 500 999</td>
-                                                <td>9%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>501 000 — 1 000 999</td>
-                                                <td>12%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1 000 100 — 2 000 999</td>
-                                                <td>14%</td>
-                                            </tr>
-                                            <!-- <tr>
-                                                <td>Свыше 2 000 999</td>
-                                                <td>16%</td>
-                                            </tr> -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab">
-
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                    <div class="row mb__15">
-                        <div class="col">
-                            <div class="text xxl white montserrat">Меню:</div>
-                        </div>
-                    </div>
-                    <div class="row mb__40">
-                        <div class="col-6 d-flex flex-column">
-                            <a class="link gray text m ubuntu mb__10" href="">Главная страница</a>
-                            <a class="link gray text m ubuntu mb__10" href="">Каталог продукции</a>
-                            <a class="link gray text m ubuntu mb__10" href="">Акции</a>
-                            <a class="link gray text m ubuntu" href="">О компании</a>
-                        </div>
-                        <div class="col-6 d-flex flex-column">
-                            <a class="link gray text m ubuntu mb__10" href="">Доставка</a>
-                            <a class="link gray text m ubuntu mb__10" href="">Галерея</a>
-                            <a class="link gray text m ubuntu mb__10" href="">Контакты</a>
-                            <a class="link gray text m ubuntu" href="">Частые вопросы</a>
-                        </div>
-                    </div>
-                    <div class="row mb__20 d-lg-block d-md-block d-sm-none d-none">
-                        <div class="col">
-                            <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
-                                продукции.<br />Все права защищены. Доставка по всей России.</div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center d-lg-block d-md-block d-sm-none d-none">
-                        <div class="col">
-                            <span class="mr__15">
-                                <i class="icon visa"></i>
-                            </span>
-                            <span class="mr__15">
-                                <i class="icon mastercard"></i>
-                            </span>
-                            <span class="mr__15">
-                                <i class="icon mir"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-left text-md-right text-lg-right text-sm-left">
-                    <div class="row mb__15">
-                        <div class="col">
-                            <a href="tel:+78452393315" class="text white montserrat">
-                                <span>+7 (8452) </span>
-                                <span class="text montserrat-bold">39-33-15</span>
-                            </a>
-                            <div class="text m gray-1 ubuntu">
-                                Администрация
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb__15">
-                        <div class="col">
-                            <a href="tel:+79120991104" class="text white montserrat">
-                                <span>+7 (9120) </span>
-                                <span class="text montserrat-bold">99-11-04</span>
-                            </a>
-                            <div class="text m gray-1 ubuntu">
-                                Отдел продаж
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb__30">
-                        <div class="col">
-                            <a href="mailto:szsm2019@mail.ru" class="text white montserrat">
-                                szsm2019@mail.ru
-                            </a>
-                            <div class="text m gray-1 ubuntu">
-                                E-mail для связи
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-sm__30">
-                        <div class="col d-flex justify-content-center  justify-content-lg-end justify-content-md-end  justify-content-sm-center">
-                            <a class="link gray d-flex flex-column align-items-center mr__20" href="">
-                                <i class="icon inst gray mb__5"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a class="link gray d-flex flex-column align-items-center mr__20" href="">
-                                <i class="icon whatsapp gray mb__5"></i>
-                                <span>WhatsApp</span>
-                            </a>
-                            <a class="link gray d-flex flex-column align-items-center" href="">
-                                <i class="icon viber gray mb__5"></i>
-                                <span>Viber</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mb__20 d-lg-none d-md-none d-sm-block d-block text-center">
-                        <div class="col">
-                            <div class="text m ubuntu gray-1">© СЗСМ — завод и интернет-магазин кирпичной
-                                продукции. Все права защищены. Доставка по всей России.</div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center d-lg-none d-md-none d-sm-block d-block text-center">
-                        <div class="col">
-                            <span class="mr__15">
-                                <i class="icon visa"></i>
-                            </span>
-                            <span class="mr__15">
-                                <i class="icon mastercard"></i>
-                            </span>
-                            <span class="mr__15">
-                                <i class="icon mir"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <div class="top"></div>
-    <!-- footer end -->
-
 
 
     <script src="js/jquery.js"></script>
