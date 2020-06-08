@@ -145,7 +145,7 @@ button.close:focus {
 .sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
-  top: 20px;
+  top: 90px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3113,6 +3113,9 @@ body.compensate-for-scrollbar {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -8521,7 +8524,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1000;
+  z-index: 100001;
   display: none;
   float: left;
   min-width: 10rem;

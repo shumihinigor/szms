@@ -19,20 +19,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="header-link">
-                        <a href="index.html" class="header-link__item active">Главная страница</a>
-                        <a href="catalog.html" class="header-link__item">Каталог продукции</a>
-                        <a href="stocks.html" class="header-link__item">Акции</a>
-                        <a href="about.html" class="header-link__item">О компании</a>
-                        <a href="delivery.html" class="header-link__item">Доставка</a>
-                        <a href="product__gallery.html" class="header-link__item">Галерея</a>
-                        <a href="contacts.html" class="header-link__item">Контакты</a>
-                        <a href="faq.html" class="header-link__item">Частые вопросы</a>
-                    </div>
+                    <ul class="header-link">
+                        <li><a href="index.html" class="header-link__item active">Главная страница</a></li>
+                        <li class="position-relative dropdown"  type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="catalog.html" class="header-link__item">Каталог продукции</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                            </div>
+                        </li>
+                        <li><a href="stocks.html" class="header-link__item">Акции</a></li>
+                        <li><a href="about.html" class="header-link__item">О компании</a></li>
+                        <li><a href="delivery.html" class="header-link__item">Доставка</a></li>
+                        <li><a href="product__gallery.html" class="header-link__item">Галерея</a></li>
+                        <li><a href="contacts.html" class="header-link__item">Контакты</a></li>
+                        <li><a href="faq.html" class="header-link__item">Частые вопросы</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
+    
     <header class="header">
         <div class="container">
             <div class="row">

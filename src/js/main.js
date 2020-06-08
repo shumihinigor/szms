@@ -152,7 +152,6 @@ function sliderStocks() {
     ]
   });
 }
-if (window.innerWidth <= 767) {}
 
 // слайдер на странице со списком товаров - доставка
 // function sliderAdvantage() {
@@ -190,7 +189,6 @@ function sliderProducts() {
   $sliderProducts.slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    speed: 400,
     arrows: true,
     responsive: [{
         breakpoint: 991,
@@ -450,3 +448,15 @@ function filterMobild() {
     $('.filter-fixed__content').removeClass('active')
   })
 }
+
+$('.dropdown').hover(function() {
+  $(this).find('.dropdown-menu', function() {
+    if ($(this).on('mouseover')) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  }).stop(true, true).delay(100).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(500);
+});
