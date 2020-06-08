@@ -114,7 +114,7 @@ function sliderReviews() {
       },
     ]
   });
-  
+
 
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
@@ -122,34 +122,37 @@ function sliderReviews() {
 
 // слайдер на главной с акциями
 function sliderStocks() {
-  if (window.innerWidth <= 767) {
+  var $sliderReviews = $('.slider-stocks');
 
-    var $sliderReviews = $('.slider-stocks');
-
-    $sliderReviews.slick({
-      centerMode: true,
-      centerPadding: '50px',
-      responsive: [{
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 1,
-            arrows: false,
-            // dots: true
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            centerMode: true,
-            arrows: false,
-            // dots: true
-          }
-        },
-      ]
-    });
-  }
+  $sliderReviews.slick({
+    slidesToShow: 3,
+    arrows: false,
+    centerMode: false,
+    centerPadding: '0px',
+    responsive: [{
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          centerMode: false,
+          centerPadding: '0px',
+          // dots: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '50px',
+          centerMode: true,
+          arrows: false,
+          // dots: true
+        }
+      },
+    ]
+  });
 }
+if (window.innerWidth <= 767) {}
 
 // слайдер на странице со списком товаров - доставка
 // function sliderAdvantage() {
@@ -207,7 +210,7 @@ function sliderProducts() {
           centerPadding: '50px',
           // dots: true
         }
-      },{
+      }, {
         breakpoint: 449,
         settings: {
           slidesToShow: 1,
@@ -393,51 +396,45 @@ function menuMobile() {
 
 // scroll menu
 $(window).scroll(function () {
-  
+
   let heightNav = $('.header-nav').height() + 40
   let scrollTop = $(this).scrollTop();
 
   if ($(this).scrollTop() > 52) {
     if ($(this).innerWidth() >= 992) {
-      $(".header").css(
-        {
-          'position': 'sticky',
-          'left': '0px',
-          'right': '0px',
-          // 'top': (scrollTop - heightNav),
-        }
-      );
+      $(".header").css({
+        'position': 'sticky',
+        'left': '0px',
+        'right': '0px',
+        // 'top': (scrollTop - heightNav),
+      });
     } else {
-      $(".header").css(
-        {
-          'position': 'sticky',
-          'left': '0px',
-          'right': '0px',
-          // 'top': scrollTop,
-        }
-      );
+      $(".header").css({
+        'position': 'sticky',
+        'left': '0px',
+        'right': '0px',
+        // 'top': scrollTop,
+      });
       $('.header-nav').css({
         // 'top': -heightNav,
         // 'position': 'fixed',
       })
     }
   } else {
-    $(".header").css(
-      {
-        'position': 'sticky',
-        'top': '0px',
-      }
-    );
+    $(".header").css({
+      'position': 'sticky',
+      'top': '0px',
+    });
   }
 });
 
 // фильтр Список - Таблица
 function filterList() {
-  $('.icon.list').on('click', function() {
+  $('.icon.list').on('click', function () {
     $('#table').hide()
     $('#list').show()
   })
-  $('.icon.table').on('click', function() {
+  $('.icon.table').on('click', function () {
     $('#list').hide()
     $('#table').show()
   })
@@ -445,10 +442,10 @@ function filterList() {
 
 // фильтр на мобилке
 function filterMobild() {
-  $('.filter-fixed__button').on('click', function() {
+  $('.filter-fixed__button').on('click', function () {
     $('.filter-fixed__content').addClass('active')
   })
-  $('.filter-fixed__close').on('click', function() {
+  $('.filter-fixed__close').on('click', function () {
     $('.icon.filter').removeClass('active')
     $('.filter-fixed__content').removeClass('active')
   })
