@@ -4,7 +4,12 @@
     list-style: none
     &-item
         position: relative
-        margin-bottom: 5px
+        margin-bottom: 10px
+        padding-left: 25px
+        &:last-child
+            margin-bottom: 0
         &.dashed
             &::before
                 content: '— '
+                position: absolute
+                left: 0
