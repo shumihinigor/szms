@@ -3479,6 +3479,8 @@ body.compensate-for-scrollbar {
   background: #FFFFFF;
   border: 1px solid #DFC3C7;
   padding: 18px 14px;
+  height: 100%;
+  width: 100%;
 }
 
 .catalog-item:hover {
@@ -3495,6 +3497,16 @@ body.compensate-for-scrollbar {
   width: calc(100% + 30px);
   height: -webkit-calc(100% + 38px);
   height: calc(100% + 38px);
+  height: 155px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-item__image {
+    height: 125px;
+  }
 }
 
 .catalog-item__name {
@@ -3534,7 +3546,7 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   right: 14px;
-  top: 40%;
+  top: 95px;
   width: 40px;
   height: 40px;
   padding: 5px 7px 6px 7px;
@@ -3544,6 +3556,12 @@ body.compensate-for-scrollbar {
   -webkit-box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4);
           box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4);
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-item__basket {
+    top: 65px;
+  }
 }
 
 .catalog-item__basket .icon.basket {

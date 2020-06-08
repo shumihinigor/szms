@@ -21,7 +21,6 @@ $(document).ready(function () {
   deleteImage();
   filterList();
   filterMobild();
-  height();
 });
 
 
@@ -29,25 +28,8 @@ $(window).on('resize', function () {
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
   menuMobile();
-  height();
 });
 
-// высота плашек в отзывах
-function height() {
-  
-  var maxHeight = 0, maxHeightElement = null;
-  $('.slider-reviews__item').each(function(){
-   if ($(this).height() > maxHeight) {
-       maxHeight = $(this).height();
-       maxHeightElement = $(this);
-      }
-    });
-    
-    var heightItem = maxHeightElement.height() + 40;
-    $('.slider-reviews__item').css('height', heightItem)
-
-
-}
 
 // ссылки в навигации
 function navigation() {
@@ -141,6 +123,7 @@ function sliderReviews() {
 // слайдер на главной с акциями
 function sliderStocks() {
   if (window.innerWidth <= 767) {
+
     var $sliderReviews = $('.slider-stocks');
 
     $sliderReviews.slick({

@@ -7,7 +7,8 @@
         background: #FFFFFF
         border: 1px solid #DFC3C7
         padding: 18px 14px
-        // min-height: 220px
+        height: 100%
+        width: 100%
         &:hover
             box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
         &__image
@@ -17,7 +18,12 @@
             margin-top: -19px
             width: calc(100% + 30px)
             height: calc(100% + 38px)
-            // padding: 0 18px
+            height: 155px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            @media screen and ( max-width: 767px )
+                height: 125px
        
         &__name
             position: relative
@@ -36,7 +42,7 @@
             align-items: center
             justify-content: center
             right: 14px
-            top: 40%
+            top: 95px
             width: 40px
             height: 40px
             padding: 5px 7px 6px 7px
@@ -45,7 +51,7 @@
             box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
             cursor: pointer
             @media screen and ( max-width: 767px )
-                // top: 40%
+                top: 65px
             & .icon.basket
                 margin-bottom: 0
             &:hover
