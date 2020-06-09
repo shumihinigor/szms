@@ -181,8 +181,8 @@ function sliderStocks() {
 //   }
 // }
 
-// слайдер на странице со списком товаров - доставка
 
+// слайдер на странице со списком товаров - доставка
 function sliderProducts() {
   var $sliderProducts = $('.slider-products');
 
@@ -245,8 +245,6 @@ function calculator() {
       $('.calculator-wrapper').css('height', -h)
     }
   })
-
-
 }
 
 // хлебные крошки
@@ -323,6 +321,7 @@ function deleteImage() {
 
 // слайдер на доставку 
 
+
 // слайдер на главной с акциями
 function sliderDelivery() {
   if (window.innerWidth <= 991) {
@@ -385,8 +384,10 @@ function menuMobile() {
   $('.navbar-toggler.menu').on('click', function () {
     $('.header-nav').toggleClass('active')
     if ($('.header-nav').hasClass('active')) {
+      $('.header-nav').css('opacity', 1)
       $('.header-nav').css('top', heightHeader + 20)
     } else {
+      $('.header-nav').css('opacity', 0)
       $('.header-nav').css('top', -heightNav)
     }
   })
@@ -449,14 +450,14 @@ function filterMobild() {
   })
 }
 
-$('.dropdown').hover(function() {
-  $(this).find('.dropdown-menu', function() {
-    if ($(this).on('mouseover')) {
-      $(this).show();
-    } else {
-      $(this).hide();
-    }
-  }).stop(true, true).delay(100).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(500);
-});
+// $('.dropdown').hover(function() {
+//   $(this).find('.dropdown-content', function() {
+//     if ($(this).on('mouseover')) {
+//       $(this).addClass('active')
+//     } else {
+//       $(this).removeClass('active')
+//     }
+//   }).stop(true, true).delay(100).fadeIn(500).addClass('active');
+// }, function() {
+//   $(this).find('.dropdown-content').stop(true, true).delay(100).fadeOut(500).removeClass('active');
+// });

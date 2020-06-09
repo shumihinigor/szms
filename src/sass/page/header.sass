@@ -6,21 +6,26 @@
     box-shadow: 0px 7px 7px -7px rgba(175, 125, 128, 0.4)
     z-index: 10000
     transition: none
-
     &-nav
         background: #F8F8F8
-        padding: 20px 0
+        // padding: 20px 0
         transition: all .3s
         position: static !important
         @media screen and ( max-width: 991px )
             position: fixed !important
             opacity: 0
-            z-index: 999
             left: 0
             right: 0
             top: 70px
+            bottom: 0
+            width: 80%
             background: #333333
+            padding: 0
+            overflow-y: auto
+            overflow-x: hidden
+            box-shadow: 0px 1px 7px rgba(175, 125, 128, 0.4)
             &.active
+                z-index: 999
                 opacity: 1
             // display: none
             // top: -100%
@@ -36,6 +41,7 @@
             flex-direction: column
             align-items: start
         &__item
+            position: relative
             font-family: Ubuntu
             font-style: normal
             font-weight: 500
@@ -44,26 +50,136 @@
             letter-spacing: 0.045em
             color: $gray-50
             margin-right: 15px
-            @media screen and ( max-width: 991px )
-                color: #F2F2F2
-                margin-bottom: 15px
-                font-weight: normal
-                line-height: 20px
-                &:last-child
-                    margin-bottom: 0
-                &:hover, &.active
-                    font-size: 16px
-                    font-family: Montserrat
-                    font-style: normal
-                    font-weight: 600
-                    color: $white !important
-                    text-decoration: none !important
             &:last-child
                 margin-right: 0
             &:hover, &.active
-                color: $gray-100
-                text-decoration: underline
-    
+                & > a
+                    color: $gray-100
+                    text-decoration: underline
+            & a
+                display: inline-block
+                text-decoration: none
+                color: $gray-50
+            & > a
+                padding: 20px 0
+                @media screen and ( max-width: 991px )
+                    padding: 0
+            &.dropdown
+                & .dropdown-content
+                    display: none
+                    position: absolute
+                    z-index: 100001
+                    top: 52px
+                    left: 0
+                    background: #FFFFFF
+                    padding: 15px
+                    white-space: nowrap
+                    border: 1px solid #F8F8F8
+                    list-style: none
+                    @media screen and ( max-width: 991px )
+                        display: block
+                        position: relative
+                        left: -15px
+                        top: 0
+                        width: calc(100% + 30px)
+                        border: 0
+                        padding: 0
+                    & li
+                        margin-bottom: 15px
+                        &:hover
+                            & > a
+                                color: $gray-100
+                                text-decoration: underline
+                        &:last-child
+                            margin-bottom: 0
+                        @media screen and ( max-width: 991px )
+                            margin-bottom: 0
+                            padding: 15px
+                            border-bottom: 0.5px solid #DFC3C7
+                            &:last-child
+                                border-bottom: 0
+                &::after
+                    content: ''
+                    display: none
+                    position: absolute
+                    z-index: 100002
+                    bottom: -10px
+                    left: 10px
+                    width: 32px
+                    height: 18px
+                    background-size: cover
+                    background-position: center center
+                    background-repeat: no-repeat
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAOCAYAAAA8E3wEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACoSURBVHgBvdTJDcIwEAXQ+RzsK51AC3RAB4hKKIEWUkI6oAXoJDcvFzOOlMhSHGedfMnyMh69i2U45+5EdKFj8kMI4ey9//B8JcEA+CqlbogbabTHgAbdoRSaYnF/SgpNLPCypv1Sp1jr5G4ZYyq+9KAN4f5Ka/0cnI81bEHHsCK4Fi1hk+BSdAqbHf4cXtbaUBr8wt+0Z0porJFEcqgYlkPFsRRdi/0Bqa2vgtkWnKMAAAAASUVORK5CYII=)
+                &:hover
+                    &::after
+                        display: block
+                    & .dropdown-content
+                        display: block
+                        @media screen and ( max-width: 991px )
+                            bottom: auto
+                            // top: 45px
+                @media screen and ( max-width: 991px )
+                    background: #F8F8F8 !important
+                    padding-bottom: 0
+                    & a
+                        color: $gray-100 !important
+                    & .dropdown-content
+                        margin-top: 15px
+                    &::after
+                        display: block
+                        bottom: auto
+                        top: 45px
+                &.active
+                    @media screen and ( max-width: 991px )
+                        background: #F8F8F8
+                        padding-bottom: 0
+                        & a
+                            color: $gray-100 !important
+                        & .dropdown-content
+                            margin-top: 15px
+                    & .dropdown-content
+                        display: block
+                @media screen and ( max-width: 991px )
+                    background: #FFFFFF
+                    border-bottom: 0.5px solid #DFC3C7
+                    & a
+                        color: $gray-100
+            @media screen and ( max-width: 991px )
+                border-bottom: 0.5px solid #484848
+                padding: 15px 
+                width: 100%
+                margin-right: 0
+                & li
+                    position: relative
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 5px
+                        height: 10px
+                        top: 0
+                        bottom: 0
+                        right: 24px
+                        margin: auto
+                        background-position: center center
+                        background-repeat: no-repeat
+                        background-size: cover
+                        background-image: url(../images/vector.svg)
+                & a
+                    font-family: $montserrat
+                    font-style: normal
+                    font-weight: 600
+                    line-height: 20px
+                    color: #FFFFFF
+                &:hover, &.active
+                    & a
+                        // font-size: 14px
+                        font-family: Montserrat
+                        font-style: normal
+                        font-weight: 600
+                        color: $white !important
+                        text-decoration: none !important
+                        
     &-logo
         margin-right: 25px
         img
