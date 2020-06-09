@@ -3,8 +3,8 @@ $(document).ready(function () {
   // calculator();
   navigation();
   menuMobile();
-  basketCatalog();
   sliderMain();
+  basketCatalog();
   sliderReviews();
   sliderStocks();
   sliderDelivery();
@@ -20,16 +20,16 @@ $(document).ready(function () {
   removeBasketItem();
   deleteImage();
   filterList();
-  filterMobild();
+  filterMobile();
+  menu();
 });
 
-
+// resize
 $(window).on('resize', function () {
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
   menuMobile();
 });
-
 
 // ссылки в навигации
 function navigation() {
@@ -122,9 +122,10 @@ function sliderReviews() {
 
 // слайдер на главной с акциями
 function sliderStocks() {
-  var $sliderReviews = $('.slider-stocks');
+  var $sliderStocks = $('.slider-stocks');
+  var $sliderStocksModal = $('.slider-stocks-modal');
 
-  $sliderReviews.slick({
+  $sliderStocks.slick({
     slidesToShow: 3,
     arrows: false,
     centerMode: false,
@@ -151,6 +152,36 @@ function sliderStocks() {
       },
     ]
   });
+
+  $sliderStocksModal.slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '50px',
+    responsive: [{
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          // centerMode: false,
+          // centerPadding: '0px',
+          // dots: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '50px',
+          centerMode: true,
+          arrows: false,
+          // dots: true
+        }
+      },
+    ]
+  });
+
 }
 
 // слайдер на странице со списком товаров - доставка
@@ -335,6 +366,7 @@ function goToPage() {
     document.location.href = "basket.html";
   })
 }
+
 // tooltip
 function tooltip() {
   $('[data-toggle="tooltip"]').tooltip({
@@ -430,18 +462,20 @@ function menuMobile() {
   })
 }
 
-// scroll menu
-$(window).scroll(function () {
+// menu
+function menu() {
 
   let heightNav = $('.header-nav').height() + 40
   let scrollTop = $(this).scrollTop();
-
-  if ($(this).scrollTop() > 52) {
-    if ($(this).innerWidth() >= 992) {
+  
+  if ($(window).scrollTop() > 52) {
+    if ($(window).innerWidth() >= 992) {
       $(".header").css({
         'position': 'sticky',
         'left': '0px',
         'right': '0px',
+        'top': '0px',
+
         // 'top': (scrollTop - heightNav),
       });
     } else {
@@ -462,6 +496,12 @@ $(window).scroll(function () {
       'top': '0px',
     });
   }
+
+}
+
+// scroll menu
+$(window).scroll(function () {
+  menu();
 });
 
 // фильтр Список - Таблица
@@ -477,7 +517,7 @@ function filterList() {
 }
 
 // фильтр на мобилке
-function filterMobild() {
+function filterMobile() {
   $('.filter-fixed__button').on('click', function () {
     $('.filter-fixed__content').addClass('active')
   })
