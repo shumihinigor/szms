@@ -532,7 +532,7 @@ h5::after, .h5::after {
 
 .text.xxl {
   font-size: 20px !important;
-  line-height: 19px !important;
+  line-height: 28px !important;
 }
 
 .text.xl {
@@ -1149,8 +1149,6 @@ select.form-control:focus {
   left: 0;
   top: 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .slick-track:before, .slick-track:after {
@@ -3610,7 +3608,7 @@ body.compensate-for-scrollbar {
   }
 }
 
-.slider-products .slick-prev {
+.slider-products .slick-prev, .slider-products-second .slick-prev {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3624,11 +3622,11 @@ body.compensate-for-scrollbar {
   background-repeat: no-repeat;
 }
 
-.slider-products .slick-prev .icon {
+.slider-products .slick-prev .icon, .slider-products-second .slick-prev .icon {
   display: none;
 }
 
-.slider-products .slick-next {
+.slider-products .slick-next, .slider-products-second .slick-next {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3642,7 +3640,7 @@ body.compensate-for-scrollbar {
   background-repeat: no-repeat;
 }
 
-.slider-products .slick-next .icon {
+.slider-products .slick-next .icon, .slider-products-second .slick-next .icon {
   display: none;
 }
 
@@ -3659,6 +3657,7 @@ body.compensate-for-scrollbar {
   padding: 18px 14px;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .catalog-item:hover {
@@ -3673,8 +3672,6 @@ body.compensate-for-scrollbar {
   margin-top: -19px;
   width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px);
-  height: -webkit-calc(100% + 38px);
-  height: calc(100% + 38px);
   height: 155px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3689,6 +3686,20 @@ body.compensate-for-scrollbar {
 
 .catalog-item__name {
   position: relative;
+  white-space: nowrap;
+}
+
+.catalog-item__name::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -14px;
+  width: 20px;
+  height: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 
 .catalog-item__price {
@@ -4345,13 +4356,29 @@ body.compensate-for-scrollbar {
 
 .basket-image {
   display: block;
-  max-width: 167px;
   max-height: 160px;
+  height: 160px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.basket-price {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .basket-price {
+    right: auto;
+    left: 20px;
+  }
 }
 
 .basket-item {
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
   border: 1px solid #DFC3C7;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -4366,7 +4393,7 @@ body.compensate-for-scrollbar {
   .basket-item {
     margin-left: -5px !important;
     margin-right: -5px !important;
-    padding: 10px 10px 40px 10px;
+    padding: 10px 10px 50px 10px;
   }
 }
 
@@ -4402,6 +4429,37 @@ body.compensate-for-scrollbar {
   height: 100%;
   padding: 20px 20px 35px 20px;
   min-height: 200px;
+}
+
+.profile-item.active .profile-item__cashback {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-item__cashback {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+      -ms-flex-align: end;
+          align-items: end;
+  height: 100%;
+  padding: 20px 20px 35px 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .profile-photo {
@@ -11691,7 +11749,7 @@ a.close.disabled {
 .modal {
   position: fixed;
   left: 0;
-  z-index: 1050;
+  z-index: 100000;
   display: none;
   width: 100%;
   height: 100%;
@@ -11832,7 +11890,7 @@ a.close.disabled {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 99999;
   width: 100vw;
   height: 100vh;
   background-color: #000;

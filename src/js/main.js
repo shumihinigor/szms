@@ -132,7 +132,7 @@ function sliderStocks() {
     responsive: [{
         breakpoint: 991,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           arrows: false,
           centerMode: false,
           centerPadding: '0px',
@@ -185,6 +185,7 @@ function sliderStocks() {
 // слайдер на странице со списком товаров - доставка
 function sliderProducts() {
   var $sliderProducts = $('.slider-products');
+  var $sliderProductsSecond = $('.slider-products-second');
 
   $sliderProducts.slick({
     slidesToShow: 6,
@@ -220,6 +221,42 @@ function sliderProducts() {
       },
     ]
   });
+
+  $sliderProductsSecond.slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [{
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          // centerMode: true,
+          // arrows: false,
+          // dots: true
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '50px',
+          // dots: true
+        }
+      }, {
+        breakpoint: 449,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '50px',
+          // dots: true
+        }
+      },
+    ]
+  });
+
 }
 
 // карточки в каталоге
@@ -308,7 +345,7 @@ function tooltip() {
 // удаление позиции из корзины
 function removeBasketItem() {
   $('.basket-remove').on('click', function () {
-    $(this).parent().hide('slow');
+    $(this).parent().hide('fast');
   })
 }
 
