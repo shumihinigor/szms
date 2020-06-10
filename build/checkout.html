@@ -159,7 +159,7 @@
                              </div>
                         </div>
                          <div class="mb__30">
-                             <div class="button contour medium text m ubuntu-500 burgundy-50 text-uppercase w-100">получить код</div>
+                             <div class="button contour medium text m ubuntu-500 burgundy-50 text-uppercase w-100" data-toggle="modal" data-target="#code">получить код</div>
                          </div>
                     </div>
                     <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
@@ -181,6 +181,63 @@
                   <div class="">
                       <a href="#" class="link red text m ubuntu">Войти в аккаунт как Агент</a>
                   </div>
+             </div>
+         </div>
+     </div>
+    </div>
+    
+     <!-- Modal -->
+     <div class="modal code fade" id="code" tabindex="-1" role="dialog" aria-labelledby="codeLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-md">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body ">
+                 <div class="mb__25 text-center">
+                     <div class="text xxl montserrat-bold gray-100">Введите код</div>
+                 </div>
+                 <div class="row">
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                    <div class="col">
+                        <div class="mb__25">
+                            <div class="mb__10">
+                                <div class="text m ubuntu gray-100">Мы отправили код на почту semenfam@gmail.com</div>
+                            </div>
+                            <div class="">
+                                <a href="#" class="link red text m ubuntu">Изменить</a>
+                            </div>
+                        </div>
+                        <div class="mb__10 form-group custom code d-flex align-items-center justify-content-between">
+                            <input type="text" class="form-control" id="code1" aria-describedby="code" placeholder="" maxlength="1" >
+                            <input type="text" class="form-control" id="code2" aria-describedby="code" placeholder="" maxlength="1" >
+                            <input type="text" class="form-control" id="code3" aria-describedby="code" placeholder="" maxlength="1" >
+                            <input type="text" class="form-control" id="code4" aria-describedby="code" placeholder="" maxlength="1" >
+                        </div>
+                        <div class="text m gray-50 montserrat-normal text-center mb__15">
+                            Получить новый код можно серез 00:14
+                        </div>
+                        <div class="mb__30">
+                            <div class="button red medium text m ubuntu-500 white text-uppercase w-100">получить код</div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                    <div class="col">
+                        <div class="mb__15">
+                            <a href="#" class="link red text m ubuntu">Войти по почте</a>
+                        </div>
+                        <div class="">
+                            <a href="#" class="link red text m ubuntu">Создать аккаунт как агент</a>
+                        </div>
+                    </div>
+                    <div class="col-2 d-lg-block d-md-block d-sm-none d-none"></div>
+                </div>
              </div>
          </div>
      </div>
@@ -263,9 +320,9 @@
     <!-- menu end -->
 
     <!-- Товар -->
-    <section class="mb__50 mt-sm__30 mt-md__50">
+    <section class="mb__50 mt-sm__30 mt-md__50 mb-sm__0">
         <div class="container">
-            <div class="row mb__30">
+            <div class="row ">
                 <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="row mb__50">
                         <div class="col">
@@ -297,7 +354,7 @@
                                 <div class="col">
                                     <div class="checkout-address selected">
                                         <div class="text m gray-100 montserrat">Адрес доставки:</div>
-                                        <div class="button medium contour text m ubuntu-500 burgundy-50 text-uppercase">Выбрать адрес</div>
+                                        <div class="button medium contour text m ubuntu-500 burgundy-50 text-uppercase" data-toggle="modal" data-target="#map">Выбрать адрес</div>
                                     </div>
                                     <div class="checkout-address__item text m montserrat gray-100">
                                         Ярославль, Угличская улица, д. 50, кв. 29, индекс 150047
@@ -479,7 +536,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="checkout bg__pink mb__20 sticky">
+                    <div class="checkout bg__pink sticky">
                         <div class="mb__20">
                             <div class="text m montserrat gray-100 d-flex justify-content-between align-items-center mb__10">
                                 <span class="text-left mr__10">Кирпич силикатный:</span>
@@ -525,6 +582,25 @@
         </div>
     </section>
 
+
+     <!-- Modal -->
+ <div class="modal map fade" id="map" tabindex="-1" role="dialog" aria-labelledby="mapLabel"
+ aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+         <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+             </button>
+         </div>
+         <div class="modal-body text-center">
+            <div id="map" class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9dead1506090d4c8548ae5e98e0e2f0b60d81c301a1b8b77b76b4ab6618dec50&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+         </div>
+     </div>
+ </div>
+</div>
 
     
 </div>

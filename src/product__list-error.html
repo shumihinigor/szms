@@ -1,0 +1,460 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru">
+
+<head>
+    <title>Список товаров</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="">
+
+    <div class="content">
+
+    <!-- header -->
+    //= template/header.html
+    <!-- header end -->
+
+    <!-- breadcrumbs -->
+    //= template/come__back.html
+    <!-- breadcrumbs end -->
+
+    <div class="filter-fixed d-lg-none d-md-block d-sm-block">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-between">
+                    <select class="form-control bg__white" id="exampleFormControlSelect1">
+                        <option>По популярности</option>
+                        <option>По рейтингу</option>
+                    </select>
+                    <div class="filter-fixed__button">
+                        <i class="icon filter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-fixed__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="filter-fixed__close">
+                            <i class="icon close"></i>
+                        </div>
+                    </div>
+                    <div class="filter-fixed__content-item">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="text xl semi-bold gray-100 mb__15">Цена ₽</div>
+                            <div class="row d-flex mb__20">
+                                <div class="col">
+                                    <input type="text" class="form-control contour" placeholder="от 14" required="">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control contour" placeholder="до 22" required="">
+                                </div>
+                            </div>
+                            <input type="range" class="custom-range" min="0" max="100" value="50" id="customRange1" oninput="range();">
+                        </div>
+                    </div>
+                    <div class="filter-fixed__content-item">
+                        <div class="col-12">
+                            <div class="text xl semi-bold gray-100 mb__15">Цвет продукции</div>
+                            <div class="row d-flex mb__20">
+                                <div class="col d-flex flex-wrap">
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Неокрашенный <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Розовый <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Бирюзовый <span class="text s gray-50 montserrat ml__10">61</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Слоновая кость <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between mr__10">
+                                        Благородная сталь <span class="text s gray-50 montserrat ml__10">73</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-fixed__content-item">
+                        <div class="col-12">
+                            <div class="text m gray-50 montserrat text-center mb__10">
+                                Подобран 41 товар
+                            </div>
+                            <div class="button red text m text-uppercase w-100 mb__10">
+                                Показать
+                            </div>
+                            <div class="button contour text m text-uppercase w-100">
+                                Сбросить фильтр
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- breadcrumbs -->
+    //= template/breadcrumbs.html
+    <!-- breadcrumbs end -->
+
+
+    <!-- Слайдер -->
+    <section class="catalog mb__50 mt-md__30">
+        <div class="container">
+            <div class="row row-cols-xl-1 row-cols-lg-1 row-cols-md-1 row-cols-1 slider-products-second">
+                <div class="col mb-sm__10">
+                    <a href="product__list.html" class="catalog-link">
+                        <div class="catalog-link__image mb__25 mb-sm__0" style="background-image: url(images/catalog2-1.png);">
+                            <!-- <img src="images/catalog2-1.png" alt=""> -->
+                            <div class="catalog-link__content d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="icon network"></i>
+                                    <span class="text m ubuntu white">01</span>
+                                </div>
+                                <div class="link white text l mt-auto text-nowrap">
+                                    <span class="mr__5">Окрашенный</span>
+                                    <i class="icon arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-sm__10">
+                    <a href="product__list.html" class="catalog-link">
+                        <div class="catalog-link__image mb__25 mb-sm__0" style="background-image: url(images/catalog2-1.png);">
+                            <!-- <img src="images/catalog2-1.png" alt=""> -->
+                            <div class="catalog-link__content d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="icon network"></i>
+                                    <span class="text m ubuntu white">02</span>
+                                </div>
+                                <div class="link white text l mt-auto text-nowrap">
+                                    <span class="mr__5">Неокрашенный</span>
+                                    <i class="icon arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-sm__10">
+                    <a href="product__list.html" class="catalog-link">
+                        <div class="catalog-link__image mb__25 mb-sm__0" style="background-image: url(images/catalog2-1.png);">
+                            <!-- <img src="images/catalog2-1.png" alt=""> -->
+                            <div class="catalog-link__content d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="icon network"></i>
+                                    <span class="text m ubuntu white">02</span>
+                                </div>
+                                <div class="link white text l mt-auto text-nowrap">
+                                    <span class="mr__5">Неокрашенный</span>
+                                    <i class="icon arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-sm__10">
+                    <a href="product__list.html" class="catalog-link">
+                        <div class="catalog-link__image mb__25 mb-sm__0" style="background-image: url(images/catalog2-1.png);">
+                            <!-- <img src="images/catalog2-1.png" alt=""> -->
+                            <div class="catalog-link__content d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="icon network"></i>
+                                    <span class="text m ubuntu white">02</span>
+                                </div>
+                                <div class="link white text l mt-auto text-nowrap">
+                                    <span class="mr__5">Неокрашенный</span>
+                                    <i class="icon arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col mb-sm__10">
+                    <a href="product__list.html" class="catalog-link">
+                        <div class="catalog-link__image mb__25 mb-sm__0" style="background-image: url(images/catalog2-1.png);">
+                            <!-- <img src="images/catalog2-1.png" alt=""> -->
+                            <div class="catalog-link__content d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <i class="icon network"></i>
+                                    <span class="text m ubuntu white">02</span>
+                                </div>
+                                <div class="link white text l mt-auto text-nowrap">
+                                    <span class="mr__5">Неокрашенный</span>
+                                    <i class="icon arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог -->
+    <section class="catalog mb__70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="h4 text-uppercase mb__20">Силикатный кирпич (Слоновая кость)</h4>
+                </div>
+            </div>
+            <div class="row d-flex ">
+                <div class="col-lg-3 d-lg-block d-md-none d-none">
+                    <div class="row flex-column">
+                        <div class="col">
+                            <div class="filter mb__20">
+                                <div class="card">
+                                    <button class="filter-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Цена ₽
+                                    </button>
+                                    <div id="collapseOne" class="collapse multi-collapse show">
+                                        <div class="card-body">
+                                            <div class="row d-flex mb__20">
+                                                <div class="col">
+                                                    <input type="text" class="form-control contour" placeholder="от 14"
+                                                        required="">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control contour" placeholder="до 22"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                            <input type="range" class="custom-range" min="0" max="100" value="50"
+                                                id="customRange2" oninput="range();">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <button class="filter-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Пустотность
+                                    </button>
+                                    <div id="collapseTwo" class="collapse multi-collapse show">
+                                        <div class="card-body">
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Полнотелый <span class="text s gray-50 montserrat ml__10"></span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                3-х пустотный <span class="text s gray-50 montserrat ml__10"></span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                11-пустотный <span class="text s gray-50 montserrat ml__10"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <button class="filter-button" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Толщина
+                                    </button>
+                                    <div id="collapseThree" class="collapse multi-collapse show">
+                                        <div class="card-body">
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Одинарный <span class="text s gray-50 montserrat ml__10">65</span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Утолщенный <span class="text s gray-50 montserrat ml__10">88</span>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-secondary mb__10 text m montserrat gray-100 d-flex align-items-center justify-content-between">
+                                                Двойной <span class="text s gray-50 montserrat ml__10">138</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text m gray-50 montserrat text-center mb__10">
+                                        Подобран 41 товар
+                                    </div>
+                                    <div class="button red text m text-uppercase w-100 mb__10">
+                                        Показать
+                                    </div>
+                                    <div class="button contour text m text-uppercase w-100">
+                                        Сбросить фильтр
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb__20">
+                            <a href="stocks.html" class="stocks-item text-decoration-none">
+                                <div class="stocks-image">
+                                    <img src="images/stocks1-1.png" alt="">
+                                </div>
+                                <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                            </a>
+                        </div>
+                        <div class="col mb__20">
+                            <a href="stocks.html" class="stocks-item text-decoration-none">
+                                <div class="stocks-image">
+                                    <img src="images/stocks1-1.png" alt="">
+                                </div>
+                                <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mb-md__20">
+                    <div class="row d-lg-block d-md-none d-none mb__20">
+                        <div class="col">
+                            <div class="filter-block d-flex align-items-center justify-content-between">
+                                <div class="filter-item text m montserrat active up">По цене</div>
+                                <div class="filter-item text m montserrat">По популярности</div>
+                                <div class="filter-item text m montserrat">По новизне</div>
+                                <div class="filter-display ml-auto d-flex align-items-center justify-content-end">
+                                    <div class="text m montserrat gray-100 mr__15">Вид:</div>
+                                    <div class="filter-display__item">
+                                        <i class="icon list active"></i>
+                                        <i class="icon table"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb__20">
+                        <div class="col-12">
+                            <div class="text xl montserrat-bold">
+                                По заданным критериям ничего не найдено.
+                            </div>
+                            <div class="text xl montserrat-bold">
+                                Пожалуйста, попробуйте изменить критерии отбора.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantage bg__burgundy-50 mb__70">
+        <div class="container">
+            <div class="row row-cols-xl-6 row-cols-lg-3 row-cols-md-3 row-cols-2 slider-advantage">
+                <div class="col mb-md__30 p-0">
+                    <div class="advantage-item">
+                        <i class="icon advantage strength mb__20"></i>
+                        <div class="text xl white bold">Прочность</div>
+                    </div>
+                </div>
+                <div class="col mb-md__30 p-0">
+                    <div class="advantage-item">
+                        <i class="icon advantage hourglass mb__20"></i>
+                        <div class="text xl white bold">Долгострочность</div>
+                    </div>
+                </div>
+                <div class="col mb-md__30 p-0">
+                    <div class="advantage-item">
+                        <i class="icon advantage tree mb__20"></i>
+                        <div class="text xl white bold">Экологичность</div>
+                    </div>
+                </div>
+                <div class="col mb-md__30 p-0">
+                    <div class="advantage-item">
+                        <i class="icon advantage snow mb__20"></i>
+                        <div class="text xl white bold">Морозостойкость</div>
+                    </div>
+                </div>
+                <div class="col mb-md__30 p-0">
+                    <div class="advantage-item">
+                        <i class="icon advantage fire mb__20"></i>
+                        <div class="text xl white bold">Пожаро&shy;безопасность</div>
+                    </div>
+                </div>
+                <div class="col mb-md__30 p-0">
+                    <div class="advantage-item">
+                        <i class="icon advantage strength mb__20"></i>
+                        <div class="text xl white bold">Шумоизоляция</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Акции -->
+    <section class="stocks mb__70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="h1 burgundy-100 mb__20">Акции</h1>
+                </div>
+            </div>
+            <div class="row row-cols-xl-12 row-cols-lg-12 row-cols-md-12 row-cols-12 slider-stocks">
+                <!-- <div class=""> -->
+                <div class="col mb__20">
+                    <a href="stocks.html" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <div class="col mb__20">
+                    <a href="stocks.html" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <div class="col mb__20">
+                    <a href="stocks.html" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <div class="col mb__20">
+                    <a href="stocks.html" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <div class="col mb__20">
+                    <a href="stocks.html" class="stocks-item text-decoration-none">
+                        <div class="stocks-image">
+                            <img src="images/stocks1-1.png" alt="">
+                        </div>
+                        <div class="stocks-text link black text m montserrat text-center">Какой-то текст</div>
+                    </a>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+    
+</div>
+<!-- footer -->
+//= template/footer.html
+<!-- footer end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

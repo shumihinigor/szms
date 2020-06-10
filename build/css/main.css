@@ -112,27 +112,6 @@ button.close:focus {
   text-transform: none;
 }
 
-.form-group.custom {
-  margin: 0;
-}
-
-.form-group.custom .form-control {
-  border: 1px solid #DFC3C7;
-  color: #333333;
-}
-
-.form-group.custom .form-control:hover, .form-group.custom .form-control:focus {
-  border: 1px solid #552225;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.form-group.custom .form-control.error {
-  border: 1px solid #FF5065;
-  -webkit-box-shadow: 0px 1px 7px rgba(255, 80, 101, 0.4);
-          box-shadow: 0px 1px 7px rgba(255, 80, 101, 0.4);
-}
-
 @media screen and (max-width: 767px) {
   .h-sm-auto {
     height: auto !important;
@@ -151,6 +130,7 @@ button.close:focus {
 @media screen and (max-width: 991px) {
   .sticky {
     position: relative !important;
+    top: 0;
   }
 }
 
@@ -1102,6 +1082,43 @@ select.form-control:focus {
   border-color: #824C4F;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.form-group.custom {
+  margin: 0;
+}
+
+.form-group.custom .form-control {
+  border: 1px solid #DFC3C7;
+  color: #333333;
+}
+
+.form-group.custom .form-control:hover, .form-group.custom .form-control:focus {
+  border: 1px solid #552225;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-group.custom .form-control.error {
+  border: 1px solid #FF5065;
+  -webkit-box-shadow: 0px 1px 7px rgba(255, 80, 101, 0.4);
+          box-shadow: 0px 1px 7px rgba(255, 80, 101, 0.4);
+}
+
+.form-group.custom.code {
+  margin-bottom: 15px;
+}
+
+.form-group.custom.code .form-control {
+  width: 74px;
+  height: 74px;
+  padding: 10px 10px 15px 10px;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  color: #552225;
 }
 
 /* Slider */
@@ -2066,6 +2083,10 @@ img {
   .modal-md, .modal-xl {
     max-width: 540px !important;
   }
+}
+
+.map .modal-body {
+  padding: 0;
 }
 
 .radio-item {
@@ -3593,6 +3614,16 @@ body.compensate-for-scrollbar {
   }
 }
 
+.slider-reviews__photo {
+  max-width: 142px;
+  max-height: 118px;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .slider-reviews__item {
   position: relative;
   background: #FFFFFF;
@@ -4382,7 +4413,7 @@ body.compensate-for-scrollbar {
 
 .basket-item {
   position: relative;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 50px 20px;
   border: 1px solid #DFC3C7;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -4397,7 +4428,7 @@ body.compensate-for-scrollbar {
   .basket-item {
     margin-left: -5px !important;
     margin-right: -5px !important;
-    padding: 10px 10px 50px 10px;
+    padding: 10px 10px 70px 10px;
   }
 }
 
@@ -11745,6 +11776,7 @@ a.close.disabled {
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
+  padding-right: 0 !important;
 }
 
 .modal {

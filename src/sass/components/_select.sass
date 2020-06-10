@@ -22,3 +22,28 @@ select.form-control
     &:focus
         border-color: #824C4F
         box-shadow: none
+
+
+.form-group.custom
+    margin: 0
+    & .form-control
+        border: 1px solid #DFC3C7
+        color: #333333
+        &:hover, &:focus
+            border: 1px solid #552225
+            box-shadow: none
+        &.error
+            border: 1px solid #FF5065
+            box-shadow: 0px 1px 7px rgba(255, 80, 101, 0.4)
+    &.code
+        margin-bottom: 15px
+        & .form-control
+            width: 74px
+            height: 74px
+            padding: 10px 10px 15px 10px
+            font-size: 60px
+            text-align: center
+            font-family: "Montserrat"
+            font-style: normal
+            font-weight: bold
+            color: #552225
