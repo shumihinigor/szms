@@ -3208,16 +3208,16 @@ body.compensate-for-scrollbar {
   z-index: 100001;
   top: 52px;
   left: 0;
-  background: #FFFFFF;
+  background: #824C4F;
   padding: 15px;
   white-space: nowrap;
-  border: 1px solid #F8F8F8;
   list-style: none;
 }
 
 @media screen and (max-width: 991px) {
   .header-link__item.dropdown .dropdown-content {
     display: block;
+    background: #FFFFFF;
     position: relative;
     left: -15px;
     top: 0;
@@ -3232,8 +3232,12 @@ body.compensate-for-scrollbar {
   margin-bottom: 15px;
 }
 
+.header-link__item.dropdown .dropdown-content li > a {
+  color: #FFFFFF;
+}
+
 .header-link__item.dropdown .dropdown-content li:hover > a {
-  color: #333333;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
@@ -3310,10 +3314,6 @@ body.compensate-for-scrollbar {
   .header-link__item.dropdown.active .dropdown-content {
     margin-top: 15px;
   }
-}
-
-.header-link__item.dropdown.active .dropdown-content {
-  display: block;
 }
 
 @media screen and (max-width: 991px) {
@@ -4497,7 +4497,7 @@ body.compensate-for-scrollbar {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(85, 34, 37, 0.9);
 }
 
 .profile-photo {
