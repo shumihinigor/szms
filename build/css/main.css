@@ -2089,6 +2089,14 @@ img {
   padding: 0;
 }
 
+.code .modal-header {
+  border-bottom: 0;
+}
+
+.code .modal-body {
+  padding: 1rem 0;
+}
+
 .radio-item {
   display: -webkit-box;
   display: -webkit-flex;
