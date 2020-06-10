@@ -159,6 +159,8 @@ function sliderStocks() {
     arrows: false,
     centerMode: true,
     centerPadding: '50px',
+    useTransform:false,
+    variableWidth: true,
     responsive: [{
         breakpoint: 991,
         settings: {
