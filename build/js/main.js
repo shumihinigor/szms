@@ -28,7 +28,7 @@ $(document).ready(function () {
 $(window).on('resize', function () {
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-prev'))
   $('.slider-reviews + .progress-wrapper .progress-button').append($('.slider-reviews .slick-next'))
-  menuMobile();
+  // menuMobile();
 });
 
 // ссылки в навигации
@@ -445,29 +445,47 @@ function scrollTop() {
 
 // меню на мобилке
 function menuMobile() {
-  let heightNav = $('.header-nav').height() + 40
-  let heightHeader = $('.header').height()
-  $('.header-nav').css('top', -heightNav)
-  $('.header-nav').css('bottom', 'auto')
+  // let heightNav = $('.header-nav').height() + 40
+  // let heightHeader = $('.header').height()
+  // $('.header-nav').css('top', -heightNav)
+  // $('.header-nav').css('bottom', 'auto')
+  // $('.header-nav').css('opacity', 1)
 
+
+  // $('.navbar-toggler.menu').on('click', function () {
+  //   $('.header-nav').toggleClass('active')
+  //   if ($('.header-nav').hasClass('active')) {
+  //     $('.header-nav').css('opacity', 1)
+  //     $('.header-nav').css('top', heightHeader + 20)
+  //     $('.header-nav').css('bottom', 0)
+  //     $('.top').hide()
+  //     $('body').addClass('off-scroll')
+  //   } else {
+  //     $('.header-nav').css('opacity', 0)
+  //     $('.header-nav').css('top', -heightNav)
+  //     $('body').removeClass('off-scroll')
+  //   }
+  // })
 
   $('.navbar-toggler.menu').on('click', function () {
-    $('.header-nav').toggleClass('active')
-    if ($('.header-nav').hasClass('active')) {
-      $('.header-nav').css('opacity', 1)
-      $('.header-nav').css('top', heightHeader + 20)
-      $('.header-nav').css('bottom', 0)
+    $('.header-nav').animate({
+      
+    }).toggleClass('active')
+      if ($('.header-nav').hasClass('active')) {
+        $('body').addClass('off-scroll')
+        $('.top').hide()
     } else {
-      $('.header-nav').css('opacity', 0)
-      $('.header-nav').css('top', -heightNav)
+        $('body').removeClass('off-scroll')
+        $('.top').show()
     }
   })
+
 }
 
 // menu
 function menu() {
 
-  let heightNav = $('.header-nav').height() + 40
+  // let heightNav = $('.header-nav').height() + 40
   let scrollTop = $(this).scrollTop();
   
   if ($(window).scrollTop() > 52) {
