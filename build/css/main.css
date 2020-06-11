@@ -1547,8 +1547,8 @@ img {
 .icon.profile {
   display: block;
   margin: auto;
-  width: 22px;
-  height: 26px;
+  width: 27px;
+  height: 30px;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1571,7 +1571,7 @@ img {
   display: block;
   margin: auto;
   width: 30px;
-  height: 27.5px;
+  height: 28px;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3124,7 +3124,7 @@ body.compensate-for-scrollbar {
     top: 70px;
     bottom: 0;
     width: 80%;
-    background: #333333;
+    background: #552225;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
@@ -3332,7 +3332,7 @@ body.compensate-for-scrollbar {
 
 @media screen and (max-width: 991px) {
   .header-link__item {
-    border-bottom: 0.5px solid #484848;
+    border-bottom: 0.5px solid #824C4F;
     padding: 15px;
     width: 100%;
     margin-right: 0;
@@ -3865,11 +3865,13 @@ body.compensate-for-scrollbar {
 .catalog-link {
   position: relative;
   background: #FFFFFF;
+  height: 100%;
 }
 
 .catalog-link__image {
   position: relative;
-  min-height: 180px;
+  min-height: 230px;
+  height: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

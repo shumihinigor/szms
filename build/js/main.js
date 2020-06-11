@@ -391,9 +391,6 @@ function deleteImage() {
 }
 
 // слайдер на доставку 
-
-
-// слайдер на главной с акциями
 function sliderDelivery() {
   if (window.innerWidth <= 991) {
     var $sliderReviews = $('.slider-delivery');
@@ -451,12 +448,15 @@ function menuMobile() {
   let heightNav = $('.header-nav').height() + 40
   let heightHeader = $('.header').height()
   $('.header-nav').css('top', -heightNav)
+  $('.header-nav').css('bottom', 'auto')
+
 
   $('.navbar-toggler.menu').on('click', function () {
     $('.header-nav').toggleClass('active')
     if ($('.header-nav').hasClass('active')) {
       $('.header-nav').css('opacity', 1)
       $('.header-nav').css('top', heightHeader + 20)
+      $('.header-nav').css('bottom', 0)
     } else {
       $('.header-nav').css('opacity', 0)
       $('.header-nav').css('top', -heightNav)
