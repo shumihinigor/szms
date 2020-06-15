@@ -22,6 +22,7 @@ $(document).ready(function () {
   filterList();
   filterMobile();
   menu();
+  map();
 });
 
 // resize
@@ -159,7 +160,7 @@ function sliderStocks() {
     arrows: false,
     centerMode: true,
     centerPadding: '50px',
-    useTransform:false,
+    useTransform: false,
     variableWidth: true,
     responsive: [{
         breakpoint: 991,
@@ -469,14 +470,14 @@ function menuMobile() {
 
   $('.navbar-toggler.menu').on('click', function () {
     $('.header-nav').animate({
-      
+
     }).toggleClass('active')
-      if ($('.header-nav').hasClass('active')) {
-        $('body').addClass('off-scroll')
-        $('.top').hide()
+    if ($('.header-nav').hasClass('active')) {
+      $('body').addClass('off-scroll')
+      $('.top').hide()
     } else {
-        $('body').removeClass('off-scroll')
-        $('.top').show()
+      $('body').removeClass('off-scroll')
+      $('.top').show()
     }
   })
 
@@ -487,7 +488,7 @@ function menu() {
 
   // let heightNav = $('.header-nav').height() + 40
   let scrollTop = $(this).scrollTop();
-  
+
   if ($(window).scrollTop() > 52) {
     if ($(window).innerWidth() >= 992) {
       $(".header").css({
@@ -558,3 +559,9 @@ function filterMobile() {
 // }, function() {
 //   $(this).find('.dropdown-content').stop(true, true).delay(100).fadeOut(500).removeClass('active');
 // });
+
+
+// карты
+function map() {
+
+}

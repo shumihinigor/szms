@@ -8,317 +8,459 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28dd9db4-8e56-4971-8a36-3885a400c0e7&lang=ru_RU"
+        type="text/javascript"></script>
 </head>
 
 <body class="">
 
     <div class="content">
 
-    <!-- header -->
-    //= template/header.html
-    <!-- header end -->
+        <!-- header -->
+        //= template/header.html
+        <!-- header end -->
 
-    <!-- breadcrumbs -->
-    //= template/breadcrumbs.html
-    <!-- breadcrumbs end -->
+        <!-- breadcrumbs -->
+        //= template/breadcrumbs.html
+        <!-- breadcrumbs end -->
 
-    <!-- breadcrumbs -->
-    //= template/come__back.html
-    <!-- breadcrumbs end -->
+        <!-- breadcrumbs -->
+        //= template/come__back.html
+        <!-- breadcrumbs end -->
 
-    <!-- menu -->
-    //= template/menu.html
-    <!-- menu end -->
+        <!-- menu -->
+        //= template/menu.html
+        <!-- menu end -->
 
-    <!-- Товар -->
-    <section class="mb__50 mt-sm__30 mt-md__50 mb-sm__0">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 col-md-12 col-sm-12">
-                    <div class="row mb__50">
-                        <div class="col">
-                            <div class="row mb__40">
-                                <div class="col">
-                                    <h1 class="h1 text burgundy-100">Оформить заказ</h1>
-                                </div>
-                            </div>
-                            <div class="row mb__25">
-                                <div class="col">
-                                    <h4 class="h4 text-uppercase ">Выберите способ доставки</h4>
-                                </div>
-                            </div>
-                            <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 mb__20">
-                                <div class="col mb-md__15">
-                                    <div class="radio-item">
-                                        <input type="radio" id="radio1" class="radio-input" name="gender">
-                                        <label for="radio1" class="radio-label text xl montserrat-bold w-100">Самовывоз</label>
+        <!-- Товар -->
+        <section class="mb__50 mt-sm__30 mt-md__50 mb-sm__0">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="row mb__50">
+                            <div class="col">
+                                <div class="row mb__40">
+                                    <div class="col">
+                                        <h1 class="h1 text burgundy-100">Оформить заказ</h1>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="radio-item">
-                                        <input type="radio" id="radio2" class="radio-input" name="gender">
-                                        <label for="radio2" class="radio-label text xl montserrat-bold w-100">Доставка</label>
+                                <div class="row mb__25">
+                                    <div class="col">
+                                        <h4 class="h4 text-uppercase ">Выберите способ доставки</h4>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mb__20">
-                                <div class="col">
-                                    <div class="checkout-address selected">
-                                        <div class="text m gray-100 montserrat">Адрес доставки:</div>
-                                        <div class="button medium contour text m ubuntu-500 burgundy-50 text-uppercase" data-toggle="modal" data-target="#map">Выбрать адрес</div>
+                                <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 mb__20">
+                                    <div class="col mb-md__15">
+                                        <div class="radio-item">
+                                            <input type="radio" id="radio1" class="radio-input" name="gender">
+                                            <label for="radio1"
+                                                class="radio-label text xl montserrat-bold w-100">Самовывоз</label>
+                                        </div>
                                     </div>
-                                    <div class="checkout-address__item text m montserrat gray-100">
-                                        Ярославль, Угличская улица, д. 50, кв. 29, индекс 150047
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mb__15">
-                                <div class="col">
-                                    <div class="text m ubuntu gray-100">Саратовский завод строительных материалов осуществляет доставку продукции до потребителя. доставка осуществляется различными видами автомобильного транспорта, железнодорожным транспортом, в зависимости от объёма продукции удалённости региона доставки. автомобильная доставка осуществляется с самосвалом Камаз с краном манипулятором, грузоподъемностью до 20 т, длинномером. стоимость доставки рассчитывается индивидуально для каждой перевозки. зависит от расстояния до объема, количество груза и выбранной машины.</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="#" class="link red text m ubuntu underline">
-                                        <span class="mr__5">Перейти в раздел «О магазине»</span>
-                                        <i class="icon arrow-right red"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb__50">
-                        <div class="col">
-                            <div class="row mb__25">
-                                <div class="col">
-                                    <h4 class="h4 text-uppercase ">Выберите Способ оплаты</h4>
-                                </div>
-                            </div>
-                            <div class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 row-cols-1 mb__20">
-                                <div class="col mb__15">
-                                    <div class="radio-item">
-                                        <input type="radio" id="radio3" class="radio-input" name="gender">
-                                        <label for="radio3" class="radio-label text xl montserrat-bold w-100">Оплата онлайн
-                                            <span class="" data-toggle="tooltip" data-placement="right" title="" data-original-title="При оплате заказа банковской картой возврат денежных средств производится на ту карту, с которой был произведен платеж."><i class="icon prompt"></i></span>
-
-                                        </label>
+                                    <div class="col">
+                                        <div class="radio-item">
+                                            <input type="radio" id="radio2" class="radio-input" name="gender">
+                                            <label for="radio2"
+                                                class="radio-label text xl montserrat-bold w-100">Доставка</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col mb__15">
-                                    <div class="radio-item">
-                                        <input type="radio" id="radio4" class="radio-input" name="gender">
-                                        <label for="radio4" class="radio-label text xl montserrat-bold w-100">Наличными при получении
-                                        </label>
+                                <div class="row mb__20">
+                                    <div class="col">
+                                        <div class="checkout-address selected">
+                                            <div class="text m gray-100 montserrat">Адрес доставки:</div>
+                                            <div class="button medium contour text m ubuntu-500 burgundy-50 text-uppercase"
+                                                data-toggle="modal" data-target="#modal-map">Выбрать адрес</div>
+                                        </div>
+                                        <div class="checkout-address__item text m montserrat gray-100">
+                                            Ярославль, Угличская улица, д. 50, кв. 29, индекс 150047
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col mb__15">
-                                    <div class="radio-item">
-                                        <input type="radio" id="radio5" class="radio-input" name="gender">
-                                        <label for="radio5" class="radio-label text xl montserrat-bold w-100">
-                                            Выставить счет
-                                            <span class="" data-toggle="tooltip" data-placement="right" title="" data-original-title="Это документ от Продавца к Покупателю, который содержит реквизиты для оплаты и перечень товаров и (или) услуг."><i class="icon prompt"></i></span>
-                                        </label>
+                                <div class="row mb__15">
+                                    <div class="col">
+                                        <div class="text m ubuntu gray-100">Саратовский завод строительных материалов
+                                            осуществляет доставку продукции до потребителя. доставка осуществляется
+                                            различными видами автомобильного транспорта, железнодорожным транспортом, в
+                                            зависимости от объёма продукции удалённости региона доставки. автомобильная
+                                            доставка осуществляется с самосвалом Камаз с краном манипулятором,
+                                            грузоподъемностью до 20 т, длинномером. стоимость доставки рассчитывается
+                                            индивидуально для каждой перевозки. зависит от расстояния до объема,
+                                            количество груза и выбранной машины.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="link red text m ubuntu underline">
+                                            <span class="mr__5">Перейти в раздел «О магазине»</span>
+                                            <i class="icon arrow-right red"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mb__50">
-                        <div class="col">
-                            <div class="row mb__25">
-                                <div class="col">
-                                    <h4 class="h4 text-uppercase">
-                                        <span class=" mr__25">Ваши данные</span>
-                                        <span class="error">*Вы заполнили не все данные</span>
-                                    </h4>
+                        <div class="row mb__50">
+                            <div class="col">
+                                <div class="row mb__25">
+                                    <div class="col">
+                                        <h4 class="h4 text-uppercase ">Выберите Способ оплаты</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 row-cols-1 mb__20">
+                                    <div class="col mb__15">
+                                        <div class="radio-item">
+                                            <input type="radio" id="radio3" class="radio-input" name="gender">
+                                            <label for="radio3" class="radio-label text xl montserrat-bold w-100">Оплата
+                                                онлайн
+                                                <span class="" data-toggle="tooltip" data-placement="right" title=""
+                                                    data-original-title="При оплате заказа банковской картой возврат денежных средств производится на ту карту, с которой был произведен платеж."><i
+                                                        class="icon prompt"></i></span>
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col mb__15">
+                                        <div class="radio-item">
+                                            <input type="radio" id="radio4" class="radio-input" name="gender">
+                                            <label for="radio4"
+                                                class="radio-label text xl montserrat-bold w-100">Наличными при
+                                                получении
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col mb__15">
+                                        <div class="radio-item">
+                                            <input type="radio" id="radio5" class="radio-input" name="gender">
+                                            <label for="radio5" class="radio-label text xl montserrat-bold w-100">
+                                                Выставить счет
+                                                <span class="" data-toggle="tooltip" data-placement="right" title=""
+                                                    data-original-title="Это документ от Продавца к Покупателю, который содержит реквизиты для оплаты и перечень товаров и (или) услуг."><i
+                                                        class="icon prompt"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <ul class="nav nav-tabs" id="myTab-2" role="tablist">
-                                        <li class="nav-item w-50" role="presentation">
-                                            <a class="nav-link active text xxl semi-bold text-nowrap" id="home-tab-2" data-toggle="tab" href="#home-2" role="tab" aria-controls="home-2" aria-selected="false">Физ. лицо</a>
-                                        </li>
-                                        <li class="nav-item  w-50" role="presentation">
-                                            <a class="nav-link text xxl text-nowrap" id="profile-tab-2" data-toggle="tab" href="#profile-2" role="tab" aria-controls="profile-2" aria-selected="false">Юр. лицо</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent-2">
-                                        <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
-                                            <div class="text m ubuntu gray-100 mt__20">
-                                                <form>
-                                                    <div class="row mb__30">
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputEmail1">Имя*</label>
-                                                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        </div>
+                        <div class="row mb__50">
+                            <div class="col">
+                                <div class="row mb__25">
+                                    <div class="col">
+                                        <h4 class="h4 text-uppercase">
+                                            <span class=" mr__25">Ваши данные</span>
+                                            <span class="error">*Вы заполнили не все данные</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="nav nav-tabs" id="myTab-2" role="tablist">
+                                            <li class="nav-item w-50" role="presentation">
+                                                <a class="nav-link active text xxl semi-bold text-nowrap"
+                                                    id="home-tab-2" data-toggle="tab" href="#home-2" role="tab"
+                                                    aria-controls="home-2" aria-selected="false">Физ. лицо</a>
+                                            </li>
+                                            <li class="nav-item  w-50" role="presentation">
+                                                <a class="nav-link text xxl text-nowrap" id="profile-tab-2"
+                                                    data-toggle="tab" href="#profile-2" role="tab"
+                                                    aria-controls="profile-2" aria-selected="false">Юр. лицо</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent-2">
+                                            <div class="tab-pane fade show active" id="home-2" role="tabpanel"
+                                                aria-labelledby="home-tab-2">
+                                                <div class="text m ubuntu gray-100 mt__20">
+                                                    <form>
+                                                        <div class="row mb__30">
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputEmail1">Имя*</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="exampleInputEmail1"
+                                                                        aria-describedby="emailHelp" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputPassword1">Фамилия*</label>
+                                                                    <input type="text" class="form-control error"
+                                                                        id="exampleInputPassword1"
+                                                                        placeholder="Семенов">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputPassword1">Фамилия*</label>
-                                                              <input type="text" class="form-control error" id="exampleInputPassword1" placeholder="Семенов">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputEmail2">Телефон для
+                                                                        связи*</label>
+                                                                    <input type="tel" class="form-control"
+                                                                        id="exampleInputEmail2"
+                                                                        aria-describedby="emailHelp"
+                                                                        placeholder="+7(915)133-23-71"
+                                                                        pattern="2[0-9]{3}-[0-9]{3}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputPassword2">Электронная
+                                                                        почта</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleInputPassword2"
+                                                                        placeholder="semen_semenov@gmail.com">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputEmail2">Телефон для связи*</label>
-                                                              <input type="tel" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputPassword2">Электронная почта</label>
-                                                              <input type="email" class="form-control" id="exampleInputPassword2" placeholder="semen_semenov@gmail.com">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                    </form>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
-                                            <div class="text m ubuntu gray-100 mt__20">
-                                                <form>
-                                                    <div class="row mb__30">
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputEmail3">Имя*</label>
-                                                              <input type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="">
+                                            <div class="tab-pane fade" id="profile-2" role="tabpanel"
+                                                aria-labelledby="profile-tab-2">
+                                                <div class="text m ubuntu gray-100 mt__20">
+                                                    <form>
+                                                        <div class="row mb__30">
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputEmail3">Имя*</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="exampleInputEmail3"
+                                                                        aria-describedby="emailHelp" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputPassword3">Фамилия*</label>
+                                                                    <input type="text" class="form-control error"
+                                                                        id="exampleInputPassword3"
+                                                                        placeholder="Семенов">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputPassword3">Фамилия*</label>
-                                                              <input type="text" class="form-control error" id="exampleInputPassword3" placeholder="Семенов">
+                                                        <div class="row mb__30">
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputEmail4">Телефон для
+                                                                        связи*</label>
+                                                                    <input type="tel" class="form-control"
+                                                                        id="exampleInputEmail4"
+                                                                        aria-describedby="emailHelp"
+                                                                        placeholder="+7(915)133-23-71"
+                                                                        pattern="2[0-9]{3}-[0-9]{3}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputPassword4">Электронная
+                                                                        почта</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleInputPassword4"
+                                                                        placeholder="semen_semenov@gmail.com">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mb__30">
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputEmail4">Телефон для связи*</label>
-                                                              <input type="tel" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
+                                                        <div class="row mb__30">
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputEmail5">Наименование</label>
+                                                                    <input type="tel" class="form-control"
+                                                                        id="exampleInputEmail5"
+                                                                        aria-describedby="emailHelp"
+                                                                        placeholder="+7(915)133-23-71"
+                                                                        pattern="2[0-9]{3}-[0-9]{3}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputPassword6">ИНН</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleInputPassword6"
+                                                                        placeholder="semen_semenov@gmail.com">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputPassword4">Электронная почта</label>
-                                                              <input type="email" class="form-control" id="exampleInputPassword4" placeholder="semen_semenov@gmail.com">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputEmail6">КПП</label>
+                                                                    <input type="tel" class="form-control"
+                                                                        id="exampleInputEmail6"
+                                                                        aria-describedby="emailHelp"
+                                                                        placeholder="+7(915)133-23-71"
+                                                                        pattern="2[0-9]{3}-[0-9]{3}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group custom">
+                                                                    <label for="exampleInputPassword7">Юр. адрес</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleInputPassword7"
+                                                                        placeholder="semen_semenov@gmail.com">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mb__30">
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputEmail5">Наименование</label>
-                                                              <input type="tel" class="form-control" id="exampleInputEmail5" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputPassword6">ИНН</label>
-                                                              <input type="email" class="form-control" id="exampleInputPassword6" placeholder="semen_semenov@gmail.com">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputEmail6">КПП</label>
-                                                              <input type="tel" class="form-control" id="exampleInputEmail6" aria-describedby="emailHelp" placeholder="+7(915)133-23-71" pattern="2[0-9]{3}-[0-9]{3}">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col">
-                                                            <div class="form-group custom">
-                                                              <label for="exampleInputPassword7">Юр. адрес</label>
-                                                              <input type="email" class="form-control" id="exampleInputPassword7" placeholder="semen_semenov@gmail.com">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="checkout bg__pink sticky">
+                            <div class="mb__20">
+                                <div
+                                    class="text m montserrat gray-100 d-flex justify-content-between align-items-center mb__10">
+                                    <span class="text-left mr__10">Кирпич силикатный:</span>
+                                    <span class="text xl text-right">160 854 руб.</span>
+                                </div>
+                                <div
+                                    class="text m montserrat gray-100 d-flex justify-content-between align-items-center">
+                                    <span class="text-left mr__10">Упаковка:</span>
+                                    <span class="text xl text-right">14 754 руб.</span>
+                                </div>
+                            </div>
+                            <div class="mb__10">
+                                <div
+                                    class="text xxl montserrat-bold black d-flex justify-content-between align-items-center">
+                                    <span class="text-left mr__10">Итого:</span>
+                                    <span class="text xxxl text-right">175 599 руб.</span>
+                                </div>
+                            </div>
+                            <div class="mb__25">
+                                <div
+                                    class="text s ubuntu-300 black d-flex justify-content-between align-items-center mb__5">
+                                    <span class="text-left mr__10">В том числе НДС (20%)</span>
+                                    <span class="text s text-right">29 266 руб.</span>
+                                </div>
+                                <div class="text s ubuntu-300 black d-flex justify-content-between align-items-center">
+                                    <span class="text-left mr__10">*без учета стоимости раствора и доставки</span>
+                                </div>
+                            </div>
+                            <div class="mb__15">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label text s ubuntu gray-50"
+                                        for="customControlAutosizing">Согласен с условиями
+                                        <span><a href="#" class="link text gray-50 underline">публичной
+                                                оферты</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="checkout-button">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="button red text-uppercase text m ubuntu-500 w-100 mr-md__10">оформить
+                                        заказ</div>
+                                    <a href="#" class="button download d-lg-none d-md-block d-sm-block d-block"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="checkout bg__pink sticky">
-                        <div class="mb__20">
-                            <div class="text m montserrat gray-100 d-flex justify-content-between align-items-center mb__10">
-                                <span class="text-left mr__10">Кирпич силикатный:</span>
-                                <span class="text xl text-right">160 854 руб.</span>
-                            </div>
-                            <div class="text m montserrat gray-100 d-flex justify-content-between align-items-center">
-                                <span class="text-left mr__10">Упаковка:</span>
-                                <span class="text xl text-right">14 754 руб.</span>
-                            </div>
-                        </div>
-                        <div class="mb__10">
-                            <div class="text xxl montserrat-bold black d-flex justify-content-between align-items-center">
-                                <span class="text-left mr__10">Итого:</span>
-                                <span class="text xxxl text-right">175 599 руб.</span>
-                            </div>
-                        </div>
-                        <div class="mb__25">
-                            <div class="text s ubuntu-300 black d-flex justify-content-between align-items-center mb__5">
-                                <span class="text-left mr__10">В том числе НДС (20%)</span>
-                                <span class="text s text-right">29 266 руб.</span>
-                            </div>
-                            <div class="text s ubuntu-300 black d-flex justify-content-between align-items-center">
-                                <span class="text-left mr__10">*без учета стоимости раствора и доставки</span>
-                            </div>
-                        </div>
-                        <div class="mb__15">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                <label class="custom-control-label text s ubuntu gray-50" for="customControlAutosizing">Согласен с условиями
-                                    <span><a href="#" class="link text gray-50 underline">публичной оферты</a></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="checkout-button">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="button red text-uppercase text m ubuntu-500 w-100 mr-md__10">оформить заказ</div>
-                                <a href="#" class="button download d-lg-none d-md-block d-sm-block d-block"></a>
-                            </div>
-                        </div>
+            </div>
+        </section>
+
+
+        <!-- Modal -->
+        <div class="modal modal-map fade" id="modal-map" tabindex="-1" role="dialog" aria-labelledby="mapLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="map" id="map" style="width: 100%; height: 400px"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-     <!-- Modal -->
- <div class="modal map fade" id="map" tabindex="-1" role="dialog" aria-labelledby="mapLabel"
- aria-hidden="true">
- <div class="modal-dialog modal-lg">
-     <div class="modal-content">
-         <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-             </button>
-         </div>
-         <div class="modal-body text-center">
-            <div id="map" class="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9dead1506090d4c8548ae5e98e0e2f0b60d81c301a1b8b77b76b4ab6618dec50&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
-         </div>
-     </div>
- </div>
-</div>
-
-    
-</div>
+    </div>
 
     <!-- footer -->
     //= template/footer.html
     <!-- footer end -->
+
+    <script>
+        ymaps.ready(init);
+
+function init() {
+    // Стоимость за километр.
+    var DELIVERY_TARIFF = 20,
+    // Минимальная стоимость.
+        MINIMUM_COST = 500,
+        myMap = new ymaps.Map('map', {
+            center: [60.906882, 30.067233],
+            zoom: 9,
+            controls: []
+        }),
+    // Создадим панель маршрутизации.
+        routePanelControl = new ymaps.control.RoutePanel({
+            options: {
+                // Добавим заголовок панели.
+                showHeader: true,
+                title: 'Расчёт доставки'
+            }
+        }),
+        zoomControl = new ymaps.control.ZoomControl({
+            options: {
+                size: 'small',
+                float: 'none',
+                position: {
+                    bottom: 145,
+                    right: 10
+                }
+            }
+        });
+    // Пользователь сможет построить только автомобильный маршрут.
+    routePanelControl.routePanel.options.set({
+        types: {auto: true}
+    });
+
+    // Если вы хотите задать неизменяемую точку "откуда", раскомментируйте код ниже.
+    /*routePanelControl.routePanel.state.set({
+        fromEnabled: false,
+        from: 'Москва, Льва Толстого 16'
+     });*/
+
+    myMap.controls.add(routePanelControl).add(zoomControl);
+
+    // Получим ссылку на маршрут.
+    routePanelControl.routePanel.getRouteAsync().then(function (route) {
+
+        // Зададим максимально допустимое число маршрутов, возвращаемых мультимаршрутизатором.
+        route.model.setParams({results: 1}, true);
+
+        // Повесим обработчик на событие построения маршрута.
+        route.model.events.add('requestsuccess', function () {
+
+            var activeRoute = route.getActiveRoute();
+            if (activeRoute) {
+                // Получим протяженность маршрута.
+                var length = route.getActiveRoute().properties.get("distance"),
+                // Вычислим стоимость доставки.
+                    price = calculate(Math.round(length.value / 1000)),
+                // Создадим макет содержимого балуна маршрута.
+                    balloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                        '<span>Расстояние: ' + length.text + '.</span><br/>' +
+                        '<span style="font-weight: bold; font-style: italic">Стоимость доставки: ' + price + ' р.</span>');
+                // Зададим этот макет для содержимого балуна.
+                route.options.set('routeBalloonContentLayout', balloonContentLayout);
+                // Откроем балун.
+                activeRoute.balloon.open();
+            }
+        });
+
+    });
+    // Функция, вычисляющая стоимость доставки.
+    function calculate(routeLength) {
+        return Math.max(routeLength * DELIVERY_TARIFF, MINIMUM_COST);
+    }
+}
+    </script>
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>

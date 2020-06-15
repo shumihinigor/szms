@@ -86,8 +86,8 @@
   .map {
     position: relative;
     left: -15px;
-    width: -webkit-calc(100% + 30px);
-    width: calc(100% + 30px);
+    width: -webkit-calc(100% + 30px) !important;
+    width: calc(100% + 30px) !important;
     max-width: none !important;
   }
 }
@@ -2129,7 +2129,7 @@ img {
   }
 }
 
-.map .modal-body {
+.modal-map .modal-body {
   padding: 0;
 }
 
@@ -3153,6 +3153,16 @@ body.compensate-for-scrollbar {
   -o-transition: all .3s;
   transition: all .3s;
   position: static !important;
+}
+
+.header-nav .container-lg {
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .header-nav .container-lg {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
