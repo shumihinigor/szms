@@ -33,10 +33,10 @@
         <!-- menu end -->
 
         <!-- Товар -->
-        <section class="mb__50 mt-sm__30 mt-md__50 mb-sm__0">
+        <section class="mb__50 mt-sm__30 mt-md__50 mb-md__0">
             <div class="container">
                 <div class="row ">
-                    <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="col-lg-8 col-md-12 col-sm-12 mb-md__50">
                         <div class="row mb__50">
                             <div class="col">
                                 <div class="row mb__40">
@@ -73,7 +73,7 @@
                                                 data-toggle="modal" data-target="#modal-map">Выбрать адрес</div>
                                         </div>
                                         <div class="checkout-address__item text m montserrat gray-100">
-                                            Ярославль, Угличская улица, д. 50, кв. 29, индекс 150047
+                                            Ваш адрес
                                         </div>
                                     </div>
                                 </div>
@@ -307,6 +307,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="border-top border-burgundy-25 pt-3">
+                                    <div class="text s ubuntu-300 gray-50">При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента. </div>
+                                    <div class="text s ubuntu-300 gray-50">При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS), что обеспечивает безопасную обработку реквизитов Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень защиты. </div>
+                                    <div class="text s ubuntu-300 gray-50">В случае возврата, денежные средства возвращаются на ту же карту, с которой производилась оплата.</div>
+                                    <div class="text s ubuntu-300 gray-50">При оплате  заказа банковской картой возврат денежных средств производится на ту карту, с которой был произведен платеж.</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="checkout bg__pink sticky">
@@ -364,7 +374,8 @@
 
 
         <!-- Modal -->
-        <div class="modal modal-map fade" id="modal-map" tabindex="-1" role="dialog" aria-labelledby="mapLabel" aria-hidden="true">
+        <div class="modal modal-map fade" id="modal-map" tabindex="-1" role="dialog" aria-labelledby="mapLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -373,7 +384,7 @@
                         </button>
                     </div>
                     <div class="modal-body text-center">
-                        <div class="map" id="map" style="width: 100%; height: 400px"></div>
+                        <div class="" id="map" style="width: 100%; height: 400px"></div>
                     </div>
                 </div>
             </div>
@@ -385,81 +396,111 @@
     <!-- footer end -->
 
     <script>
+        
         ymaps.ready(init);
 
-function init() {
-    // Стоимость за километр.
-    var DELIVERY_TARIFF = 20,
-    // Минимальная стоимость.
-        MINIMUM_COST = 500,
-        myMap = new ymaps.Map('map', {
-            center: [60.906882, 30.067233],
-            zoom: 9,
-            controls: []
-        }),
-    // Создадим панель маршрутизации.
-        routePanelControl = new ymaps.control.RoutePanel({
-            options: {
-                // Добавим заголовок панели.
-                showHeader: true,
-                title: 'Расчёт доставки'
-            }
-        }),
-        zoomControl = new ymaps.control.ZoomControl({
-            options: {
-                size: 'small',
-                float: 'none',
-                position: {
-                    bottom: 145,
-                    right: 10
+        function init() {
+
+            // Стоимость за километр.
+            var DELIVERY_TARIFF = 20,
+                // Минимальная стоимость.
+                MINIMUM_COST = 500,
+                myMap = new ymaps.Map('map', {
+                    center: [51.436180, 45.875500],
+                    zoom: 12,
+                    controls: []
+                }),
+                // Создадим панель маршрутизации.
+                routePanelControl = new ymaps.control.RoutePanel({
+                    options: {
+                        // Добавим заголовок панели.
+                        showHeader: true,
+                        title: 'Доставки'
+                    }
+                }),
+                zoomControl = new ymaps.control.ZoomControl({
+                    options: {
+                        size: 'small',
+                        float: 'none',
+                        position: {
+                            bottom: 145,
+                            right: 10
+                        }
+                    }
+                });
+            // Пользователь сможет построить только автомобильный маршрут.
+            routePanelControl.routePanel.options.set({
+                types: {
+                    auto: true
                 }
+            });
+
+
+            // Зададим координаты пункта отправления с помощью геолокации.
+            // var location = routePanelControl.routePanel.geolocate('to');
+
+            // Если вы хотите задать неизменяемую точку "откуда", раскомментируйте код ниже.
+            routePanelControl.routePanel.state.set({
+                fromEnabled: false,
+                from: 'Верхний Александровский пр., 6, Саратов',
+                to: ''
+            });
+
+
+            myMap.controls.add(routePanelControl).add(zoomControl);
+
+            // Получим ссылку на маршрут.
+            routePanelControl.routePanel.getRouteAsync().then(function (route) {
+
+                // Зададим максимально допустимое число маршрутов, возвращаемых мультимаршрутизатором.
+                route.model.setParams({
+                    results: 1
+                }, true);
+
+                // Повесим обработчик на событие построения маршрута.
+                route.model.events.add('requestsuccess', function () {
+
+                    var activeRoute = route.getActiveRoute();
+                    if (activeRoute) {
+                        // Получим протяженность маршрута.
+                        var length = route.getActiveRoute().properties.get("distance"),
+                            // Вычислим стоимость доставки.
+                            // price = calculate(Math.round(length.value / 1000)),
+                            // Создадим макет содержимого балуна маршрута.
+                            balloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                                '<span>Расстояние: ' + length.text + '.</span>');
+                        // price
+                        // <br/>' +
+                        // '<span style="font-weight: bold; font-style: italic">Стоимость доставки: ' +
+                        // price + ' р.</span>
+                        // Зададим этот макет для содержимого балуна.
+                        route.options.set('routeBalloonContentLayout', balloonContentLayout);
+                        // Откроем балун.
+                        activeRoute.balloon.open();
+                    }
+                    var a;
+                    var adress = routePanelControl.routePanel.state.get('to');
+                    var myGeocoder = ymaps.geocode(adress);
+                    myGeocoder.then(
+                        function (res) {
+                            $('.checkout-address__item').text(res.geoObjects.get(0).properties._data.text);
+                        },
+                        function (err) {
+                            // Обработка ошибки.
+                        }
+                    );
+
+                });
+                
+
+            });
+            // Функция, вычисляющая стоимость доставки.
+            function calculate(routeLength) {
+                return Math.max(routeLength * DELIVERY_TARIFF, MINIMUM_COST);
             }
-        });
-    // Пользователь сможет построить только автомобильный маршрут.
-    routePanelControl.routePanel.options.set({
-        types: {auto: true}
-    });
+        }
 
-    // Если вы хотите задать неизменяемую точку "откуда", раскомментируйте код ниже.
-    /*routePanelControl.routePanel.state.set({
-        fromEnabled: false,
-        from: 'Москва, Льва Толстого 16'
-     });*/
 
-    myMap.controls.add(routePanelControl).add(zoomControl);
-
-    // Получим ссылку на маршрут.
-    routePanelControl.routePanel.getRouteAsync().then(function (route) {
-
-        // Зададим максимально допустимое число маршрутов, возвращаемых мультимаршрутизатором.
-        route.model.setParams({results: 1}, true);
-
-        // Повесим обработчик на событие построения маршрута.
-        route.model.events.add('requestsuccess', function () {
-
-            var activeRoute = route.getActiveRoute();
-            if (activeRoute) {
-                // Получим протяженность маршрута.
-                var length = route.getActiveRoute().properties.get("distance"),
-                // Вычислим стоимость доставки.
-                    price = calculate(Math.round(length.value / 1000)),
-                // Создадим макет содержимого балуна маршрута.
-                    balloonContentLayout = ymaps.templateLayoutFactory.createClass(
-                        '<span>Расстояние: ' + length.text + '.</span><br/>' +
-                        '<span style="font-weight: bold; font-style: italic">Стоимость доставки: ' + price + ' р.</span>');
-                // Зададим этот макет для содержимого балуна.
-                route.options.set('routeBalloonContentLayout', balloonContentLayout);
-                // Откроем балун.
-                activeRoute.balloon.open();
-            }
-        });
-
-    });
-    // Функция, вычисляющая стоимость доставки.
-    function calculate(routeLength) {
-        return Math.max(routeLength * DELIVERY_TARIFF, MINIMUM_COST);
-    }
-}
     </script>
 
     <script src="js/jquery.js"></script>

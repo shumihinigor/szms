@@ -43,7 +43,13 @@
         max-width: 540px !important
 
 .modal-map
+    overflow: auto !important
+    & .modal-dialog
+        position: static
+    & .modal-content
+        position: static
     & .modal-body
+        position: static
         padding: 0
 .code
     & .modal-header

@@ -144,7 +144,7 @@
                                     <div class="d-flex align-items-start flex-column w-100 ">
                                         <div class="text l semi-bold gray-100 mb__20">Адреса доставки</div>
                                         <div class="d-flex flex-column w-100 ">
-                                            <form class="mb__40">
+                                            <div class="mb__40">
                                                 <div class="form-group row">
                                                     <div class="col-sm-12 position-relative">
                                                         <input type="text" class="form-control gray" id="suggest"
@@ -153,11 +153,11 @@
                                                             class="icon remove-gray cursor-pointer"></i>
                                                     </div>
                                                 </div>
-                                            </form>
+                                            </div>
                                             <div class="d-flex align-items-center flex-column">
-                                                <a href="#" class="button contour text m text-uppercase mb__5 w-100">
+                                                <div id="add-address" class="button contour text m text-uppercase mb__5 w-100">
                                                     <span class="">Добавить адрес</span>
-                                                </a>
+                                                </div>
                                                 <span class="text m montserrat-normal green">Введите адрес в поле
                                                     ниже</span>
                                             </div>
@@ -186,50 +186,47 @@
     //= template/footer.html
     <!-- footer end -->
 
-    <!-- <script>
+    <script>
         ymaps.ready(init);
 
-        var suggest = "";
-
-
         function init() {
-
-            var myMap = new ymaps.Map("map", {
-                    center: [51.436180, 45.875500],
-                    zoom: 15,
-                    controls: ['zoomControl', 'geolocationControl']
-                });
-
-
-            var suggestView = new ymaps.SuggestView('suggest');
-            suggestView.events.add("select", function (e) {
-                console.log(e.get('item').value)
-            })
-
-            $("#removeSuggest").on('click', function() {
-                $('#suggest').val('');
-            });
-
-        }
-    </script> -->
-
-    <script>
-        ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
                 center: [55.753994, 37.622093],
                 zoom: 9,
-                // Добавим кнопку для построения маршрутов на карту.
-                controls: ['routeButtonControl']
+                controls: ['zoomControl', 'rulerControl']
             });
 
-            var control = myMap.controls.get('routeButtonControl');
+            var suggestView = new ymaps.SuggestView('suggest');
+            suggestView.events.add("select", function (e) {
+                var adress = e.get('item').value;
+                ymaps.geocode(adress).then(function (res) {
+                    // Выбираем первый результат геокодирования.
+                    var firstGeoObject = res.geoObjects.get(0),
+                        // Координаты геообъекта.
 
-            // Зададим координаты пункта отправления с помощью геолокации.
-            control.routePanel.geolocate('from');
+                        coords = firstGeoObject.geometry.getCoordinates(),
+                        // Область видимости геообъекта.
+                        bounds = firstGeoObject.properties.get('boundedBy');
 
-            // Откроем панель для построения маршрутов.
-            control.state.set('expanded', true);
-        });
+                    firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
+                    // Получаем строку с адресом и выводим в иконке геообъекта.
+                    firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
+
+                    // Добавляем первый найденный геообъект на карту.
+                    myMap.geoObjects.add(firstGeoObject);
+                    // Масштабируем карту на область видимости геообъекта.
+                    myMap.setBounds(bounds, {
+                        // Проверяем наличие тайлов на данном масштабе.
+                        checkZoomRange: true
+                    });
+                });
+            });
+
+
+            $("#removeSuggest").on('click', function () {
+                $('#suggest').val('');
+            });
+        }
     </script>
 
     <script src="js/jquery.js"></script>

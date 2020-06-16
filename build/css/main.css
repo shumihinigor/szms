@@ -1448,6 +1448,26 @@ img {
           box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4);
 }
 
+.icon.inst-footer {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  width: 45px;
+  height: 45px;
+  right: 0 !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/inst-footer.svg);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.icon.inst-footer:hover {
+  -webkit-box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4);
+          box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4);
+}
+
 .icon.whatsapp {
   display: block;
   width: 25px;
@@ -1986,6 +2006,42 @@ img {
           box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4);
 }
 
+.icon.facebook-header {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/facebook-header.svg);
+}
+
+.icon.facebook-header:hover {
+  background-image: url(../images/facebook-header-hover.svg);
+}
+
+.icon.facebook-footer {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  width: 45px;
+  height: 45px;
+  right: 0 !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/facebook-footer.svg);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.icon.facebook-footer:hover {
+  -webkit-box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4);
+          box-shadow: 0px 1px 7px rgba(17, 17, 17, 0.4);
+}
+
 .icon.vk {
   display: inline-block;
   vertical-align: middle;
@@ -2129,7 +2185,20 @@ img {
   }
 }
 
+.modal-map {
+  overflow: auto !important;
+}
+
+.modal-map .modal-dialog {
+  position: static;
+}
+
+.modal-map .modal-content {
+  position: static;
+}
+
 .modal-map .modal-body {
+  position: static;
   padding: 0;
 }
 
