@@ -3675,6 +3675,10 @@ body.compensate-for-scrollbar {
   border: 2px solid #DFC3C7;
 }
 
+.slider-main {
+  line-height: 0;
+}
+
 .slider-main__image {
   position: relative;
   display: block;
