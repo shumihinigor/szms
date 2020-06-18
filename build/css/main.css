@@ -68,7 +68,7 @@
 }
 
 .border-burgundy-25 {
-  border-color: 1px solid #DFC3C7 !important;
+  border-color: #DFC3C7 !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -3551,7 +3551,7 @@ body.compensate-for-scrollbar {
   background-image: url(../images/profile-hover.svg);
 }
 
-.header-profile:focue .icon.profile, .header-profile:active .icon.profile {
+.header-profile:focus .icon.profile, .header-profile:active .icon.profile {
   background-image: url(../images/profile-hover.svg);
 }
 
@@ -3563,7 +3563,7 @@ body.compensate-for-scrollbar {
   background-image: url(../images/basket-hover.svg);
 }
 
-.header-basket:focue .icon.basket, .header-basket:active .icon.basket {
+.header-basket:focus .icon.basket, .header-basket:active .icon.basket {
   background-image: url(../images/basket-focus.svg);
 }
 
